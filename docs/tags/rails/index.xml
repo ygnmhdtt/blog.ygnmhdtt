@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on yaginumahidetatsu.com</title>
+    <link>http://example.org/tags/rails/</link>
+    <description>Recent content in Rails on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Tue, 06 Jun 2017 14:57:03 +0900</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブラウザで動くマークダウンエディタ</title>
+      <link>http://example.org/2017/06/06/md-editor/</link>
+      <pubDate>Tue, 06 Jun 2017 14:57:03 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/06/md-editor/</guid>
+      <description>&lt;p&gt;esa.ioのようにリアルタイムで自分の書いているマークダウンがどんな風に見えるかが
+わかるエディタがほしいなと思って、作ってみた。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Railsのconstantsが反映されなかった</title>
+      <link>http://example.org/2016/12/20/rails-const/</link>
+      <pubDate>Tue, 20 Dec 2016 18:00:00 +0900</pubDate>
+      
+      <guid>http://example.org/2016/12/20/rails-const/</guid>
+      <description>&lt;p&gt;&lt;code&gt;app/initializers/constants.rb&lt;/code&gt; に定数を書きたくて書いたんだけど、何故か反映されなくて地味にハマっていた。時間を無駄にした…&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RailsでMySQLを使用する時にidの自動採番をリセットしたい</title>
+      <link>http://example.org/2016/11/23/rails-reset-autoincrement/</link>
+      <pubDate>Wed, 23 Nov 2016 18:00:00 +0900</pubDate>
+      
+      <guid>http://example.org/2016/11/23/rails-reset-autoincrement/</guid>
+      <description>&lt;p&gt;RailsではIDがデフォルトでautoIncrementされる&lt;/p&gt;
+
+&lt;p&gt;rails generate modelで作ったテーブルは必ずIDカラムがauto_incrementで最初につく．
+開発中に動作確認を適当に叩いてるといらないデータができるので，削除したい．
+しかし，削除してもidの値はリセットされない．&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on yaginumahidetatsu.com</title>
+    <link>http://example.org/tags/ruby/</link>
+    <description>Recent content in Ruby on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Thu, 07 Sep 2017 09:18:13 +0900</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker × Capybara × Selenium × Headless ChromeでE2Eテストを書く</title>
+      <link>http://example.org/2017/09/07/docker-capybara-selenium-headless/</link>
+      <pubDate>Thu, 07 Sep 2017 09:18:13 +0900</pubDate>
+      
+      <guid>http://example.org/2017/09/07/docker-capybara-selenium-headless/</guid>
+      <description>&lt;p&gt;Docker上にrubyが動くコンテナを作って、E2Eテストを書くやり方を残しておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DatadogのAPIをrubyから操作する</title>
+      <link>http://example.org/2017/06/24/ruby-dd-api/</link>
+      <pubDate>Sat, 24 Jun 2017 17:08:08 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/24/ruby-dd-api/</guid>
+      <description>&lt;p&gt;Datadogを最近業務で使っている。
+コンソールの使い方は大体わかってきたので、APIを使ってみることにした。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ブラウザで動くマークダウンエディタ</title>
+      <link>http://example.org/2017/06/06/md-editor/</link>
+      <pubDate>Tue, 06 Jun 2017 14:57:03 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/06/md-editor/</guid>
+      <description>&lt;p&gt;esa.ioのようにリアルタイムで自分の書いているマークダウンがどんな風に見えるかが
+わかるエディタがほしいなと思って、作ってみた。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rubyでキャメルケースをスネークケースにしたい</title>
+      <link>http://example.org/2017/06/06/ruby-camel-to-snake/</link>
+      <pubDate>Tue, 06 Jun 2017 07:46:54 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/06/ruby-camel-to-snake/</guid>
+      <description>&lt;p&gt;仕事でどうしてもcamelケースが羅列された文字列をsnakeケースに変えたくなった時に、
+いい感じのやり方がわからなかったので作った。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rubyでHaskellのiterate</title>
+      <link>http://example.org/2016/11/27/ruby-haskell-iterate/</link>
+      <pubDate>Sun, 27 Nov 2016 18:00:00 +0900</pubDate>
+      
+      <guid>http://example.org/2016/11/27/ruby-haskell-iterate/</guid>
+      <description>&lt;p&gt;Haskellのiterateが便利なので、rubyで書いてみた。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>trigram作った</title>
+      <link>http://example.org/2016/11/13/trigram/</link>
+      <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
+      
+      <guid>http://example.org/2016/11/13/trigram/</guid>
+      <description>&lt;p&gt;n-gramの勉強のために、簡単に作ってみた。
+&lt;a href=&#34;https://github.com/ygnmhdtt/trigram&#34;&gt;https://github.com/ygnmhdtt/trigram&lt;/a&gt;
+ruby製です。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

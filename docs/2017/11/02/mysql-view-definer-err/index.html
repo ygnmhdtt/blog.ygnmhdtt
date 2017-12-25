@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>MySQLでViewのdefinerエラーが出た際の対応 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/mysql">#MySQL</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">November 2, 2017</h2>
+    <h1 class="title">MySQLでViewのdefinerエラーが出た際の対応</h1>
+      
+    <div class="content">
+      <p>ちょこちょこ見るやつを、ちゃんと理解して、ちゃんと対応した。メモ。</p>
+
+<p></p>
+
+<h3 id="発生した事象">発生した事象</h3>
+
+<p>MySQLからdumpをとるために、以下のようなコマンドを叩いた。</p>
+
+<pre><code>mysqldump -u user -p --no-data db &gt; db_schema.dump
+</code></pre>
+
+<p>すると、以下のようなエラーが出た。</p>
+
+<pre><code>mysqldump: Got error: 1449: The user specified as a definer (''user2''@''%'') does not exist when using LOCK TABLES
+</code></pre>
+
+<h3 id="これはなにか">これはなにか？</h3>
+
+<p>これは要するに、viewのdefinerとして存在すべきユーザ user2 が存在していないよ！というエラー。
+viewはテーブルみたいなものだが、ちょっと違う。viewがわからない場合はこことかを参照。
+viewにはdefinerという概念があるが、  user でアクセスすると user2 をdefinerとするviewはダンプできないらしい。</p>
+
+<h3 id="対応策">対応策</h3>
+
+<p>まず、tableでなくviewになっているのはどれなのか、以下のコマンドで確認する。</p>
+
+<pre><code>show table status;
+</code></pre>
+
+<p>長くなるのでここには貼らないが、一番右の Comment に VIEW とあるやつがあるはず。それがview.</p>
+
+<p>次に、viewのdefinerを確認する。
+view名が test_view の場合、以下のコマンドをたたく。</p>
+
+<pre><code>show create table test_view;
+</code></pre>
+
+<p>すると、viewの定義が見られる。</p>
+
+<pre><code>(前略)
+CREATE ALGORITHM=UNDEFINED DEFINER=`user2`@`%` SQL SECURITY DEFINER VIEW `test_view` AS select
+(後略)
+</code></pre>
+
+<p>やはり、definer=user2になっている。
+これを、 user になおしてやる。
+上の CREATE ALGORHITHM のSQL文を最後までコピペし、以下のように変える。</p>
+
+<pre><code>(前略)
+ALTER ALGORITHM=UNDEFINED DEFINER=`user`@`%` SQL SECURITY DEFINER VIEW `test_view` AS select
+(後略)
+</code></pre>
+
+<p>変えたのは最初のCREATEを ALTER に変えたのと、 DEFINER=user にするのみ。
+これをすべてのviewに対して行う。</p>
+
+<p>これで最初のmysqldumpを叩くと、正常にイケルはず。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

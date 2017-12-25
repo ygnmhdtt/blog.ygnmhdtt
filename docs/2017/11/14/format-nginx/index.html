@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>nginxのログを整形する | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/nginx">#nginx</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/command">#command</a>
+  
+  | <a class="subtitle is-6" href="/tags/awk">#awk</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">November 14, 2017</h2>
+    <h1 class="title">nginxのログを整形する</h1>
+      
+    <div class="content">
+      <p>nginxのログを調査する必要があった。</p>
+
+<p></p>
+
+<h1 id="やりたかったこと">やりたかったこと</h1>
+
+<p>nginxのログ(300万行くらいある)の中で、リクエストタイムが長くかかっているものを抽出したかった。</p>
+
+<h1 id="作ったコマンド">作ったコマンド</h1>
+
+<p>$ cat /var/log/nginx/access.log | awk &ldquo;{print $11, &ldquo;,&rdquo;, $4}&rdquo; | sort -rn | head -n 25</p>
+
+<h1 id="ログフォーマットについて">ログフォーマットについて</h1>
+
+<p>まず、上記コマンドでいい感じに取るためには、nginxのログフォーマットが上記コマンドに最適化されている必要がある。
+筆者の環境のログフォーマットは以下の通り。</p>
+
+<p>/etc/nginx/nginx.conf</p>
+
+<p>$remote_addr - $remote_user [$time_local] &ldquo;$request&rdquo; $status $body_bytes_sent $request_time &ldquo;$http_referer&rdquo; &ldquo;$http_user_agent&rdquo; &ldquo;$http_x_forwarded_for&rdquo;</p>
+
+<p>上記フォーマットはnginx標準。
+ただまあ、実際はフォーマットが異なっていても上記コマンドをいい感じに変えれば余裕でイケる。</p>
+
+<h1 id="コマンドの説明">コマンドの説明</h1>
+
+<p>awk コマンドの print を使うと、対象文字列を空白でスプリットして、 $n で指定されたn番目の要素を標準出力してくれる。
+上記フォーマットだと、11番目はリクエストタイムであり、4番目は対象ログの発生時間である。
+注意点は、n番目というのはログフォーマットの話ではなく、実際のログの話である。
+そのため、</p>
+
+<pre><code>[12/Nov/2017:03:35:01 +0900]
+</code></pre>
+
+<p>こういう文字列があった時、 + の前の空白でもスプリットされる。</p>
+
+<p>そんな感じで、リクエストタイムと対象ログを表示し、それを降順とするために sort -rn する。そこから最初の25件を標準出力する。</p>
+
+<h1 id="結果">結果</h1>
+
+<p>以下のように取れる。</p>
+
+<pre><code>$ cat access.log | awk ''{print $11, &quot;,&quot;, $4}'' | sort -rn | head -n 25
+60.309 , [12/Nov/2017:21:04:24
+60.054 , [12/Nov/2017:21:02:47
+59.922 , [12/Nov/2017:21:04:18
+59.788 , [12/Nov/2017:21:02:56
+59.773 , [12/Nov/2017:21:02:41
+59.665 , [12/Nov/2017:21:04:16
+59.081 , [12/Nov/2017:20:44:13
+53.276 , [12/Nov/2017:17:44:08
+51.800 , [12/Nov/2017:17:44:08
+51.673 , [12/Nov/2017:17:44:12
+50.771 , [12/Nov/2017:17:44:11
+49.620 , [12/Nov/2017:17:44:08
+33.279 , [12/Nov/2017:17:43:48
+32.837 , [12/Nov/2017:17:43:47
+30.912 , [12/Nov/2017:17:43:47
+29.123 , [12/Nov/2017:17:43:47
+27.221 , [12/Nov/2017:17:43:47
+26.251 , [12/Nov/2017:17:43:41
+25.423 , [12/Nov/2017:17:44:08
+24.691 , [12/Nov/2017:17:44:08
+24.659 , [12/Nov/2017:17:44:08
+23.419 , [12/Nov/2017:17:43:41
+22.507 , [12/Nov/2017:17:44:11
+22.350 , [12/Nov/2017:17:43:41
+21.383 , [12/Nov/2017:17:44:08
+</code></pre>
+
+<p>いい感じ。
+ちなみに、300万行くらいのログを上記コマンドにかけて、30秒程度かかった。(筆者の環境)</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Datadog専用のLoggerをGoで作った | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/golang">#Golang</a>
+  
+  | <a class="subtitle is-6" href="/tags/datadog">#Datadog</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">October 23, 2017</h2>
+    <h1 class="title">Datadog専用のLoggerをGoで作った</h1>
+      
+    <div class="content">
+      <p>Datadogのログ監視用にloggerを作った。</p>
+
+<p></p>
+
+<p><a href="https://github.com/ygnmhdtt/ddlog_go">ddlog_go</a>にソースがある。</p>
+
+<p>Datadogのログフォーマットは</p>
+
+<pre><code>metric unix_timestamp value [attribute1=v1 attributes2=v2 ...]
+</code></pre>
+
+<p>こんな感じでないといけない。もしこのフォーマットでないログを監視したいときは、自分でカスタムパーサを書く必要がある。しかし、この世のほとんどのログはこのフォーマットになってないと思う。(たぶん)
+なので、はじめからこのフォーマットでログを出しとけばいいじゃん！という用途に使う。</p>
+
+<p>READMEの通り、</p>
+
+<pre><code>package main
+
+import (
+  &quot;os&quot;
+  &quot;github.com/ygnmhdtt/ddlog_go
+)
+
+func main() {
+  // You can specify metric_name and where to output
+  ddl := ddlog_go.NewddLogger(&quot;test.metric&quot;, os.Stderr)
+
+  // Set attributes
+  ddl.Attr(&quot;env&quot;, &quot;production&quot;)
+
+  // This line prints &quot;test.metric 967809600 1 loglevel=INFO env=production&quot;
+  ddl.INFO(&quot;1&quot;) 
+  // This line prints &quot;test.metric 967809601 2 loglevel=WARN env=production&quot;
+  ddl.WARN(&quot;2&quot;)
+
+  // ClearAttr clears all attributes
+  ddl.ClearAttr()
+
+  // This line prints &quot;test.metric 967809600 1 loglevel=INFO env=production hoge=fuga&quot;
+  ddl.Attr(&quot;env&quot;, &quot;production&quot;).Attr(&quot;hoge&quot;, &quot;fuga&quot;).INFO(&quot;1&quot;)
+}
+</code></pre>
+
+<p>こんなふうに使う。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

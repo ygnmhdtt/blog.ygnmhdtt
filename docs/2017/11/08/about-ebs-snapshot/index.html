@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>EBSのスナップショットについて学んだ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/ebs">#EBS</a>
+  
+  | <a class="subtitle is-6" href="/tags/snapshot">#snapshot</a>
+  
+  | <a class="subtitle is-6" href="/tags/backup">#backup</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">November 8, 2017</h2>
+    <h1 class="title">EBSのスナップショットについて学んだ</h1>
+      
+    <div class="content">
+      <p>EBSのスナップショットの増分とか、リストアについて学んだ。</p>
+
+<p></p>
+
+<p>こういう問題について考えていた。</p>
+
+<pre><code>Which of the following approaches provides the lowest cost for Amazon Elastic Block Store snapshots while giving you the ability to fully restore data?
+
+A. Maintain two snapshots: the original snapshot and the latest incremental snapshot.
+
+B. Maintain a volume snapshot; subsequent snapshots will overwrite one another
+
+C. Maintain a single snapshot the latest snapshot is both Incremental and complete.
+
+D. Maintain the most current snapshot, archive the original and incremental to Amazon Glacier.
+</code></pre>
+
+<p>訳すとこんな感じ。</p>
+
+<pre><code>Amazon Elastic Block Storeスナップショットのコストを最小限に抑えながら、データを完全に復元できる次のアプローチはどれか？
+A. 元のスナップショットと最新の増分スナップショットの2つのスナップショットを維持する
+B. ボリュームスナップショットを維持する。後続のスナップショットは互いに上書きされる
+C. 単一のスナップショットを維持する、最新の増分スナップショットが増分であり完全である
+D. 最新のスナップショットを維持し、オリジナルと増分をAmazon Glacierにアーカイブする
+</code></pre>
+
+<p>この問題、結論としては答えはCなんだけど、最新のスナップショットだけでいいのか？と疑問に思った。
+というのは、EBSは基本的に2回目以降のスナップショットの取得は増分になる。
+例えば、50GBあるEBSのスナップショットを取る時、初回は50GBぶんのスナップショットを取る。
+その後5GB増えた時、次のスナップショットは増分の5GBのみとなる。
+だから、最新のスナップショットだけ残していては、途中のスナップショットが歯抜的にバックアップできないのでは？と考えてしまった。</p>
+
+<h1 id="仕組みについて">仕組みについて</h1>
+
+<p>そもそも、ドキュメントに以下のような記述がある。</p>
+
+<pre><code>スナップショットの保存は増分ベースで行われるものの、最新のスナップショットさえあればボリュームを復元できるようにスナップショット削除プロセスは設計されています。
+</code></pre>
+
+<p>仕組みがこちらに書いてあった。</p>
+
+<p>S3に実際に保存されているスナップショットと、我々ユーザから見えているスナップショット(概念)は実は異なっていることがわかる。
+実際にS3に保存されているのは文字通り 増分 であるが、概念としてのスナップショットでは各時点での 全分 が保存されている。
+スナップショットの削除 という行為は、S3からのファイル削除ではなく、 概念 の削除を行っている。(そもそもS3を見てもスナップショットは見られないようになっている。)
+そして、概念を削除しても、別の時点での概念にその増分が必要とされている場合、S3からは削除されない。(図中 A のように、必要とされていないデータは本当に消える。)
+逆に言うと、スナップショットを削除したつもりでも、S3への保管のコストがなくなるとは限らない、ということ。(だからEBSスナップショットは安い)</p>
+
+<h1 id="まとめ">まとめ</h1>
+
+<p>Cのように、最新のスナップショット(概念)さえあれば、全部元に戻せる。</p>
+
+<h1 id="ちなみに">ちなみに</h1>
+
+<p>Dのように、Glacierに明示的に保存することはできない。内部で勝手にS3に保管される。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>ELBの動きとSSLターミネーションについて学んだ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/elb">#ELB</a>
+  
+  | <a class="subtitle is-6" href="/tags/https">#HTTPS</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">November 1, 2017</h2>
+    <h1 class="title">ELBの動きとSSLターミネーションについて学んだ</h1>
+      
+    <div class="content">
+      <p>ELBはEC2へリクエストを負荷分散してくれる。
+その際の暗号化について学んだ。</p>
+
+<p></p>
+
+<p>本来、HTTPS証明書はサーバに配置する。
+ELB配下にEC2が冗長化されているケースでも、EC2に証明書をデプロイすることは可能。
+しかし、実際はSSL(TLS)の終端はELBとし、証明書もELBに持たせる。
+そして、ELBからEC2への接続は暗号化されない。
+これは、いくつかの理由がある(たぶん)</p>
+
+<ul>
+<li>証明書を一元管理するため</li>
+<li>盗聴の心配がないため</li>
+<li>セッション維持のため</li>
+<li>盗聴の心配がない</li>
+</ul>
+
+<p>こちらに、以下のような記載があった。</p>
+
+<pre><code>Whenever you are connecting to an RDS instance from an EC2 instance within the same region, that communication is going through AWS private network. 
+
+However traffics between RDS DB instances and EC2 instances which are located in different regions will go through the internet. 
+
+If you are concerned about security, you may want to use SSL for communication between RDS DB instances and EC2 instances.
+</code></pre>
+
+<p>RDSについての記載だが、要点は同じ。
+同一リージョンのインスタンス間のトラフィックは、AWSのプライベートなネットワークを通るため、暗号化は不要とのこと。</p>
+
+<h3 id="セッション維持">セッション維持</h3>
+
+<p>ELBにはスティッキーセッションという、Cookieベースでのセッション維持機能がある。
+そして、スティッキーセッションはSSLの終端をEC2にする場合は 使えない 。
+これは、ELBからEC2に通信する際のトラフィックが暗号化されると、ELBがCookieの中身を読み取れないため。(読み取れないと当然トラフィックをスティッキーに分散できない)</p>
+
+<h3 id="まとめ">まとめ</h3>
+
+<p>SSLターミネーションは便利。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

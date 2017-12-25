@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Apacheのドキュメントルート変更が反映されなかった | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/apache">#Apache</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 6, 2016</h2>
+    <h1 class="title">Apacheのドキュメントルート変更が反映されなかった</h1>
+      
+    <div class="content">
+      <p>apacheでgitからcloneしたphpのプロジェクトを動かしたかったのに動かせなくてややハマったのでメモ．
+※php関係ないです</p>
+
+<p></p>
+
+<p>最初にやったこと</p>
+
+<p>cd /etc/apache2
+vi http.conf
+でhttp.confを</p>
+
+<p>DocumentRoot &ldquo;/path/to/project&rdquo;
+  <directory></p>
+
+<p>のように変更</p>
+
+<p>しかし，apacheのデフォルト画面が出るだけなので，指定がおかしい，もしくは設定ファイルが間違っている．</p>
+
+<p>直し方</p>
+
+<p>which apachectl</p>
+
+<p>の結果が
+/usr/sbin/apachectl
+でなかった．
+macにはapacheがデフォルトで入っている．上記のパスはそのデフォルトのapacheを示す．
+これをデフォルトに戻してやればOK.
+私の環境では，brew uninstall httpd24でいけました．（以前brewから入れたapacheが悪さしていた．）</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

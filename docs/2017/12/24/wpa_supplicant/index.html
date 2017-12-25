@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>wpa_supplicantでWPAの無線LANに繋ぐ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 24, 2017</h2>
+    <h1 class="title">wpa_supplicantでWPAの無線LANに繋ぐ</h1>
+      
+    <div class="content">
+      <p>表題についてメモっておく。</p>
+
+<p></p>
+
+<h4 id="暗号化方式を確かめる">暗号化方式を確かめる</h4>
+
+<p>Windowsでログインして、繋がってるネットワークのプロパティからWEPなのか、WPA系なのかを確かめる。
+筆者環境の無線LANはWPA2形式で暗号化されていた。
+以下の方法はWPA系に対応した方法。</p>
+
+<h4 id="wpa-supplicantで繋ぐ">wpa_supplicantで繋ぐ</h4>
+
+<p>筆者はGentooインストールをSystemRescueCDからやっていたのでwpa_supplicantコマンドはデフォルトで入っていた。
+GentooのminimalCDとかには入ってないかもなので、その場合はSystemRescueCDを使うか、一回有線でつないでemergeするなどすること。</p>
+
+<p>まずは設定ファイルを作る。</p>
+
+<pre><code>% wpa_passphrase &quot;各自の無線のSSID&quot; &gt;&gt; /etc/wpa_supplicant/wpa_supplicant.conf
+
+</code></pre>
+
+<p>これで、 <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> に設定ファイルができる。
+念のため閲覧権限を与えておく。</p>
+
+<pre><code>% chmod -v 600 /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre>
+
+<p>次に、無線LANをキャッチできるドライバの名前を確かめる。</p>
+
+<pre><code>% iwconfig
+</code></pre>
+
+<p>iwconfigで、 <code>wlp...</code> みたいな名前のドライバがあると思うので、それの名前を覚えておく。
+筆者のマシン(ThinkPad E470) では <code>wlp5s0</code> だったので、その名前で説明する。</p>
+
+<p>そして、実際に繋ぐ。</p>
+
+<pre><code>% wpa_supplicant -Dnl80211,wext -iwlp5s0 -c/etc/wpa_supplicant/wpa_supplicant.conf -B
+Successfully initialized wpa_supplicant
+</code></pre>
+
+<p>そして、DHCPからIPアドレスをもらう。</p>
+
+<pre><code>% dhcpcd wlp5s0
+</code></pre>
+
+<p>確認する。</p>
+
+<pre><code>% ifconfig wlp5s0
+</code></pre>
+
+<p>これで、 IPアドレスがちゃんと振られていれば、インターネットに繋がると思う。
+pingを打つなりして確認する。</p>
+
+<h4 id="つながらない場合">つながらない場合</h4>
+
+<p>もしつながらない場合はwpa_supplicantのログを出しながら繋ぐ。</p>
+
+<pre><code>% wpa_supplicant -Dnl80211,wext -iwlp5s0 -c/etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre>
+
+<p>-Bオプションをなくすと、その場で繋いで、ログを出してくれるのでそれを読む。</p>
+
+<p>また、</p>
+
+<pre><code>% killall wpa_supplicant
+</code></pre>
+
+<p>で一回殺したり、</p>
+
+<pre><code>% ifconfig wlp5s0 down
+% ifconfig wlp5s0 up
+</code></pre>
+
+<p>で、ドライバをupしなおしたりするといいという情報もある。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

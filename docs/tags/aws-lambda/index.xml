@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws Lambda on yaginumahidetatsu.com</title>
+    <link>http://example.org/tags/aws-lambda/</link>
+    <description>Recent content in Aws Lambda on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Fri, 22 Sep 2017 18:01:35 +0900</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/aws-lambda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DatadogからLambdaを叩く</title>
+      <link>http://example.org/2017/09/22/datadog-lambda/</link>
+      <pubDate>Fri, 22 Sep 2017 18:01:35 +0900</pubDate>
+      
+      <guid>http://example.org/2017/09/22/datadog-lambda/</guid>
+      <description>&lt;p&gt;DatadogからLambdaをたたくまで、まあまあ苦労したのでまとめておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DatadogとAPI GatewayとLambdaでプロセス再起動を自動化する</title>
+      <link>http://example.org/2017/06/30/datadog-apigateway-lambda/</link>
+      <pubDate>Fri, 30 Jun 2017 18:05:37 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/30/datadog-apigateway-lambda/</guid>
+      <description>&lt;p&gt;いい記事を弊社ブログで書いたのでこっちでも紹介しておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python2でAWSLambdaからSlack通知をするための最低限のコード</title>
+      <link>http://example.org/2017/06/19/python2-lambda-slack/</link>
+      <pubDate>Mon, 19 Jun 2017 10:22:59 +0900</pubDate>
+      
+      <guid>http://example.org/2017/06/19/python2-lambda-slack/</guid>
+      <description>&lt;p&gt;検証のために、Lambdaから最低限のコードでSlack通知を行いたかったので、メモ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

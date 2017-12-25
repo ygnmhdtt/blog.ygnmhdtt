@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>進捗を可視化するスクリプトを作った | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/bash">#bash</a>
+  
+  | <a class="subtitle is-6" href="/tags/slack">#slack</a>
+  
+  | <a class="subtitle is-6" href="/tags/remote-work">#remote-work</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 1, 2017</h2>
+    <h1 class="title">進捗を可視化するスクリプトを作った</h1>
+      
+    <div class="content">
+      <p>スクリプトを作った。</p>
+
+<p></p>
+
+<p>働き方についてはもう少しやったらいい感じに書きたいと思います。</p>
+
+<p>さて、リモートワークは自己管理が大切です、一人で悩んでいても誰も気づいてくれず、時間の無駄になってしまう。</p>
+
+<pre><code>#!/bin/bash
+URL=''https://hooks.slack.com/services/token''
+MSG=''''
+USERNAME=''test''
+CHANNEL=''channel_test''
+ICON='':bird:''
+MSG=`cat task.txt`
+
+payload=&quot;payload={
+  &quot;channel\&quot;: \&quot;${CHANNEL}\&quot;,
+  &quot;username\&quot;: \&quot;${USERNAME}\&quot;,
+  &quot;text\&quot;: \&quot;\`\`\`${MSG}\`\`\`\&quot;,
+  :icon_emoji\&quot;: \&quot;${ICON}\&quot;,
+}
+curl -X POST --data-urlencode &quot;${payload}&quot; $URL
+</code></pre>
+
+<p>webhookの仕様そのままなので、こんな感じです、
+進捗は、いろいろ考えたけど、テキストベースで十分、あんまり凝ると辛くなりそう。</p>
+
+<p>そして、これだけだとあれというか、このシェルを毎回実行するのは微妙、コピペすればいいでしょ、という話なので、cronを設定しましょう。
+macのcron初めて使った。</p>
+
+<pre><code>$ crontab -e
+</code></pre>
+
+<p>でviで</p>
+
+<pre><code>* 16 * * 1-5 task.sh
+</code></pre>
+
+<p><sup>2</sup>&frasl;<sub>2</sub> 追記↓が正しいです、↑だと16時から17時まで毎分実行される。</p>
+
+<p>0 16 * * 1-5 task.sh</p>
+
+<p>これで平日16時にいい感じにシェルが走って進捗がSlackに連携されます。
+毎日やることほどいい感じに手間なくしたい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

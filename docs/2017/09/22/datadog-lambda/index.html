@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>DatadogからLambdaを叩く | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/datadog">#Datadog</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/python2.7">#Python2.7</a>
+  
+  | <a class="subtitle is-6" href="/tags/aws-lambda">#AWS Lambda</a>
+  
+  | <a class="subtitle is-6" href="/tags/twilio">#Twilio</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">September 22, 2017</h2>
+    <h1 class="title">DatadogからLambdaを叩く</h1>
+      
+    <div class="content">
+      <p>DatadogからLambdaをたたくまで、まあまあ苦労したのでまとめておく。</p>
+
+<p></p>
+
+<p>今日、弊社ブログで<a href="https://blog.mmmcorp.co.jp/blog/2017/06/02/starting-datadog/">こういう記事</a>を書いた。
+システム監視の一環で、DDからアラートが上がった時に担当者にに電話をかけたい、というのがやりたいこと。
+これは内部的な仕組みとして、DDのアラートがWebhookを飛ばす -&gt; CloudFront -&gt; API Gateway -&gt; Lambda という流れになっている。</p>
+
+<h1 id="cloudfrontを使う">CloudFrontを使う</h1>
+
+<p>こちらを参考に、CloudFrontを使ってAPI Gatewayを叩いている。
+DDのWebhookは暗号化プロトコルにSSLv3を使っているので、(イケてない)API Gatewayを直接叩くことができない。
+そのため、API Gatewayの前段にCloudFrontをかませている。</p>
+
+<h1 id="日本語を送る">日本語を送る</h1>
+
+<p>日本語の送信で、色々ハマってしまった。試行錯誤の結果、以下のようなやり方を取った。
+* DD側でURLエンコーディングしてフックする
+* Lambda側でデコードして日本語を使う</p>
+
+<h1 id="dd側でurlエンコーディング">DD側でURLエンコーディング</h1>
+
+<p>これは簡単で、 Integrations Webhook からエンコーディングにチェックを入れる。</p>
+
+<h1 id="lambdaでの扱い方">Lambdaでの扱い方</h1>
+
+<p>API Gatewayのログ(Request Body)を見ると以下のような感じになっていた。</p>
+
+<pre><code>event_type=query_alert_monitor&amp;alert_id=XXXXXXXX&amp;alert_transition=Recovered&amp;date=1505904673000&amp;alert_title=%E3%83%87%E3%82%A3%E3%82%B9%E3
+</code></pre>
+
+<p>URLエンコーディングしてなければJSONでポストされ、Pythonではdict型で扱える。
+しかし、URLのクエリパラメータとして来る場合は、以下のようにすると扱いやすい。(Python2.7です。)</p>
+
+<pre><code>import urlparse
+import urllib
+
+def handle(event, context):
+    // この時点ではeventはdict
+    request = str(event[''body''])
+    // クエリパラメータをパース
+    params = urlparse.parse_qs(request)
+    event_type_encoding = params[''event_type''][0]
+    // デコード
+    event_type_decoded = urllib.unquote(event_type_encoding)
+</code></pre>
+
+<p>こうするとデコードして、日本語がされることを日本語として扱える。
+Pythonの符号化方式周りはハマることが多くてつらい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

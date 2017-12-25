@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>trigram作った | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/n-gram">#n-gram</a>
+  
+  | <a class="subtitle is-6" href="/tags/ruby">#Ruby</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">November 13, 2016</h2>
+    <h1 class="title">trigram作った</h1>
+      
+    <div class="content">
+      <p>n-gramの勉強のために、簡単に作ってみた。
+<a href="https://github.com/ygnmhdtt/trigram">https://github.com/ygnmhdtt/trigram</a>
+ruby製です。</p>
+
+<p></p>
+
+<p>使い方</p>
+
+<pre><code>$ ruby trigram.rb dogura_magura.txt &gt; output.txt
+</code></pre>
+
+<p>例</p>
+
+<pre><code>$ ruby trigram.rb test.txt
+</code></pre>
+
+<pre><code>test.txt
+赤パジャマ青パジャマ黄パジャマ
+かえるぴょこぴょこ3ぴょこぴょこ合わせてぴょこぴょこ6ぴょこぴょこ
+</code></pre>
+
+<p>結果↓</p>
+
+<pre><code>赤パジャマ青パジャマ黄パジャマ
+かえるぴょこぴょこ3ぴょこぴょこ合わせてぴょこぴょこ6ぴょこぴょこ
+[[&quot;ぴょこ&quot;, 8],
+ [&quot;こぴょ&quot;, 4],
+ [&quot;ょこぴ&quot;, 4],
+ [&quot;ジャマ&quot;, 3],
+ [&quot;パジャ&quot;, 3],
+ [&quot;わせて&quot;, 1],
+ [&quot;合わせ&quot;, 1],
+ [&quot;こ合わ&quot;, 1],
+ [&quot;ょこ合&quot;, 1],
+ [&quot;3ぴょ&quot;, 1],
+ [&quot;こ3ぴ&quot;, 1],
+ [&quot;ょこ3&quot;, 1],
+ [&quot;るぴょ&quot;, 1],
+ [&quot;えるぴ&quot;, 1],
+ [&quot;かえる&quot;, 1],
+ [&quot;黄パジ&quot;, 1],
+ [&quot;マ黄パ&quot;, 1],
+ [&quot;ャマ黄&quot;, 1],
+ [&quot;青パジ&quot;, 1],
+ [&quot;マ青パ&quot;, 1],
+ [&quot;ャマ青&quot;, 1],
+ [&quot;6ぴょ&quot;, 1],
+ [&quot;こ6ぴ&quot;, 1],
+ [&quot;ょこ6&quot;, 1],
+ [&quot;てぴょ&quot;, 1],
+ [&quot;せてぴ&quot;, 1],
+ [&quot;赤パジ&quot;, 1]]
+</code></pre>
+
+<p>検索エンジンとかにも使われているらしい(?)</p>
+
+<h3 id="青空文庫で試す">青空文庫で試す</h3>
+
+<p>青空文庫　「ドグラ・マグラ」夢野久作</p>
+
+<pre><code>[[&quot;ている&quot;, 1652],
+ [&quot;、その&quot;, 935],
+ [&quot;ました&quot;, 880],
+ [&quot;ってい&quot;, 821],
+ [&quot;という&quot;, 773],
+ [&quot;して、&quot;, 768],
+ [&quot;………&quot;, 727],
+ [&quot;った。&quot;, 672],
+ [&quot;してい&quot;, 601],
+ [&quot;した。&quot;, 544],
+ [&quot;。……&quot;, 525],
+ [&quot;なって&quot;, 509],
+ [&quot;ように&quot;, 503],
+ [&quot;ような&quot;, 500],
+ [&quot;座いま&quot;, 487],
+ [&quot;御座い&quot;, 487],
+</code></pre>
+
+<p>なるほどという感じ
+ちょっと下↓</p>
+
+<pre><code>[&quot;林博士&quot;, 246],
+ [&quot;若林博&quot;, 246],
+ [&quot;たもの&quot;, 243],
+ [&quot;博士は&quot;, 242],
+ [&quot;チャカ&quot;, 240],
+ [&quot;精神病&quot;, 239],
+ [&quot;てしま&quot;, 239],
+ [&quot;て来る&quot;, 238],
+ [&quot;ある。&quot;, 236],
+ [&quot;だから&quot;, 235],
+ [&quot;カポコ&quot;, 230],
+ [&quot;ャカポ&quot;, 230],
+ [&quot;しまし&quot;, 230],
+ [&quot;なかっ&quot;, 229],
+</code></pre>
+
+<p>予想通りで良かった。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

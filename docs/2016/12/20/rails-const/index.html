@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Railsのconstantsが反映されなかった | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/rails">#Rails</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/docker">#Docker</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 20, 2016</h2>
+    <h1 class="title">Railsのconstantsが反映されなかった</h1>
+      
+    <div class="content">
+      <p><code>app/initializers/constants.rb</code> に定数を書きたくて書いたんだけど、何故か反映されなくて地味にハマっていた。時間を無駄にした…</p>
+
+<p></p>
+
+<h3 id="どうするか">どうするか</h3>
+
+<p><code>docker-compose kill</code> でdockerのインスタンスを終了させて、
+<code>docker-compose up</code> で再開
+要は再起動</p>
+
+<h3 id="何故これで治るのか">何故これで治るのか？</h3>
+
+<p>app/initializers配下のファイルはアプリケーションを読み込む時にしか読み込まれないっぽい。
+実行中にいくらいじってもダメなようでした。ややハマった。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

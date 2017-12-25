@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>EC2にdocker環境を構築するときにやったこと | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/ec2">#EC2</a>
+  
+  | <a class="subtitle is-6" href="/tags/docker">#Docker</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 11, 2017</h2>
+    <h1 class="title">EC2にdocker環境を構築するときにやったこと</h1>
+      
+    <div class="content">
+      <p>無事dockerが入れられたのでメモ。</p>
+
+<p></p>
+
+<p>MacのターミナルからEC2へ繋ぐコマンドが↓。
+test.pemは、EC2インスタンスを構築するときダウンロードする鍵。
+my.public.ip.addressは、EC2 Management Consoleから見られる。</p>
+
+<pre><code>$ ssh -i path/to/pem/test.pem ''my.public.ip.address'' -l ec2-user
+</code></pre>
+
+<p>つなぎ先のIPはインスタンスを起動し直すたび変わるので、ElasticIPを設定すれば永続化できる。(お金かかるのでやってない)</p>
+
+<p>最初にやれと言われるのでやる。</p>
+
+<pre><code>$ sudo yum update -y
+</code></pre>
+
+<p>サーバのOSを確認しておく。</p>
+
+<pre><code>$ cat /etc/*release*
+
+
+NAME=&quot;Amazon Linux AMI&quot;
+VERSION=&quot;2016.09&quot;
+ID=&quot;amzn&quot;
+ID_LIKE=&quot;rhel fedora&quot;
+VERSION_ID=&quot;2016.09&quot;
+PRETTY_NAME=&quot;Amazon Linux AMI 2016.09&quot;
+ANSI_COLOR=&quot;0;33&quot;
+CPE_NAME=&quot;cpe:/o:amazon:linux:2016.09:ga&quot;
+HOME_URL=&quot;http://aws.amazon.com/amazon-linux-ami/&quot;
+Amazon Linux AMI release 2016.09
+cpe:/o:amazon:linux:2016.09:ga
+</code></pre>
+
+<p>ちゃんとAmazonLinuxAMIが入っている。</p>
+
+<h3 id="dockerをinstall">dockerをinstall</h3>
+
+<pre><code>$ sudo yum install -y docker
+</code></pre>
+
+<h3 id="dockerを立ち上げる">dockerを立ち上げる</h3>
+
+<pre><code>sudo service docker start
+</code></pre>
+
+<p>sudoなしでdockerを立ち上げるために、ec2-userをgroupに入れる。</p>
+
+<pre><code>$ sudo usermod -a -G docker ec2-user
+</code></pre>
+
+<p>ここで</p>
+
+<pre><code>$ exit
+</code></pre>
+
+<p>でEC2を抜ける。
+もう一回最初のコマンドを叩いてログインし直す。(上で設定したgroupのpermissionを反映させるためらしい(?))</p>
+
+<h3 id="dockerが生きてるか-sudoなしで叩けるか-確認">dockerが生きてるか(sudoなしで叩けるか)確認</h3>
+
+<pre><code>docker info
+
+
+Containers: 0
+ Running: 0
+ Paused: 0
+ Stopped: 0
+Images: 0
+Server Version: 1.12.6
+Storage Driver: devicemapper
+ Pool Name: docker-202:1-395189-pool
+ Pool Blocksize: 65.54 kB
+ Base Device Size: 10.74 GB
+ Backing Filesystem: xfs
+ Data file: /dev/loop0
+ Metadata file: /dev/loop1
+ Data Space Used: 11.8 MB
+ Data Space Total: 107.4 GB
+ Data Space Available: 7.001 GB
+ Metadata Space Used: 581.6 kB
+ Metadata Space Total: 2.147 GB
+ Metadata Space Available: 2.147 GB
+ Thin Pool Minimum Free Space: 10.74 GB
+ Udev Sync Supported: true
+ Deferred Removal Enabled: false
+ Deferred Deletion Enabled: false
+ Deferred Deleted Device Count: 0
+ Data loop file: /var/lib/docker/devicemapper/devicemapper/data
+ WARNING: Usage of loopback devices is strongly discouraged for production use. Use `--storage-opt dm.thinpooldev` to specify a custom block storage device.
+ Metadata loop file: /var/lib/docker/devicemapper/devicemapper/metadata
+ Library Version: 1.02.93-RHEL7 (2015-01-28)
+Logging Driver: json-file
+Cgroup Driver: cgroupfs
+Plugins:
+ Volume: local
+ Network: bridge overlay null host
+Swarm: inactive
+Runtimes: runc
+Default Runtime: runc
+Security Options:
+Kernel Version: 4.4.41-36.55.amzn1.x86_64
+Operating System: Amazon Linux AMI 2016.09
+OSType: linux
+Architecture: x86_64
+CPUs: 1
+Total Memory: 995.4 MiB
+</code></pre>
+
+<h1 id="docker-composeもinstall">docker-composeもinstall</h1>
+
+<p>docker-composeは、複数コンテナを簡単に扱うためのdockerのモジュール(?)らしい
+大体の場合、docker上にはアプリケーション以外にもmysqlなど複数のコンテナを構築する。docker-composeなしだとそれらの立ち上げが面倒だし、順番なども考慮しなきゃいけない。それらを楽にするのがdocker-compose。docker-compose.ymlに設定を書くことでいい感じにコンテナを立ち上げてくれる。(という理解)</p>
+
+<pre><code>curl -L --fail https://github.com/docker/compose/releases/download/1.13.0/run.sh &gt; /usr/local/bin/docker-compose
+</code></pre>
+
+<p>ここで <code>/usr/local/bin</code> のpermissionで弾かれたので、以下でpermission付与</p>
+
+<pre><code>sudo chmod a+rwx /usr/local/bin/
+</code></pre>
+
+<p>docker-composeにもpermission付与</p>
+
+<pre><code>chmod +x /usr/local/bin/docker-compose
+</code></pre>
+
+<p>docker-composeがいけてるか確認</p>
+
+<pre><code>docker-compose -v
+
+docker-compose version 1.11.1, build 7c5d5e4
+</code></pre>
+
+<p>ここまでできれば余裕。
+あとは ~/.ssh/ に鍵を作ったり、configファイルを作ったりして、好きなところにプロジェクトをcloneして開発する。</p>
+
+<p>docker for macは遅いし、リソースを食う。
+macのストレージを45GB近く取ってて、辛くなる。EC2上にdockerを入れられれば、ホストとなるmacのリソースを食われないし、Linux上だとやはりdockerが速い。速いのは正義で、生産性にダイレクトに関わってくる要素なので、こだわりたい。</p>
+
+<p>リモートサーバ上で開発することのデメリットがひとつあって、Macにあるファイルをリモートサーバに持っていくのが面倒くさい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

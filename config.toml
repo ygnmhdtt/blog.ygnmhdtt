@@ -1,0 +1,18 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "yaginumahidetatsu.com"
+theme = "kiss"
+copyright = "(c) <a href=\"https://github.com/ygnmhdtt\">Hidetatsu Yaginuma</a> 2017"
+disqusShortname = "shortname"
+Paginate = 5
+enableRobotsTXT = true
+publishDir = "docs"
+
+[permalinks]
+post = "/:year/:month/:day/:filename"
+
+[params.info]
+homeTitle = "ygnmhdtt" # Title for home page
+
+[taxonomies]
+tag ="tags"

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>PostgreSQLに入門したのでメモ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/postgresql">#PostgreSQL</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">June 24, 2017</h2>
+    <h1 class="title">PostgreSQLに入門したのでメモ</h1>
+      
+    <div class="content">
+      <p>PostgreSQLを初めて触ったら、コマンドに慣れていなかったので、メモしておく。Dockerを使ってます。</p>
+
+<p></p>
+
+<h1 id="ポスグレでよく使うコマンド">ポスグレでよく使うコマンド</h1>
+
+<h3 id="ログイン">ログイン</h3>
+
+<pre><code>psql -h ホスト -U ユーザ -W
+</code></pre>
+
+<p>-W がパスワード。</p>
+
+<p>-p はポートなので注意(mysqlではパスワード)</p>
+
+<h1 id="dbを見る">DBを見る</h1>
+
+<pre><code>\l
+</code></pre>
+
+<h1 id="dbに入る">DBに入る</h1>
+
+<pre><code>\c &lt;db_name&gt;
+</code></pre>
+
+<h1 id="テーブル一覧">テーブル一覧</h1>
+
+<pre><code>\d
+</code></pre>
+
+<h1 id="スキーマを見る">スキーマを見る</h1>
+
+<pre><code>\d &lt;table_name&gt;
+</code></pre>
+
+<h1 id="db作成">DB作成</h1>
+
+<pre><code>Create database database_name encoding ''UTF-8'';
+</code></pre>
+
+<h1 id="テーブル作成">テーブル作成</h1>
+
+<pre><code>Create table table_name (column_name1 column_type, column_name2 column_type, …);
+</code></pre>
+
+<p>mysqlとけっこう違う。普段mysqlばっかりなんだけど、ポスグレも覚えたいし、慣れたらこっちのほうが早そう。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

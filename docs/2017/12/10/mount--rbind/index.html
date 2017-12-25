@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>mount --rbind とはなにか | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/linux">#linux</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 10, 2017</h2>
+    <h1 class="title">mount --rbind とはなにか</h1>
+      
+    <div class="content">
+      <p>表題について学んだ。</p>
+
+<p></p>
+
+<p>chroot(チョルート)の前に以下のようなコマンドを叩くことが多い。</p>
+
+<pre><code># mount -t proc proc /mnt/gentoo/proc
+# mount --rbind /dev /mnt/gentoo/dev
+# mount --rbind /sys /mnt/gentoo/sys
+</code></pre>
+
+<p>これはなんなのかいまいちわかっていなかったので学んだ。</p>
+
+<h1 id="結論">結論</h1>
+
+<p>結論としては、 <code>/proc</code> <code>/dev</code> <code>/sys</code> を、chroot後にも見えるようにするための処理だった。
+そもそも mount コマンドはあくまでファイルシステムをマウントするためのコマンド。
+<code>mount -t</code> <code>mount --rbind</code> みたいにするとそれぞれ、ファイルシステムを指定してマウント、ディレクトリをマウントができる。
+シンボリックリンクを張ってるみたいなものらしい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

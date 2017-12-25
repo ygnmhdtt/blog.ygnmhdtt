@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>pecoを使ったカスタムスクリプトをまとめる | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/peco">#peco</a>
+  
+  | <a class="subtitle is-6" href="/tags/bash">#bash</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">June 8, 2017</h2>
+    <h1 class="title">pecoを使ったカスタムスクリプトをまとめる</h1>
+      
+    <div class="content">
+      <p>pecoが便利すぎるので、カスタムしたスクリプトについてメモしておく。</p>
+
+<p></p>
+
+<h3 id="pecoでディレクトリを移動する">pecoでディレクトリを移動する</h3>
+
+<pre><code>#!bin/bash
+function peco-lscd {
+    local dir=&quot;$( ls -1d ./* | peco )&quot;
+    if [ ! -z &quot;$dir&quot; ] ; then
+        cd &quot;$dir&quot;
+        ls -a
+    fi
+}
+</code></pre>
+
+<p>パスを通してpeco-lscd を叩くと</p>
+
+<pre><code>QUERY&gt;                                                                                                                                                                                IgnoreCase [13 (1/1)]
+./Applications
+./Desktop
+./Documents
+./Downloads
+./Dropbox
+./Library
+./Movies
+./Music
+./Pictures
+./Public
+./work
+</code></pre>
+
+<p>こういう感じで出てくるので、インクリメンタルサーチしながら移動ができる。そんなに使ってないかも。</p>
+
+<h3 id="pecoでファイルをviで開く">pecoでファイルをviで開く</h3>
+
+<pre><code>#!bin/bash
+function peco-vim {
+    local file=&quot;$( ls -F | grep -v / | peco )&quot;
+    if [ ! -d &quot;$file&quot; -a &quot;$file&quot; != &quot;&quot; ] ; then
+        vi &quot;$file&quot;
+    fi
+}
+</code></pre>
+
+<p>IDEとかを使わずにコーディングするときは、ファイルが多いことが多いのでけっこう使える。</p>
+
+<h3 id="pecoでdockerコンテナに入る">pecoでdockerコンテナに入る</h3>
+
+<pre><code>#!/bin/bash
+
+function peco-docker-exec() {
+  docker exec -it `docker ps | peco | cut -d&quot; &quot; -f 1` /bin/bash
+}
+</code></pre>
+
+<p>通常は <code>docker exec -it xxxx /bin/bash</code> と打たなきゃいけないんだけど、かなりめんどくさいので、作った。これは本当に便利、一番良く使う。</p>
+
+<h3 id="まとめ">まとめ</h3>
+
+<p>pecoは最高。
+適当にエイリアスを作って、コピペして使ってください！</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>EBSのIOPSについて学んだ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="http://example.org//css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="http://example.org/"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a href=/archive/><h3>Archive</h3></a>
+          <a> / </a>
+          <a href=/about/><h3>About</h3></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/ebs">#EBS</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">October 31, 2017</h2>
+    <h1 class="title">EBSのIOPSについて学んだ</h1>
+      
+    <div class="content">
+      <p>EBSのIOとかキューとかについて調べた。</p>
+
+<p></p>
+
+<h1 id="iopsについて">IOPSについて</h1>
+
+<p>SSDの場合、ひとつのIOPSで256KBのIOを処理できる。
+例えば、1024KBのIOは4とカウントされ、32KBのIOが連続して8つあった場合、ひとつのIOPSになる。</p>
+
+<h1 id="キュー長について">キュー長について</h1>
+
+<p>キュー長はデバイスに対する保留中のIOリクエストの数</p>
+
+<h1 id="レイテンシーについて">レイテンシーについて</h1>
+
+<p>実際にIOリクエストの操作にかかる時間がレイテンシー。
+イコール、IOをEBSに送って、完了通知が送られるまでの時間。</p>
+
+<h1 id="キュー長の設定">キュー長の設定</h1>
+
+<p>SSDバックドボリュームでは500IOPSごとにキュー長1が推奨されている。</p>
+
+<p>おそらく、EBSでは処理しきれないIOがキューに溜まっていくのだと思う。
+逆に言うと、500IOPSまでは待ちが発生せずに処理(IO)できるということになる。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
