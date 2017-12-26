@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/tags/git/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/git/</link>
     <description>Recent content in Git on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Mon, 09 Jan 2017 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>何行コード書いたかを可視化するシェルスクリプト</title>
-      <link>https://ygnmhdtt.github.io/2017/01/09/step/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</link>
       <pubDate>Mon, 09 Jan 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/01/09/step/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</guid>
       <description>&lt;p&gt;タイトルのものを作りました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

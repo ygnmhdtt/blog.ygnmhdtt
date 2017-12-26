@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Datadog on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/tags/datadog/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/datadog/</link>
     <description>Recent content in Datadog on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Mon, 23 Oct 2017 20:32:26 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/tags/datadog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/datadog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Datadog専用のLoggerをGoで作った</title>
-      <link>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</link>
       <pubDate>Mon, 23 Oct 2017 20:32:26 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</guid>
       <description>&lt;p&gt;Datadogのログ監視用にloggerを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>DatadogからLambdaを叩く</title>
-      <link>https://ygnmhdtt.github.io/2017/09/22/datadog-lambda/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/22/datadog-lambda/</link>
       <pubDate>Fri, 22 Sep 2017 18:01:35 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/09/22/datadog-lambda/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/22/datadog-lambda/</guid>
       <description>&lt;p&gt;DatadogからLambdaをたたくまで、まあまあ苦労したのでまとめておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>DatadogとAPI GatewayとLambdaでプロセス再起動を自動化する</title>
-      <link>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</link>
       <pubDate>Fri, 30 Jun 2017 18:05:37 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</guid>
       <description>&lt;p&gt;いい記事を弊社ブログで書いたのでこっちでも紹介しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,10 +47,10 @@
     
     <item>
       <title>DatadogのAPIをrubyから操作する</title>
-      <link>https://ygnmhdtt.github.io/2017/06/24/ruby-dd-api/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/ruby-dd-api/</link>
       <pubDate>Sat, 24 Jun 2017 17:08:08 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/06/24/ruby-dd-api/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/ruby-dd-api/</guid>
       <description>&lt;p&gt;Datadogを最近業務で使っている。
 コンソールの使い方は大体わかってきたので、APIを使ってみることにした。&lt;/p&gt;
 

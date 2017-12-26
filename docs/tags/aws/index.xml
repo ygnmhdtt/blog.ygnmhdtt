@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/tags/aws/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/aws/</link>
     <description>Recent content in Aws on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Thu, 21 Dec 2017 21:20:14 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWSソリューションアーキテクトプロフェッショナルになった</title>
-      <link>https://ygnmhdtt.github.io/2017/12/21/aws-sap/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/21/aws-sap/</link>
       <pubDate>Thu, 21 Dec 2017 21:20:14 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/12/21/aws-sap/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/21/aws-sap/</guid>
       <description>&lt;p&gt;AWSのプロフェッショナルであると認定された。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>NATインスタンスについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/2017/11/18/about-nat-instance/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/18/about-nat-instance/</link>
       <pubDate>Sat, 18 Nov 2017 18:39:17 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/11/18/about-nat-instance/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/18/about-nat-instance/</guid>
       <description>&lt;p&gt;NATインスタンス(EC2)は Source/Destチェック を無効にしなければいけない理由について学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>システムの障害について考える</title>
-      <link>https://ygnmhdtt.github.io/2017/11/11/about-system-failure/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-system-failure/</link>
       <pubDate>Sat, 11 Nov 2017 12:48:24 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/11/11/about-system-failure/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-system-failure/</guid>
       <description>&lt;p&gt;システムの障害について考えている。考えがまとまっていないんだけど、まとめておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,10 +47,10 @@
     
     <item>
       <title>EBSのスナップショットについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/2017/11/08/about-ebs-snapshot/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</link>
       <pubDate>Wed, 08 Nov 2017 21:57:55 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/11/08/about-ebs-snapshot/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</guid>
       <description>&lt;p&gt;EBSのスナップショットの増分とか、リストアについて学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -58,10 +58,10 @@
     
     <item>
       <title>Direct Connectについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/2017/11/01/about-direct-connect/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/about-direct-connect/</link>
       <pubDate>Wed, 01 Nov 2017 22:34:12 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/11/01/about-direct-connect/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/about-direct-connect/</guid>
       <description>&lt;p&gt;Direct Connectの構造と、BGPをどこで使っているのか?について学んだ。Direct connectのプライベート接続の話。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -69,10 +69,10 @@
     
     <item>
       <title>ELBの動きとSSLターミネーションについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/2017/11/01/ssl-termination/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/ssl-termination/</link>
       <pubDate>Wed, 01 Nov 2017 20:40:29 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/11/01/ssl-termination/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/ssl-termination/</guid>
       <description>&lt;p&gt;ELBはEC2へリクエストを負荷分散してくれる。
 その際の暗号化について学んだ。&lt;/p&gt;
 
@@ -81,10 +81,10 @@
     
     <item>
       <title>EBSのIOPSについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/2017/10/31/about-ebs-iops/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/31/about-ebs-iops/</link>
       <pubDate>Tue, 31 Oct 2017 23:03:23 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/10/31/about-ebs-iops/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/31/about-ebs-iops/</guid>
       <description>&lt;p&gt;EBSのIOとかキューとかについて調べた。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -92,10 +92,10 @@
     
     <item>
       <title>AWS認定ソリューションアーキテクトになった</title>
-      <link>https://ygnmhdtt.github.io/2017/10/17/aws-saa/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/aws-saa/</link>
       <pubDate>Tue, 17 Oct 2017 15:10:24 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/10/17/aws-saa/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/aws-saa/</guid>
       <description>&lt;p&gt;AWS認定ソリューションアーキテクト(アソシエイトレベル)資格をとった。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -103,10 +103,10 @@
     
     <item>
       <title>DatadogとAPI GatewayとLambdaでプロセス再起動を自動化する</title>
-      <link>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</link>
       <pubDate>Fri, 30 Jun 2017 18:05:37 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</guid>
       <description>&lt;p&gt;いい記事を弊社ブログで書いたのでこっちでも紹介しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -114,10 +114,10 @@
     
     <item>
       <title>Python2でAWSLambdaからSlack通知をするための最低限のコード</title>
-      <link>https://ygnmhdtt.github.io/2017/06/19/python2-lambda-slack/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/19/python2-lambda-slack/</link>
       <pubDate>Mon, 19 Jun 2017 10:22:59 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/06/19/python2-lambda-slack/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/19/python2-lambda-slack/</guid>
       <description>&lt;p&gt;検証のために、Lambdaから最低限のコードでSlack通知を行いたかったので、メモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -125,10 +125,10 @@
     
     <item>
       <title>EC2にdocker環境を構築するときにやったこと</title>
-      <link>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</link>
       <pubDate>Sat, 11 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</guid>
       <description>&lt;p&gt;無事dockerが入れられたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
