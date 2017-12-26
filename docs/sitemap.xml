@@ -3,627 +3,632 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/2017/12/26/gentoo-setup-network/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-fluxbox/</loc>
+    <lastmod>2017-12-26T17:46:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup-network/</loc>
     <lastmod>2017-12-26T12:29:07+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/26/gentoo-setup/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup/</loc>
     <lastmod>2017-12-26T12:05:03+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/26/gentoo-install-2/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-2/</loc>
     <lastmod>2017-12-26T11:39:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/26/gentoo-install-1/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-1/</loc>
     <lastmod>2017-12-26T10:49:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/24/wpa_supplicant/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/24/wpa_supplicant/</loc>
     <lastmod>2017-12-24T19:15:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/21/aws-sap/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/21/aws-sap/</loc>
     <lastmod>2017-12-21T21:20:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/10/mount--rbind/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/10/mount--rbind/</loc>
     <lastmod>2017-12-10T18:16:35+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/12/09/first-ggr-ext/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/09/first-ggr-ext/</loc>
     <lastmod>2017-12-09T15:19:27+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/18/about-nat-instance/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/18/about-nat-instance/</loc>
     <lastmod>2017-11-18T18:39:17+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/14/format-nginx/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/14/format-nginx/</loc>
     <lastmod>2017-11-14T15:00:30+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/11/about-engineer/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-engineer/</loc>
     <lastmod>2017-11-11T17:56:03+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/11/birds-recheck/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/birds-recheck/</loc>
     <lastmod>2017-11-11T16:59:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/11/about-system-failure/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-system-failure/</loc>
     <lastmod>2017-11-11T12:48:24+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/08/about-ebs-snapshot/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</loc>
     <lastmod>2017-11-08T21:57:55+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/02/mysql-view-definer-err/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/02/mysql-view-definer-err/</loc>
     <lastmod>2017-11-02T13:30:33+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/01/about-direct-connect/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/about-direct-connect/</loc>
     <lastmod>2017-11-01T22:34:12+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/11/01/ssl-termination/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/ssl-termination/</loc>
     <lastmod>2017-11-01T20:40:29+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/31/about-ebs-iops/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/31/about-ebs-iops/</loc>
     <lastmod>2017-10-31T23:03:23+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/28/birds-check/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/birds-check/</loc>
     <lastmod>2017-10-28T21:25:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/28/typingo/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/typingo/</loc>
     <lastmod>2017-10-28T14:41:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/24/about-saml/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/24/about-saml/</loc>
     <lastmod>2017-10-24T19:03:25+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/23/datadog-logger/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</loc>
     <lastmod>2017-10-23T20:32:26+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/22/hjkl/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/22/hjkl/</loc>
     <lastmod>2017-10-22T20:23:50+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/20/about-goroutine/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/20/about-goroutine/</loc>
     <lastmod>2017-10-20T21:35:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/17/aws-saa/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/aws-saa/</loc>
     <lastmod>2017-10-17T15:10:24+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/17/official-karabiner/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/official-karabiner/</loc>
     <lastmod>2017-10-17T15:09:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/10/17/about-criticism/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/about-criticism/</loc>
     <lastmod>2017-10-17T15:04:19+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/09/22/datadog-lambda/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/22/datadog-lambda/</loc>
     <lastmod>2017-09-22T18:01:35+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/09/07/docker-capybara-selenium-headless/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/08/09/about-humility/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/08/09/about-humility/</loc>
     <lastmod>2017-08-09T13:18:41+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/30/datadog-apigateway-lambda/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</loc>
     <lastmod>2017-06-30T18:05:37+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/24/first-postgres/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/first-postgres/</loc>
     <lastmod>2017-06-24T19:00:19+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/24/ruby-dd-api/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/ruby-dd-api/</loc>
     <lastmod>2017-06-24T17:08:08+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/19/python2-lambda-slack/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/19/python2-lambda-slack/</loc>
     <lastmod>2017-06-19T10:22:59+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/16/about-tokyo/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/16/about-tokyo/</loc>
     <lastmod>2017-06-16T09:26:59+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/08/peco-scripts/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/08/peco-scripts/</loc>
     <lastmod>2017-06-08T09:55:55+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/06/pp/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/pp/</loc>
     <lastmod>2017-06-06T19:09:52+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/06/md-editor/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/md-editor/</loc>
     <lastmod>2017-06-06T14:57:03+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/06/ruby-camel-to-snake/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/ruby-camel-to-snake/</loc>
     <lastmod>2017-06-06T07:46:54+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/06/05/remote-work-for-4m/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/05/remote-work-for-4m/</loc>
     <lastmod>2017-06-05T20:52:34+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/02/26/about-swimming/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/26/about-swimming/</loc>
     <lastmod>2017-02-26T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/02/25/about-productivity/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/25/about-productivity/</loc>
     <lastmod>2017-02-25T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/02/11/ec2-docker/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</loc>
     <lastmod>2017-02-11T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/02/01/about-progress/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</loc>
     <lastmod>2017-02-01T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2017/01/09/step/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</loc>
     <lastmod>2017-01-09T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/12/20/rails-const/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/20/rails-const/</loc>
     <lastmod>2016-12-20T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/12/06/apache-documentroot/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/06/apache-documentroot/</loc>
     <lastmod>2016-12-06T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/11/27/ruby-haskell-iterate/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/27/ruby-haskell-iterate/</loc>
     <lastmod>2016-11-27T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/11/23/rails-reset-autoincrement/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/23/rails-reset-autoincrement/</loc>
     <lastmod>2016-11-23T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/11/13/trigram/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/13/trigram/</loc>
     <lastmod>2016-11-13T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/11/07/first-atom-plugin/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/07/first-atom-plugin/</loc>
     <lastmod>2016-11-07T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/2016/11/06/terminal-google/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/06/terminal-google/</loc>
     <lastmod>2016-11-06T18:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/about/</loc>
     <lastmod>2016-01-01T19:47:18+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/amazon-api-gateway/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/amazon-api-gateway/</loc>
     <lastmod>2017-06-30T18:05:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/apache/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/apache/</loc>
     <lastmod>2016-12-06T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/atom/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/atom/</loc>
     <lastmod>2016-11-07T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/awk/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/awk/</loc>
     <lastmod>2017-11-14T15:00:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/aws/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/aws/</loc>
     <lastmod>2017-12-21T21:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/aws-lambda/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/aws-lambda/</loc>
     <lastmod>2017-09-22T18:01:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/backup/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/backup/</loc>
     <lastmod>2017-11-08T21:57:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/bash/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/bash/</loc>
     <lastmod>2017-06-08T09:55:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/bgp/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/bgp/</loc>
     <lastmod>2017-11-01T22:34:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/birds/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/birds/</loc>
     <lastmod>2017-11-11T16:59:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/capybara/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/capybara/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/chrome-extension/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/chrome-extension/</loc>
     <lastmod>2017-12-09T15:19:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/coffeescript/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/coffeescript/</loc>
     <lastmod>2016-11-07T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/command/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/command/</loc>
     <lastmod>2017-11-14T15:00:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/datadog/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/datadog/</loc>
     <lastmod>2017-10-23T20:32:26+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/direct-connect/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/direct-connect/</loc>
     <lastmod>2017-11-01T22:34:12+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/docker/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/docker/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ebs/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/ebs/</loc>
     <lastmod>2017-11-08T21:57:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ec2/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/ec2/</loc>
     <lastmod>2017-02-11T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/elb/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/elb/</loc>
     <lastmod>2017-11-01T20:40:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/gentoo/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/gentoo/</loc>
     <lastmod>2017-12-24T19:15:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/git/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/git/</loc>
     <lastmod>2017-01-09T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/golang/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/golang/</loc>
     <lastmod>2017-10-28T14:41:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/haskell/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/haskell/</loc>
     <lastmod>2016-11-27T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/headless-chrome/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/headless-chrome/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/https/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/https/</loc>
     <lastmod>2017-11-01T20:40:29+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/javascript/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/javascript/</loc>
     <lastmod>2017-12-09T15:19:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/karabiner-elements/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/karabiner-elements/</loc>
     <lastmod>2017-10-22T20:23:50+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/life/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/life/</loc>
     <lastmod>2017-12-21T21:20:14+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/linux/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/linux/</loc>
     <lastmod>2017-12-10T18:16:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/mac/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/mac/</loc>
     <lastmod>2017-10-17T15:09:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/markdown/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/markdown/</loc>
     <lastmod>2017-06-06T14:57:03+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/monitoring/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/monitoring/</loc>
     <lastmod>2017-11-11T12:48:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/mysql/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/mysql/</loc>
     <lastmod>2017-11-02T13:30:33+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/n-gram/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/n-gram/</loc>
     <lastmod>2016-11-13T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/nat/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/nat/</loc>
     <lastmod>2017-11-18T18:39:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/nginx/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/nginx/</loc>
     <lastmod>2017-11-14T15:00:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/oauth2.0/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/oauth2.0/</loc>
     <lastmod>2017-10-24T19:03:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/openid/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/openid/</loc>
     <lastmod>2017-10-24T19:03:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/peco/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/peco/</loc>
     <lastmod>2017-06-08T09:55:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/postgresql/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/postgresql/</loc>
     <lastmod>2017-06-24T19:00:19+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2017-12-26T12:29:07+09:00</lastmod>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/post/</loc>
+    <lastmod>2017-12-26T17:46:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/python2.7/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/python2.7/</loc>
     <lastmod>2017-09-22T18:01:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/rails/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/rails/</loc>
     <lastmod>2017-06-06T14:57:03+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/remote-work/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/remote-work/</loc>
     <lastmod>2017-06-05T20:52:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ruby/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/ruby/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/saml/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/saml/</loc>
     <lastmod>2017-10-24T19:03:25+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/selenium/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/selenium/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/slack/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/slack/</loc>
     <lastmod>2017-06-19T10:22:59+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/snapshot/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/snapshot/</loc>
     <lastmod>2017-11-08T21:57:55+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/song/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/song/</loc>
     <lastmod>2017-06-06T19:09:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/swimming/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/swimming/</loc>
     <lastmod>2017-02-26T18:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/system-failure/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/system-failure/</loc>
     <lastmod>2017-11-11T12:48:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/</loc>
     <lastmod>2017-06-30T18:05:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/thinking/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/thinking/</loc>
     <lastmod>2017-11-11T17:56:03+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/tools/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/tools/</loc>
     <lastmod>2017-12-09T15:19:27+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/twilio/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/twilio/</loc>
     <lastmod>2017-09-22T18:01:35+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/typing/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/typing/</loc>
     <lastmod>2017-10-28T14:41:48+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/work/</loc>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/work/</loc>
     <lastmod>2017-06-05T20:52:34+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2017-12-26T12:29:07+09:00</lastmod>
+    <loc>https://ygnmhdtt.github.io/blog.ygnmhdtt/</loc>
+    <lastmod>2017-12-26T17:46:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N Gram on yaginumahidetatsu.com</title>
-    <link>http://example.org/tags/n-gram/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/n-gram/</link>
     <description>Recent content in N Gram on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sun, 13 Nov 2016 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/n-gram/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/n-gram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>trigram作った</title>
-      <link>http://example.org/2016/11/13/trigram/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/13/trigram/</link>
       <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>http://example.org/2016/11/13/trigram/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/13/trigram/</guid>
       <description>&lt;p&gt;n-gramの勉強のために、簡単に作ってみた。
 &lt;a href=&#34;https://github.com/ygnmhdtt/trigram&#34;&gt;https://github.com/ygnmhdtt/trigram&lt;/a&gt;
 ruby製です。&lt;/p&gt;

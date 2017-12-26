@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backup on yaginumahidetatsu.com</title>
-    <link>http://example.org/tags/backup/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/backup/</link>
     <description>Recent content in Backup on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Wed, 08 Nov 2017 21:57:55 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/backup/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EBSのスナップショットについて学んだ</title>
-      <link>http://example.org/2017/11/08/about-ebs-snapshot/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</link>
       <pubDate>Wed, 08 Nov 2017 21:57:55 +0900</pubDate>
       
-      <guid>http://example.org/2017/11/08/about-ebs-snapshot/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</guid>
       <description>&lt;p&gt;EBSのスナップショットの増分とか、リストアについて学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

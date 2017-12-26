@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apache on yaginumahidetatsu.com</title>
-    <link>http://example.org/tags/apache/</link>
+    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/apache/</link>
     <description>Recent content in Apache on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Tue, 06 Dec 2016 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apacheのドキュメントルート変更が反映されなかった</title>
-      <link>http://example.org/2016/12/06/apache-documentroot/</link>
+      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/06/apache-documentroot/</link>
       <pubDate>Tue, 06 Dec 2016 18:00:00 +0900</pubDate>
       
-      <guid>http://example.org/2016/12/06/apache-documentroot/</guid>
+      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/06/apache-documentroot/</guid>
       <description>&lt;p&gt;apacheでgitからcloneしたphpのプロジェクトを動かしたかったのに動かせなくてややハマったのでメモ．
 ※php関係ないです&lt;/p&gt;
 
