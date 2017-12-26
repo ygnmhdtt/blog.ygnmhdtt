@@ -96,7 +96,7 @@ Device Drivers  --->
 
 # 起動時に自動で無線に繋ぐ設定 
 
-まずは、[こちら]()の通り `/etc/wpa_supplicant/wpa_supplicant.conf` を作成する。
+まずは、[こちら](https://yaginumahidetatsu.com/2017/12/24/wpa_supplicant/)の通り `/etc/wpa_supplicant/wpa_supplicant.conf` を作成する。
 
 ネットワーク設定を登録。
 

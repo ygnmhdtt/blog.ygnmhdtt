@@ -138,5 +138,5 @@ SystemRescueCDには `links` コマンドがないため、以下のようにす
 % tar xvjpf stage3-*.tar.bz2 --xattrs --numeric-owner
 ```
 
-続きは[こちら]()。
+続きは[こちら](https://yaginumahidetatsu.com/2017/12/26/gentoo-install-2/)。
 
