@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</loc>
+    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2017/12/26/gentoo-fluxbox/</loc>
     <lastmod>2017-12-26T17:46:13+09:00</lastmod>
   </url>
@@ -526,7 +531,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2017-12-26T17:46:13+09:00</lastmod>
+    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -609,6 +614,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/tmux/</loc>
+    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/tools/</loc>
     <lastmod>2017-12-09T15:19:27+09:00</lastmod>
     <priority>0</priority>
@@ -634,7 +645,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2017-12-26T17:46:13+09:00</lastmod>
+    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
     <priority>0</priority>
   </url>
   

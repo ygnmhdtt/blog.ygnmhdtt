@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 26 Dec 2017 17:46:13 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2017 22:13:40 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tmuxについて学んだ</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</link>
+      <pubDate>Tue, 26 Dec 2017 22:13:40 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</guid>
+      <description>&lt;p&gt;Tmuxをちゃんと勉強した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GentooにFluxboxをインストール</title>

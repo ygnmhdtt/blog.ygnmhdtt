@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Tmuxについて学んだ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tmux">#tmux</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 26, 2017</h2>
+    <h1 class="title">Tmuxについて学んだ</h1>
+      
+    <div class="content">
+      <p>Tmuxをちゃんと勉強した。</p>
+
+<p></p>
+
+<p>Gentooを使い始めるにあたり、iTermなんてものはなく、まだウインドウマネージャーも入れてないので、ターミナルの分割をtmuxで行っている。
+忘れないようにメモっておく。</p>
+
+<h1 id="コマンドたち">コマンドたち</h1>
+
+<pre><code># 新規セッション開始
+tmux
+
+# 名前をつけて新規セッション開始
+tmux new -s &lt;セッション名&gt;
+
+# セッションの一覧表示
+tmux ls
+
+# セッションを再開
+tmux a
+
+# セッションを終了
+tmux kill-session
+</code></pre>
+
+<p>tmuxは、セッション &gt; window &gt; ペイン のような関係になっている。
+セッションを作るところから全てが始まる。
+セッション内でセッションは作れない。
+まずはセッションを作って、その中でwindowやペインを自由に作るような形になる。</p>
+
+<h1 id="筆者の設定ファイル">筆者の設定ファイル</h1>
+
+<pre><code># decrease delay
+set -sg escape-time 1
+
+# reload conf
+bind r source-file ~/.tmux.conf |; display &quot;Reloaded!&quot;
+
+# use |
+bind | split-window -h
+
+# use -
+bind - split-window -v
+
+# use hjkl
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# use 256 colored terminal
+set -g default-terminal &quot;screen-256color&quot;
+
+# set color of status bar
+set -g status-fg white
+set -g status-bg black
+
+# set color of window
+setw -g window-status-fg cyan
+setw -g window-status-bg default
+setw -g window-status-attr dim
+
+# set hiughlight on forcused window
+setw -g window-status-current-fg white
+setw -g window-status-current-bg red
+setw -g window-status-current-attr bright
+
+# set color of pane
+set -g pane-border-fg green
+set -g pane-border-bg black
+
+# set hiughlight on forcused pane
+set -g pane-active-border-fg white
+set -g pane-active-border-bg yellow
+
+# set color of commandline
+set -g message-fg white
+set -g message-bg black
+set -g message-attr bright
+
+# statusbar
+
+## left
+set -g status-left-length 40
+set -g status-left &quot;#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P&quot;
+
+## right
+set -g status-right &quot;#[fg=cyan][%Y-%m-%d(%a) %H:%M]&quot;
+
+## interval of reflesh
+set -g status-interval 60
+## position of window list
+set -g status-justify centre
+## enable visual notification
+setw -g monitor-activity on
+set -g visual-activity on
+
+# top statusbar
+set -g status-position top
+
+# viのキーバインドを使用する
+setw -g mode-keys vi
+</code></pre>
+
+<h1 id="プレフィックス">プレフィックス</h1>
+
+<p>tmuxではプレフィックス(ショートカット)の後に特定のキーを押すことでいろんな操作ができる。
+デフォルトのプレフィックスは<C-b>で、筆者はそのまま使っている。(使いにくいという声が多いらしいが、そんなに使いにくいと感じなかった。)</p>
+
+<p>以下のコマンドはプレフィックスの後に入力することで実行される。自分がよく使うものだけメモ。</p>
+
+<pre><code>s    セッションの一覧選択
+d    セッションからデタッチ
+</code></pre>
+
+<pre><code>c    新規ウインドウ作成
+w    ウインドウの一覧選択
+0-9  指定番号のウインドウへ移動
+&amp;    ウインドウの破棄
+n    次のウインドウへ移動
+p    前のウインドウへ移動
+l    以前のウインドウへ移動
+</code></pre>
+
+<pre><code>|    左右にペイン分割
+-    上下にペイン分割
+q    ペイン番号を表示
+hjkl 指定方向のペインへ移動
+!    ペインを解除してウインドウ化
+x    ペインの破棄
+</code></pre>
+
+<p>筆者はひとりで使っているので、セッションは常にひとつ、ウインドウが何枚かあり、ペインは各ウインドウに細大でも4つ程度用意していることが多い。</p>
+
+<h1 id="まとめ">まとめ</h1>
+
+<p>tmuxサイコー!!</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
