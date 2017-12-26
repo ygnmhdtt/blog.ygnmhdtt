@@ -38,7 +38,7 @@ tmuxは、セッション > window > ペイン のような関係になってい
 
 # 筆者の設定ファイル
 
-```~/.tmux.conf
+```sh
 # decrease delay
 set -sg escape-time 1
 
