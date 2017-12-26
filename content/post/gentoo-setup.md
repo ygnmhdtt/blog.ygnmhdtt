@@ -1,6 +1,8 @@
 ---
 title: "Gentooの初期設定"
 date: 2017-12-26T12:05:03+09:00
+tags:
+- Gentoo
 ---
 
 Gentooの初期設定をメモる。

@@ -1,6 +1,8 @@
 ---
 title: "ThinkPadE470にGentooをインストールした その2"
 date: 2017-12-26T11:39:37+09:00
+tags:
+- Gentoo
 ---
 
 その1は[こちら](https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/)。

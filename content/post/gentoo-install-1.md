@@ -1,6 +1,8 @@
 ---
 title: "ThinkPadE470にGentooをインストールした その1"
 date: 2017-12-26T10:49:31+09:00
+tags:
+- Gentoo
 ---
 
 ThinkPad E470にGentooをインストールしたログ。

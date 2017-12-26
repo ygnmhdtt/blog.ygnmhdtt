@@ -7,10 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 24 Dec 2017 19:15:39 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 26 Dec 2017 12:29:07 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gentooのネットワーク周りのセットアップについて</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup-network/</link>
+      <pubDate>Tue, 26 Dec 2017 12:29:07 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup-network/</guid>
+      <description>&lt;p&gt;ネットワーク周りでハマったのでメモ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gentooの初期設定</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup/</link>
+      <pubDate>Tue, 26 Dec 2017 12:05:03 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup/</guid>
+      <description>&lt;p&gt;Gentooの初期設定をメモる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThinkPadE470にGentooをインストールした その2</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-2/</link>
+      <pubDate>Tue, 26 Dec 2017 11:39:37 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-2/</guid>
+      <description>&lt;p&gt;その1は&lt;a href=&#34;https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThinkPadE470にGentooをインストールした その1</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/</link>
+      <pubDate>Tue, 26 Dec 2017 10:49:31 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/</guid>
+      <description>&lt;p&gt;ThinkPad E470にGentooをインストールしたログ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>wpa_supplicantでWPAの無線LANに繋ぐ</title>
