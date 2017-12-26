@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/golang/</link>
+    <link>https://ygnmhdtt.github.io/tags/golang/</link>
     <description>Recent content in Golang on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sat, 28 Oct 2017 14:41:48 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>コマンドラインのタイピング練習ツールを作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/typingo/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/28/typingo/</link>
       <pubDate>Sat, 28 Oct 2017 14:41:48 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/typingo/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/28/typingo/</guid>
       <description>&lt;p&gt;タイピングが自己流なのをなくしたいので作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>Datadog専用のLoggerをGoで作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</link>
       <pubDate>Mon, 23 Oct 2017 20:32:26 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</guid>
       <description>&lt;p&gt;Datadogのログ監視用にloggerを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>goroutineは結局いくつにすればよいのか</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/20/about-goroutine/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/20/about-goroutine/</link>
       <pubDate>Fri, 20 Oct 2017 21:35:57 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/20/about-goroutine/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/20/about-goroutine/</guid>
       <description>&lt;p&gt;goroutineは難しい。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

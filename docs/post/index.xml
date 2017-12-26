@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/post/</link>
+    <link>https://ygnmhdtt.github.io/post/</link>
     <description>Recent content in Posts on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Tue, 26 Dec 2017 17:46:13 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Gentoo Fluxbox</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-fluxbox/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/26/gentoo-fluxbox/</link>
       <pubDate>Tue, 26 Dec 2017 17:46:13 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-fluxbox/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/26/gentoo-fluxbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gentooのネットワーク周りのセットアップについて</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup-network/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/26/gentoo-setup-network/</link>
       <pubDate>Tue, 26 Dec 2017 12:29:07 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup-network/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/26/gentoo-setup-network/</guid>
       <description>&lt;p&gt;ネットワーク周りでハマったのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -34,10 +34,10 @@
     
     <item>
       <title>Gentooの初期設定</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/26/gentoo-setup/</link>
       <pubDate>Tue, 26 Dec 2017 12:05:03 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-setup/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/26/gentoo-setup/</guid>
       <description>&lt;p&gt;Gentooの初期設定をメモる。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -45,10 +45,10 @@
     
     <item>
       <title>ThinkPadにGentooをインストールする その2</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-2/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/26/gentoo-install-2/</link>
       <pubDate>Tue, 26 Dec 2017 11:39:37 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-2/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/26/gentoo-install-2/</guid>
       <description>&lt;p&gt;その1は[こちら]()。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -56,10 +56,10 @@
     
     <item>
       <title>ThinkPadE470にGentooをインストールした その1</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-1/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/26/gentoo-install-1/</link>
       <pubDate>Tue, 26 Dec 2017 10:49:31 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/26/gentoo-install-1/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/26/gentoo-install-1/</guid>
       <description>&lt;p&gt;ThinkPad E470にGentooをインストールしたログ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -67,10 +67,10 @@
     
     <item>
       <title>wpa_supplicantでWPAの無線LANに繋ぐ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/24/wpa_supplicant/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/24/wpa_supplicant/</link>
       <pubDate>Sun, 24 Dec 2017 19:15:39 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/24/wpa_supplicant/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/24/wpa_supplicant/</guid>
       <description>&lt;p&gt;表題についてメモっておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -78,10 +78,10 @@
     
     <item>
       <title>AWSソリューションアーキテクトプロフェッショナルになった</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/21/aws-sap/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/21/aws-sap/</link>
       <pubDate>Thu, 21 Dec 2017 21:20:14 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/21/aws-sap/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/21/aws-sap/</guid>
       <description>&lt;p&gt;AWSのプロフェッショナルであると認定された。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -89,10 +89,10 @@
     
     <item>
       <title>mount --rbind とはなにか</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/10/mount--rbind/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/10/mount--rbind/</link>
       <pubDate>Sun, 10 Dec 2017 18:16:35 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/10/mount--rbind/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/10/mount--rbind/</guid>
       <description>&lt;p&gt;表題について学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -100,10 +100,10 @@
     
     <item>
       <title>Googleの検索結果からTopStoriesを消すchrome拡張を作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/09/first-ggr-ext/</link>
+      <link>https://ygnmhdtt.github.io/2017/12/09/first-ggr-ext/</link>
       <pubDate>Sat, 09 Dec 2017 15:19:27 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/09/first-ggr-ext/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/12/09/first-ggr-ext/</guid>
       <description>&lt;p&gt;chrome拡張を初めて作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -111,10 +111,10 @@
     
     <item>
       <title>NATインスタンスについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/18/about-nat-instance/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/18/about-nat-instance/</link>
       <pubDate>Sat, 18 Nov 2017 18:39:17 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/18/about-nat-instance/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/18/about-nat-instance/</guid>
       <description>&lt;p&gt;NATインスタンス(EC2)は Source/Destチェック を無効にしなければいけない理由について学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -122,10 +122,10 @@
     
     <item>
       <title>nginxのログを整形する</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/14/format-nginx/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/14/format-nginx/</link>
       <pubDate>Tue, 14 Nov 2017 15:00:30 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/14/format-nginx/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/14/format-nginx/</guid>
       <description>&lt;p&gt;nginxのログを調査する必要があった。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -133,10 +133,10 @@
     
     <item>
       <title>「エンジニア」について考えていること</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-engineer/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/11/about-engineer/</link>
       <pubDate>Sat, 11 Nov 2017 17:56:03 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-engineer/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/11/about-engineer/</guid>
       <description>&lt;p&gt;エンジニア ということについて考えていることをまとめる。(まとまっていない。)&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -144,10 +144,10 @@
     
     <item>
       <title>文鳥の再検査に行ってきた</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/birds-recheck/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/11/birds-recheck/</link>
       <pubDate>Sat, 11 Nov 2017 16:59:46 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/birds-recheck/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/11/birds-recheck/</guid>
       <description>&lt;p&gt;以前文鳥の健康診断に行ってきたんだけど、
 2週間後の今日、再検査に行ってきた。&lt;/p&gt;
 
@@ -156,10 +156,10 @@
     
     <item>
       <title>システムの障害について考える</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-system-failure/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/11/about-system-failure/</link>
       <pubDate>Sat, 11 Nov 2017 12:48:24 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/11/about-system-failure/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/11/about-system-failure/</guid>
       <description>&lt;p&gt;システムの障害について考えている。考えがまとまっていないんだけど、まとめておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -167,10 +167,10 @@
     
     <item>
       <title>EBSのスナップショットについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/08/about-ebs-snapshot/</link>
       <pubDate>Wed, 08 Nov 2017 21:57:55 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/08/about-ebs-snapshot/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/08/about-ebs-snapshot/</guid>
       <description>&lt;p&gt;EBSのスナップショットの増分とか、リストアについて学んだ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -178,10 +178,10 @@
     
     <item>
       <title>MySQLでViewのdefinerエラーが出た際の対応</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/02/mysql-view-definer-err/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/02/mysql-view-definer-err/</link>
       <pubDate>Thu, 02 Nov 2017 13:30:33 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/02/mysql-view-definer-err/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/02/mysql-view-definer-err/</guid>
       <description>&lt;p&gt;ちょこちょこ見るやつを、ちゃんと理解して、ちゃんと対応した。メモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -189,10 +189,10 @@
     
     <item>
       <title>Direct Connectについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/about-direct-connect/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/01/about-direct-connect/</link>
       <pubDate>Wed, 01 Nov 2017 22:34:12 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/about-direct-connect/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/01/about-direct-connect/</guid>
       <description>&lt;p&gt;Direct Connectの構造と、BGPをどこで使っているのか?について学んだ。Direct connectのプライベート接続の話。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -200,10 +200,10 @@
     
     <item>
       <title>ELBの動きとSSLターミネーションについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/ssl-termination/</link>
+      <link>https://ygnmhdtt.github.io/2017/11/01/ssl-termination/</link>
       <pubDate>Wed, 01 Nov 2017 20:40:29 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/01/ssl-termination/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/11/01/ssl-termination/</guid>
       <description>&lt;p&gt;ELBはEC2へリクエストを負荷分散してくれる。
 その際の暗号化について学んだ。&lt;/p&gt;
 
@@ -212,10 +212,10 @@
     
     <item>
       <title>EBSのIOPSについて学んだ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/31/about-ebs-iops/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/31/about-ebs-iops/</link>
       <pubDate>Tue, 31 Oct 2017 23:03:23 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/31/about-ebs-iops/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/31/about-ebs-iops/</guid>
       <description>&lt;p&gt;EBSのIOとかキューとかについて調べた。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -223,10 +223,10 @@
     
     <item>
       <title>文鳥の健康診断に行った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/birds-check/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/28/birds-check/</link>
       <pubDate>Sat, 28 Oct 2017 21:25:43 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/birds-check/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/28/birds-check/</guid>
       <description>&lt;p&gt;文鳥(飼い鳥)の健康診断に行ってきた。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -234,10 +234,10 @@
     
     <item>
       <title>コマンドラインのタイピング練習ツールを作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/typingo/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/28/typingo/</link>
       <pubDate>Sat, 28 Oct 2017 14:41:48 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/28/typingo/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/28/typingo/</guid>
       <description>&lt;p&gt;タイピングが自己流なのをなくしたいので作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -245,10 +245,10 @@
     
     <item>
       <title>SAMLについて調べた</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/24/about-saml/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/24/about-saml/</link>
       <pubDate>Tue, 24 Oct 2017 19:03:25 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/24/about-saml/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/24/about-saml/</guid>
       <description>&lt;p&gt;SAMLについて社内向けにまとめたので、こちらにも載せておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -256,10 +256,10 @@
     
     <item>
       <title>Datadog専用のLoggerをGoで作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</link>
       <pubDate>Mon, 23 Oct 2017 20:32:26 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/23/datadog-logger/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/23/datadog-logger/</guid>
       <description>&lt;p&gt;Datadogのログ監視用にloggerを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -267,10 +267,10 @@
     
     <item>
       <title>left_ctrl&#43;hjklで移動する</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/22/hjkl/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/22/hjkl/</link>
       <pubDate>Sun, 22 Oct 2017 20:23:50 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/22/hjkl/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/22/hjkl/</guid>
       <description>&lt;p&gt;Ctrl+hjklでvim以外でも移動したかったので、karabiner-elementsを設定した。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -278,10 +278,10 @@
     
     <item>
       <title>goroutineは結局いくつにすればよいのか</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/20/about-goroutine/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/20/about-goroutine/</link>
       <pubDate>Fri, 20 Oct 2017 21:35:57 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/20/about-goroutine/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/20/about-goroutine/</guid>
       <description>&lt;p&gt;goroutineは難しい。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -289,10 +289,10 @@
     
     <item>
       <title>AWS認定ソリューションアーキテクトになった</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/aws-saa/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/17/aws-saa/</link>
       <pubDate>Tue, 17 Oct 2017 15:10:24 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/aws-saa/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/17/aws-saa/</guid>
       <description>&lt;p&gt;AWS認定ソリューションアーキテクト(アソシエイトレベル)資格をとった。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -300,10 +300,10 @@
     
     <item>
       <title>karabiner-elements(公式)が進化してた</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/official-karabiner/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/17/official-karabiner/</link>
       <pubDate>Tue, 17 Oct 2017 15:09:56 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/official-karabiner/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/17/official-karabiner/</guid>
       <description>&lt;p&gt;karabiner-elementsを公式にしたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -311,10 +311,10 @@
     
     <item>
       <title>批判について</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/about-criticism/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/17/about-criticism/</link>
       <pubDate>Tue, 17 Oct 2017 15:04:19 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/about-criticism/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/17/about-criticism/</guid>
       <description>&lt;p&gt;批判 について最近良く考えたので、まとめておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -322,10 +322,10 @@
     
     <item>
       <title>DatadogからLambdaを叩く</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/22/datadog-lambda/</link>
+      <link>https://ygnmhdtt.github.io/2017/09/22/datadog-lambda/</link>
       <pubDate>Fri, 22 Sep 2017 18:01:35 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/22/datadog-lambda/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/09/22/datadog-lambda/</guid>
       <description>&lt;p&gt;DatadogからLambdaをたたくまで、まあまあ苦労したのでまとめておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -333,10 +333,10 @@
     
     <item>
       <title>Docker × Capybara × Selenium × Headless ChromeでE2Eテストを書く</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</link>
+      <link>https://ygnmhdtt.github.io/2017/09/07/docker-capybara-selenium-headless/</link>
       <pubDate>Thu, 07 Sep 2017 09:18:13 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/09/07/docker-capybara-selenium-headless/</guid>
       <description>&lt;p&gt;Docker上にrubyが動くコンテナを作って、E2Eテストを書くやり方を残しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -344,10 +344,10 @@
     
     <item>
       <title>謙虚さについて</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/08/09/about-humility/</link>
+      <link>https://ygnmhdtt.github.io/2017/08/09/about-humility/</link>
       <pubDate>Wed, 09 Aug 2017 13:18:41 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/08/09/about-humility/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/08/09/about-humility/</guid>
       <description>&lt;p&gt;謙虚が最強だと思っているので、それについて書く。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -355,10 +355,10 @@
     
     <item>
       <title>DatadogとAPI GatewayとLambdaでプロセス再起動を自動化する</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</link>
       <pubDate>Fri, 30 Jun 2017 18:05:37 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/30/datadog-apigateway-lambda/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/30/datadog-apigateway-lambda/</guid>
       <description>&lt;p&gt;いい記事を弊社ブログで書いたのでこっちでも紹介しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -366,10 +366,10 @@
     
     <item>
       <title>PostgreSQLに入門したのでメモ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/first-postgres/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/24/first-postgres/</link>
       <pubDate>Sat, 24 Jun 2017 19:00:19 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/first-postgres/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/24/first-postgres/</guid>
       <description>&lt;p&gt;PostgreSQLを初めて触ったら、コマンドに慣れていなかったので、メモしておく。Dockerを使ってます。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -377,10 +377,10 @@
     
     <item>
       <title>DatadogのAPIをrubyから操作する</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/ruby-dd-api/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/24/ruby-dd-api/</link>
       <pubDate>Sat, 24 Jun 2017 17:08:08 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/24/ruby-dd-api/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/24/ruby-dd-api/</guid>
       <description>&lt;p&gt;Datadogを最近業務で使っている。
 コンソールの使い方は大体わかってきたので、APIを使ってみることにした。&lt;/p&gt;
 
@@ -389,10 +389,10 @@
     
     <item>
       <title>Python2でAWSLambdaからSlack通知をするための最低限のコード</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/19/python2-lambda-slack/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/19/python2-lambda-slack/</link>
       <pubDate>Mon, 19 Jun 2017 10:22:59 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/19/python2-lambda-slack/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/19/python2-lambda-slack/</guid>
       <description>&lt;p&gt;検証のために、Lambdaから最低限のコードでSlack通知を行いたかったので、メモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -400,10 +400,10 @@
     
     <item>
       <title>4ヶ月ぶりに東京に行って思ったこと</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/16/about-tokyo/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/16/about-tokyo/</link>
       <pubDate>Fri, 16 Jun 2017 09:26:59 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/16/about-tokyo/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/16/about-tokyo/</guid>
       <description>&lt;p&gt;久しぶりに東京に行った&lt;/p&gt;
 
 &lt;p&gt;普段はリモートワークをしているけど、たまには集まって仕事をしようということで、1週間東京(渋谷)に行った。
@@ -414,10 +414,10 @@
     
     <item>
       <title>pecoを使ったカスタムスクリプトをまとめる</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/08/peco-scripts/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/08/peco-scripts/</link>
       <pubDate>Thu, 08 Jun 2017 09:55:55 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/08/peco-scripts/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/08/peco-scripts/</guid>
       <description>&lt;p&gt;pecoが便利すぎるので、カスタムしたスクリプトについてメモしておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -425,10 +425,10 @@
     
     <item>
       <title>プリンセスプリンセスの「世界でいちばん熱い夏」は、いい歌すぎる、ということについて</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/pp/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/06/pp/</link>
       <pubDate>Tue, 06 Jun 2017 19:09:52 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/pp/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/06/pp/</guid>
       <description>&lt;p&gt;プリンセス プリンセスの「世界でいちばん熱い夏」はいい歌すぎるので、まとめます。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -436,10 +436,10 @@
     
     <item>
       <title>ブラウザで動くマークダウンエディタ</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/md-editor/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/06/md-editor/</link>
       <pubDate>Tue, 06 Jun 2017 14:57:03 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/md-editor/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/06/md-editor/</guid>
       <description>&lt;p&gt;esa.ioのようにリアルタイムで自分の書いているマークダウンがどんな風に見えるかが
 わかるエディタがほしいなと思って、作ってみた。&lt;/p&gt;
 
@@ -448,10 +448,10 @@
     
     <item>
       <title>Rubyでキャメルケースをスネークケースにしたい</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/ruby-camel-to-snake/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/06/ruby-camel-to-snake/</link>
       <pubDate>Tue, 06 Jun 2017 07:46:54 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/06/ruby-camel-to-snake/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/06/ruby-camel-to-snake/</guid>
       <description>&lt;p&gt;仕事でどうしてもcamelケースが羅列された文字列をsnakeケースに変えたくなった時に、
 いい感じのやり方がわからなかったので作った。&lt;/p&gt;
 
@@ -460,10 +460,10 @@
     
     <item>
       <title>リモートワークを始めて4ヶ月経った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/05/remote-work-for-4m/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/05/remote-work-for-4m/</link>
       <pubDate>Mon, 05 Jun 2017 20:52:34 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/05/remote-work-for-4m/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/05/remote-work-for-4m/</guid>
       <description>&lt;p&gt;2月から株式会社MMMに転職した。
 サーバーサイドを担当して、結構楽しくやっている。
 リモートワークについて、思ったことや変化を書き留めておく。&lt;/p&gt;
@@ -473,10 +473,10 @@
     
     <item>
       <title>水泳について</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/26/about-swimming/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/26/about-swimming/</link>
       <pubDate>Sun, 26 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/26/about-swimming/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/26/about-swimming/</guid>
       <description>&lt;p&gt;ジョギングは疲れるので、水泳を始めた。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -484,10 +484,10 @@
     
     <item>
       <title>生産性について</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/25/about-productivity/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/25/about-productivity/</link>
       <pubDate>Sat, 25 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/25/about-productivity/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/25/about-productivity/</guid>
       <description>&lt;p&gt;生産性について考えていたことについて書いておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -495,10 +495,10 @@
     
     <item>
       <title>EC2にdocker環境を構築するときにやったこと</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</link>
       <pubDate>Sat, 11 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</guid>
       <description>&lt;p&gt;無事dockerが入れられたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -506,10 +506,10 @@
     
     <item>
       <title>進捗を可視化するスクリプトを作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/01/about-progress/</link>
       <pubDate>Wed, 01 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/01/about-progress/</guid>
       <description>&lt;p&gt;スクリプトを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -517,10 +517,10 @@
     
     <item>
       <title>何行コード書いたかを可視化するシェルスクリプト</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</link>
+      <link>https://ygnmhdtt.github.io/2017/01/09/step/</link>
       <pubDate>Mon, 09 Jan 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/01/09/step/</guid>
       <description>&lt;p&gt;タイトルのものを作りました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -528,10 +528,10 @@
     
     <item>
       <title>Railsのconstantsが反映されなかった</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/20/rails-const/</link>
+      <link>https://ygnmhdtt.github.io/2016/12/20/rails-const/</link>
       <pubDate>Tue, 20 Dec 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/20/rails-const/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/12/20/rails-const/</guid>
       <description>&lt;p&gt;&lt;code&gt;app/initializers/constants.rb&lt;/code&gt; に定数を書きたくて書いたんだけど、何故か反映されなくて地味にハマっていた。時間を無駄にした…&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -539,10 +539,10 @@
     
     <item>
       <title>Apacheのドキュメントルート変更が反映されなかった</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/06/apache-documentroot/</link>
+      <link>https://ygnmhdtt.github.io/2016/12/06/apache-documentroot/</link>
       <pubDate>Tue, 06 Dec 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/06/apache-documentroot/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/12/06/apache-documentroot/</guid>
       <description>&lt;p&gt;apacheでgitからcloneしたphpのプロジェクトを動かしたかったのに動かせなくてややハマったのでメモ．
 ※php関係ないです&lt;/p&gt;
 
@@ -551,10 +551,10 @@
     
     <item>
       <title>rubyでHaskellのiterate</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/27/ruby-haskell-iterate/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/27/ruby-haskell-iterate/</link>
       <pubDate>Sun, 27 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/27/ruby-haskell-iterate/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/27/ruby-haskell-iterate/</guid>
       <description>&lt;p&gt;Haskellのiterateが便利なので、rubyで書いてみた。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -562,10 +562,10 @@
     
     <item>
       <title>RailsでMySQLを使用する時にidの自動採番をリセットしたい</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/23/rails-reset-autoincrement/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/23/rails-reset-autoincrement/</link>
       <pubDate>Wed, 23 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/23/rails-reset-autoincrement/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/23/rails-reset-autoincrement/</guid>
       <description>&lt;p&gt;RailsではIDがデフォルトでautoIncrementされる&lt;/p&gt;
 
 &lt;p&gt;rails generate modelで作ったテーブルは必ずIDカラムがauto_incrementで最初につく．
@@ -577,10 +577,10 @@
     
     <item>
       <title>trigram作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/13/trigram/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/13/trigram/</link>
       <pubDate>Sun, 13 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/13/trigram/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/13/trigram/</guid>
       <description>&lt;p&gt;n-gramの勉強のために、簡単に作ってみた。
 &lt;a href=&#34;https://github.com/ygnmhdtt/trigram&#34;&gt;https://github.com/ygnmhdtt/trigram&lt;/a&gt;
 ruby製です。&lt;/p&gt;
@@ -590,10 +590,10 @@ ruby製です。&lt;/p&gt;
     
     <item>
       <title>左右どちらの手を多く使っているかわかるatomプラグイン作りました</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/07/first-atom-plugin/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/07/first-atom-plugin/</link>
       <pubDate>Mon, 07 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/07/first-atom-plugin/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/07/first-atom-plugin/</guid>
       <description>&lt;p&gt;はじめに&lt;/p&gt;
 
 &lt;p&gt;atomがすきなので、atomプラグイン作成の練習に作ってみた。&lt;/p&gt;
@@ -603,10 +603,10 @@ ruby製です。&lt;/p&gt;
     
     <item>
       <title>ターミナルからgoogle検索</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/06/terminal-google/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/06/terminal-google/</link>
       <pubDate>Sun, 06 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/06/terminal-google/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/06/terminal-google/</guid>
       <description>&lt;p&gt;ターミナルからブラウザを開いてgoogle検索をするコマンドを作った。
 &lt;a href=&#34;https://github.com/ygnmhdtt/ggr&#34;&gt;https://github.com/ygnmhdtt/ggr&lt;/a&gt;
 挙動がけっこう怪しい。&lt;/p&gt;

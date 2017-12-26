@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/bash/</link>
+    <link>https://ygnmhdtt.github.io/tags/bash/</link>
     <description>Recent content in Bash on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Thu, 08 Jun 2017 09:55:55 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pecoを使ったカスタムスクリプトをまとめる</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/08/peco-scripts/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/08/peco-scripts/</link>
       <pubDate>Thu, 08 Jun 2017 09:55:55 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/08/peco-scripts/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/08/peco-scripts/</guid>
       <description>&lt;p&gt;pecoが便利すぎるので、カスタムしたスクリプトについてメモしておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>進捗を可視化するスクリプトを作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/01/about-progress/</link>
       <pubDate>Wed, 01 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/01/about-progress/</guid>
       <description>&lt;p&gt;スクリプトを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>何行コード書いたかを可視化するシェルスクリプト</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</link>
+      <link>https://ygnmhdtt.github.io/2017/01/09/step/</link>
       <pubDate>Mon, 09 Jan 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/01/09/step/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/01/09/step/</guid>
       <description>&lt;p&gt;タイトルのものを作りました。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,10 +47,10 @@
     
     <item>
       <title>ターミナルからgoogle検索</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/06/terminal-google/</link>
+      <link>https://ygnmhdtt.github.io/2016/11/06/terminal-google/</link>
       <pubDate>Sun, 06 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/06/terminal-google/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/11/06/terminal-google/</guid>
       <description>&lt;p&gt;ターミナルからブラウザを開いてgoogle検索をするコマンドを作った。
 &lt;a href=&#34;https://github.com/ygnmhdtt/ggr&#34;&gt;https://github.com/ygnmhdtt/ggr&lt;/a&gt;
 挙動がけっこう怪しい。&lt;/p&gt;

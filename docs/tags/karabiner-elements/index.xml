@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Karabiner Elements on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/karabiner-elements/</link>
+    <link>https://ygnmhdtt.github.io/tags/karabiner-elements/</link>
     <description>Recent content in Karabiner Elements on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sun, 22 Oct 2017 20:23:50 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/karabiner-elements/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/karabiner-elements/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>left_ctrl&#43;hjklで移動する</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/22/hjkl/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/22/hjkl/</link>
       <pubDate>Sun, 22 Oct 2017 20:23:50 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/22/hjkl/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/22/hjkl/</guid>
       <description>&lt;p&gt;Ctrl+hjklでvim以外でも移動したかったので、karabiner-elementsを設定した。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>karabiner-elements(公式)が進化してた</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/official-karabiner/</link>
+      <link>https://ygnmhdtt.github.io/2017/10/17/official-karabiner/</link>
       <pubDate>Tue, 17 Oct 2017 15:09:56 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/10/17/official-karabiner/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/10/17/official-karabiner/</guid>
       <description>&lt;p&gt;karabiner-elementsを公式にしたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Remote Work on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/remote-work/</link>
+    <link>https://ygnmhdtt.github.io/tags/remote-work/</link>
     <description>Recent content in Remote Work on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Mon, 05 Jun 2017 20:52:34 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/remote-work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/remote-work/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>リモートワークを始めて4ヶ月経った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/05/remote-work-for-4m/</link>
+      <link>https://ygnmhdtt.github.io/2017/06/05/remote-work-for-4m/</link>
       <pubDate>Mon, 05 Jun 2017 20:52:34 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/06/05/remote-work-for-4m/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/06/05/remote-work-for-4m/</guid>
       <description>&lt;p&gt;2月から株式会社MMMに転職した。
 サーバーサイドを担当して、結構楽しくやっている。
 リモートワークについて、思ったことや変化を書き留めておく。&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>進捗を可視化するスクリプトを作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/01/about-progress/</link>
       <pubDate>Wed, 01 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/01/about-progress/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/01/about-progress/</guid>
       <description>&lt;p&gt;スクリプトを作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

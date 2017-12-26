@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/docker/</link>
+    <link>https://ygnmhdtt.github.io/tags/docker/</link>
     <description>Recent content in Docker on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Thu, 07 Sep 2017 09:18:13 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker × Capybara × Selenium × Headless ChromeでE2Eテストを書く</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</link>
+      <link>https://ygnmhdtt.github.io/2017/09/07/docker-capybara-selenium-headless/</link>
       <pubDate>Thu, 07 Sep 2017 09:18:13 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/09/07/docker-capybara-selenium-headless/</guid>
       <description>&lt;p&gt;Docker上にrubyが動くコンテナを作って、E2Eテストを書くやり方を残しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>EC2にdocker環境を構築するときにやったこと</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</link>
       <pubDate>Sat, 11 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</guid>
       <description>&lt;p&gt;無事dockerが入れられたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>Railsのconstantsが反映されなかった</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/20/rails-const/</link>
+      <link>https://ygnmhdtt.github.io/2016/12/20/rails-const/</link>
       <pubDate>Tue, 20 Dec 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/12/20/rails-const/</guid>
+      <guid>https://ygnmhdtt.github.io/2016/12/20/rails-const/</guid>
       <description>&lt;p&gt;&lt;code&gt;app/initializers/constants.rb&lt;/code&gt; に定数を書きたくて書いたんだけど、何故か反映されなくて地味にハマっていた。時間を無駄にした…&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

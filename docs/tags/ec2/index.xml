@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ec2 on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/ec2/</link>
+    <link>https://ygnmhdtt.github.io/tags/ec2/</link>
     <description>Recent content in Ec2 on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sat, 11 Feb 2017 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ygnmhdtt.github.io/tags/ec2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EC2にdocker環境を構築するときにやったこと</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</link>
+      <link>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</link>
       <pubDate>Sat, 11 Feb 2017 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/02/11/ec2-docker/</guid>
+      <guid>https://ygnmhdtt.github.io/2017/02/11/ec2-docker/</guid>
       <description>&lt;p&gt;無事dockerが入れられたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
