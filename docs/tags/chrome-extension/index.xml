@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chrome Extension on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/chrome-extension/</link>
+    <link>https://yaginumahidetatsu.com/tags/chrome-extension/</link>
     <description>Recent content in Chrome Extension on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sat, 09 Dec 2017 15:19:27 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/chrome-extension/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Googleの検索結果からTopStoriesを消すchrome拡張を作った</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/09/first-ggr-ext/</link>
+      <link>https://yaginumahidetatsu.com/2017/12/09/first-ggr-ext/</link>
       <pubDate>Sat, 09 Dec 2017 15:19:27 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/12/09/first-ggr-ext/</guid>
+      <guid>https://yaginumahidetatsu.com/2017/12/09/first-ggr-ext/</guid>
       <description>&lt;p&gt;chrome拡張を初めて作った。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

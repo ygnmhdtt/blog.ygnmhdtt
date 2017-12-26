@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atom on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/atom/</link>
+    <link>https://yaginumahidetatsu.com/tags/atom/</link>
     <description>Recent content in Atom on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Mon, 07 Nov 2016 18:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/atom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>左右どちらの手を多く使っているかわかるatomプラグイン作りました</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/07/first-atom-plugin/</link>
+      <link>https://yaginumahidetatsu.com/2016/11/07/first-atom-plugin/</link>
       <pubDate>Mon, 07 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/07/first-atom-plugin/</guid>
+      <guid>https://yaginumahidetatsu.com/2016/11/07/first-atom-plugin/</guid>
       <description>&lt;p&gt;はじめに&lt;/p&gt;
 
 &lt;p&gt;atomがすきなので、atomプラグイン作成の練習に作ってみた。&lt;/p&gt;

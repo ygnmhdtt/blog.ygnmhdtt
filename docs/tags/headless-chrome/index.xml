@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Headless Chrome on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/headless-chrome/</link>
+    <link>https://yaginumahidetatsu.com/tags/headless-chrome/</link>
     <description>Recent content in Headless Chrome on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Thu, 07 Sep 2017 09:18:13 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/headless-chrome/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/headless-chrome/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Docker × Capybara × Selenium × Headless ChromeでE2Eテストを書く</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</link>
+      <link>https://yaginumahidetatsu.com/2017/09/07/docker-capybara-selenium-headless/</link>
       <pubDate>Thu, 07 Sep 2017 09:18:13 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/09/07/docker-capybara-selenium-headless/</guid>
+      <guid>https://yaginumahidetatsu.com/2017/09/07/docker-capybara-selenium-headless/</guid>
       <description>&lt;p&gt;Docker上にrubyが動くコンテナを作って、E2Eテストを書くやり方を残しておく。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

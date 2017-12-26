@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on yaginumahidetatsu.com</title>
-    <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/mysql/</link>
+    <link>https://yaginumahidetatsu.com/tags/mysql/</link>
     <description>Recent content in Mysql on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Thu, 02 Nov 2017 13:30:33 +0900</lastBuildDate>
     
-	<atom:link href="https://ygnmhdtt.github.io/blog.ygnmhdtt/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MySQLでViewのdefinerエラーが出た際の対応</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/02/mysql-view-definer-err/</link>
+      <link>https://yaginumahidetatsu.com/2017/11/02/mysql-view-definer-err/</link>
       <pubDate>Thu, 02 Nov 2017 13:30:33 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2017/11/02/mysql-view-definer-err/</guid>
+      <guid>https://yaginumahidetatsu.com/2017/11/02/mysql-view-definer-err/</guid>
       <description>&lt;p&gt;ちょこちょこ見るやつを、ちゃんと理解して、ちゃんと対応した。メモ。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>RailsでMySQLを使用する時にidの自動採番をリセットしたい</title>
-      <link>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/23/rails-reset-autoincrement/</link>
+      <link>https://yaginumahidetatsu.com/2016/11/23/rails-reset-autoincrement/</link>
       <pubDate>Wed, 23 Nov 2016 18:00:00 +0900</pubDate>
       
-      <guid>https://ygnmhdtt.github.io/blog.ygnmhdtt/2016/11/23/rails-reset-autoincrement/</guid>
+      <guid>https://yaginumahidetatsu.com/2016/11/23/rails-reset-autoincrement/</guid>
       <description>&lt;p&gt;RailsではIDがデフォルトでautoIncrementされる&lt;/p&gt;
 
 &lt;p&gt;rails generate modelで作ったテーブルは必ずIDカラムがauto_incrementで最初につく．
