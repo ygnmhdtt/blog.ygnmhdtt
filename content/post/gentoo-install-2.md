@@ -1,5 +1,5 @@
 ---
-title: "ThinkPadにGentooをインストールする その2"
+title: "ThinkPad E470にGentooをインストールした その2"
 date: 2017-12-26T11:39:37+09:00
 ---
 
