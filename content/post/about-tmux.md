@@ -98,7 +98,7 @@ set -g message-attr bright
 
 ## left
 set -g status-left-length 40
-set -g status-left "#[fg=green]Session: #S #[fg=yellow]#I #[fg=cyan]#P"
+set -g status-left '#[fg=cyan,bg=#303030]#{?client_prefix,#[reverse],} #H[#S] #[default]'
 
 ## right
 set -g status-right "#[fg=cyan][%Y-%m-%d(%a) %H:%M]"
@@ -118,14 +118,13 @@ set -g status-position top
 setw -g mode-keys vi
 
 # highlight prefix
-set-option -g status-left '#[fg=cyan,bg=#303030]#{?client_prefix,#[reverse],} #H[#S] #[default]'
 ```
 
 
 # プレフィックス
 
 tmuxではプレフィックス(ショートカット)の後に特定のキーを押すことでいろんな操作ができる。
-デフォルトのプレフィックスは<C-t>にしている。
+デフォルトのプレフィックスは\<C-t\>にしている。
 
 以下のコマンドはプレフィックスの後に入力することで実行される。自分がよく使うものだけメモ。
 
