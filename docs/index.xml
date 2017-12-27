@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 26 Dec 2017 22:13:40 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 27 Dec 2017 19:14:30 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gentooで無線LANが認識されない場合の思考プロセスと対応の流れ</title>
+      <link>https://yaginumahidetatsu.com/2017/12/27/linux-networkcard/</link>
+      <pubDate>Wed, 27 Dec 2017 19:14:30 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/27/linux-networkcard/</guid>
+      <description>&lt;p&gt;メモっておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Tmuxについて学んだ</title>

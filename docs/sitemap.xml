@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2017/12/27/linux-networkcard/</loc>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</loc>
     <lastmod>2017-12-26T22:13:40+09:00</lastmod>
   </url>
@@ -399,6 +404,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/gentopo/</loc>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/git/</loc>
     <lastmod>2017-01-09T18:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -448,7 +459,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/linux/</loc>
-    <lastmod>2017-12-10T18:16:35+09:00</lastmod>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -485,6 +496,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/nat/</loc>
     <lastmod>2017-11-18T18:39:17+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/netword/</loc>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -526,7 +543,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -640,7 +657,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
+    <lastmod>2017-12-27T19:14:30+09:00</lastmod>
     <priority>0</priority>
   </url>
   
