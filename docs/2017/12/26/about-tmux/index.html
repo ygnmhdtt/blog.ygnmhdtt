@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>Tmuxについて学んだ | yaginumahidetatsu.com</title>
+<title>tmuxについて学んだ | yaginumahidetatsu.com</title>
 
 
 <link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
@@ -39,10 +39,10 @@
       
     </div>
     <h2 class="subtitle is-6">December 26, 2017</h2>
-    <h1 class="title">Tmuxについて学んだ</h1>
+    <h1 class="title">tmuxについて学んだ</h1>
       
     <div class="content">
-      <p>Tmuxをちゃんと勉強した。</p>
+      <p>tmuxをちゃんと勉強した。</p>
 
 <p></p>
 
@@ -74,11 +74,18 @@ tmux kill-session
 
 <h1 id="筆者の設定ファイル">筆者の設定ファイル</h1>
 
-<pre><code class="language-sh"># decrease delay
+<pre><code class="language-sh"># bind Ctrl-t to prefix
+set -g prefix C-t
+
+# unbind default prefix
+unbind C-b
+
+# decrease delay
 set -sg escape-time 1
 
 # reload conf
-bind r source-file ~/.tmux.conf |; display &quot;Reloaded!&quot;
+bind-key r source-file ~/.tmux.conf \; \
+  display-message &quot;source-file done&quot;
 
 # use |
 bind | split-window -h
@@ -142,14 +149,17 @@ set -g visual-activity on
 # top statusbar
 set -g status-position top
 
-# viのキーバインドを使用する
+# like vim
 setw -g mode-keys vi
+
+# highlight prefix
+set-option -g status-left '#[fg=cyan,bg=#303030]#{?client_prefix,#[reverse],} #H[#S] #[default]'
 </code></pre>
 
 <h1 id="プレフィックス">プレフィックス</h1>
 
 <p>tmuxではプレフィックス(ショートカット)の後に特定のキーを押すことでいろんな操作ができる。
-デフォルトのプレフィックスは<C-b>で、筆者はそのまま使っている。(使いにくいという声が多いらしいが、そんなに使いにくいと感じなかった。)</p>
+デフォルトのプレフィックスは<C-t>にしている。</p>
 
 <p>以下のコマンドはプレフィックスの後に入力することで実行される。自分がよく使うものだけメモ。</p>
 
@@ -164,6 +174,7 @@ w    ウインドウの一覧選択
 n    次のウインドウへ移動
 p    前のウインドウへ移動
 l    以前のウインドウへ移動
+,    ウインドウに名前をつける
 </code></pre>
 
 <pre><code>|    左右にペイン分割
@@ -185,6 +196,10 @@ x    ペインの破棄
 </code></pre>
 
 <p>上記の設定ファイルどおりなら、 <code>hjkl</code> で移動可能。めっちゃ便利。</p>
+
+<h1 id="プレフィックスの可視化">プレフィックスの可視化</h1>
+
+<p><a href="https://qiita.com/dtan4/items/363e92525e7c5a16f3fc">こちら</a>を参考に、プレフィックスが押されたらハイライトするようにしている。必須設定だと思う。</p>
 
 <h1 id="まとめ">まとめ</h1>
 

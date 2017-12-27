@@ -1,11 +1,11 @@
 ---
-title: "Tmuxについて学んだ"
+title: "tmuxについて学んだ"
 date: 2017-12-26T22:13:40+09:00
 tags:
 - tmux
 ---
 
-Tmuxをちゃんと勉強した。
+tmuxをちゃんと勉強した。
 
 <!--more-->
 
@@ -39,11 +39,18 @@ tmuxは、セッション > window > ペイン のような関係になってい
 # 筆者の設定ファイル
 
 ```sh
+# bind Ctrl-t to prefix
+set -g prefix C-t
+
+# unbind default prefix
+unbind C-b
+
 # decrease delay
 set -sg escape-time 1
 
 # reload conf
-bind r source-file ~/.tmux.conf |; display "Reloaded!"
+bind-key r source-file ~/.tmux.conf \; \
+  display-message "source-file done"
 
 # use |
 bind | split-window -h
@@ -107,15 +114,18 @@ set -g visual-activity on
 # top statusbar
 set -g status-position top
 
-# viのキーバインドを使用する
+# like vim
 setw -g mode-keys vi
+
+# highlight prefix
+set-option -g status-left '#[fg=cyan,bg=#303030]#{?client_prefix,#[reverse],} #H[#S] #[default]'
 ```
 
 
 # プレフィックス
 
 tmuxではプレフィックス(ショートカット)の後に特定のキーを押すことでいろんな操作ができる。
-デフォルトのプレフィックスは<C-b>で、筆者はそのまま使っている。(使いにくいという声が多いらしいが、そんなに使いにくいと感じなかった。)
+デフォルトのプレフィックスは<C-t>にしている。
 
 以下のコマンドはプレフィックスの後に入力することで実行される。自分がよく使うものだけメモ。
 
@@ -132,6 +142,7 @@ w    ウインドウの一覧選択
 n    次のウインドウへ移動
 p    前のウインドウへ移動
 l    以前のウインドウへ移動
+,    ウインドウに名前をつける
 ```
 
 ```
@@ -155,6 +166,10 @@ x    ペインの破棄
 ```
 
 上記の設定ファイルどおりなら、 `hjkl` で移動可能。めっちゃ便利。
+
+# プレフィックスの可視化
+
+[こちら](https://qiita.com/dtan4/items/363e92525e7c5a16f3fc)を参考に、プレフィックスが押されたらハイライトするようにしている。必須設定だと思う。
 
 # まとめ
 tmuxサイコー!!
