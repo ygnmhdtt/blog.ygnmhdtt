@@ -1,5 +1,5 @@
 ---
-title: "GrubでGentooとWindowsを起動できるようにする"
+title: "grubでGentooとWindowsを起動できるようにする"
 date: 2017-12-28T22:36:16+09:00
 tags:
 - Gentoo
@@ -39,3 +39,6 @@ grubを使ってLinuxとWindowsを選択できるようにする方法のメモ�
 
 これで標準出力に `Found windows boot manager...` みたいに出てきたらOK。
 rebootして、windowsが選択、起動できることをテストする。
+
+# 参考
+[GRUB2](https://wiki.gentoo.org/wiki/GRUB2/ja)
