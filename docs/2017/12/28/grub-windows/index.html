@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GrubでGentooとWindowsを起動できるようにする | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/windows">#Windows</a>
+  
+  | <a class="subtitle is-6" href="/tags/grub">#grub</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 28, 2017</h2>
+    <h1 class="title">GrubでGentooとWindowsを起動できるようにする</h1>
+      
+    <div class="content">
+      <p>grubを使ってLinuxとWindowsを選択できるようにする方法のメモ。</p>
+
+<p></p>
+
+<p><a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Bootloader/ja">ハンドブック</a>にはLinuxとWindowsのデュアルブートのやり方があんまり書いてない。
+このやり方はマザーボードがUEFIに対応していることを前提としている。</p>
+
+<h1 id="必要なライブラリ">必要なライブラリ</h1>
+
+<pre><code># emerge --ask --newuse sys-boot/os-prober
+</code></pre>
+
+<h1 id="udevをマウント">udevをマウント</h1>
+
+<p><code>udev</code> をマウントすることで別のOSの情報にアクセスできるようになるらしい。
+(これは <code>/mnt/gentoo</code> にgentooのルートをマウントしていることを前提としている。)</p>
+
+<pre><code># mkdir -p /mnt/gentoo/run/udev
+# mount -o bind /run/udev /mnt/gentoo/run/udev
+# mount --make-rslave /mnt/gentoo/run/udev
+</code></pre>
+
+<h1 id="grubの設定ファイルを作る">grubの設定ファイルを作る</h1>
+
+<pre><code># grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
+
+<p>これで標準出力に <code>Found windows boot manager...</code> みたいに出てきたらOK。
+rebootして、windowsが選択、起動できることをテストする。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

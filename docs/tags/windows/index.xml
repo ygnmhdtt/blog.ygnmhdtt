@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/windows/</link>
+    <description>Recent content in Windows on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Thu, 28 Dec 2017 22:36:16 +0900</lastBuildDate>
+    
+	<atom:link href="https://yaginumahidetatsu.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GrubでGentooとWindowsを起動できるようにする</title>
+      <link>https://yaginumahidetatsu.com/2017/12/28/grub-windows/</link>
+      <pubDate>Thu, 28 Dec 2017 22:36:16 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/28/grub-windows/</guid>
+      <description>&lt;p&gt;grubを使ってLinuxとWindowsを選択できるようにする方法のメモ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
