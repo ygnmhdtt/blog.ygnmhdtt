@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>カーネル構築時のオプションについて | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/kernel">#Kernel</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 29, 2017</h2>
+    <h1 class="title">カーネル構築時のオプションについて</h1>
+      
+    <div class="content">
+      <p><code>make *config</code> について学んだ。</p>
+
+<p></p>
+
+<p>以下の内容は <code>/usr/src/linux/Documentation/admin-guide/README.rst</code> にあったもの。</p>
+
+<pre><code>カーネルの設定
+----------------------
+
+   このステップは、たとえマイナーバージョンのアップデートであっても省略することはできません。
+   どのリリースでも新たな設定オプションが追加されるし、もし設定ファイルが期待される通りでなければ、
+   奇妙な問題が起こるでしょう。もし最低限の手順で既存の設定を新しいバージョンに持っていきたいならば、
+   `make oldconfig` を使用します。これは、新たなカーネル設定に対する回答のみをあなたに尋ねます。
+
+ - 設定のコマンド::
+
+     &quot;make config&quot;      プレーンテキストの設定インタフェース。
+
+     &quot;make menuconfig&quot;  テキストベースの色付きのメニュー、ラジオリスト、ダイアログ。
+
+     &quot;make nconfig&quot;     改良されたテキストベースの色付きのメニュー。
+
+     &quot;make xconfig&quot;     Qtベースの設定ツール。
+
+     &quot;make gconfig&quot;     Gtk+ベースの設定ツール。
+
+     &quot;make oldconfig&quot;   全ての質問の答えを既存の `.config` ファイルのコンテンツをベースとし、
+                        新たな設定シンボルについては質問する。
+
+     &quot;make silentoldconfig&quot;
+                        上と似ているが、すでに回答済みの質問については画面に出さない。
+
+     &quot;make olddefconfig&quot;
+                        上と似ているが、新たなシンボルは自動的にそれらのデフォルトにする。
+
+     &quot;make defconfig&quot;   `arch/$ARCH/defconfig` か、 `arch/$ARCH/configs/${PLATFORM}_defconfig` のいずれかから、
+                        アーキテクチャに依存して、デフォルトのシンボルを用いて新たな `.config` ファイルを作る。
+
+     &quot;make ${PLATFORM}_defconfig&quot;
+                        `arch/$ARCH/configs/${PLATFORM}_defconfig` のデフォルト値を使って、新たな `.config` を作る。
+                        あなたのアーキテクチャで使用可能な全てのプラットフォームのリストを得るためには、
+                        `make help` を使う。
+
+     &quot;make allyesconfig&quot;
+                        可能な限り全てのシンボルを `y(カーネル組み込み)` にした `.config` を作る。
+
+     &quot;make allmodconfig&quot;
+                        可能な限り全てのシンボルを `m(カーネルモジュール)` にした `.config` を作る。
+
+     &quot;make allnoconfig&quot; 可能な限り全てのシンボルを `n(ビルドしない)` にした `.config` を作る。
+
+     &quot;make randconfig&quot;  シンボルをランダムに設定した `.config` を作る。
+
+     &quot;make localmodconfig&quot; 今の設定とロード中のモジュール(`lsmod`)をベースに設定を作る。
+                           ロード済みのモジュールに不要なオプションは無効にする。
+
+                           別のマシンのための `localmodconfig` を作るには、そのマシンの `lsmod` をファイルにして、
+                           `LSMOD` パラメータと一緒に渡す。
+
+                   target$ lsmod &gt; /tmp/mylsmod
+                   target$ scp /tmp/mylsmod host:/tmp
+
+                   host$ make LSMOD=/tmp/mylsmod localmodconfig
+
+                           これはクロスコンパイル時にも動作する。
+
+     &quot;make localyesconfig&quot; localmodconfigと似ているが、全てのモジュールオプションをカーネル組み込み(=y)とする。
+
+   Linuxカーネル設定ツールについての情報は、 `Documentation/kbuild/kconfig.txt` で参照できる。
+</code></pre>
+
+<p>原文は以下。</p>
+
+<pre><code>Configuring the kernel
+----------------------
+
+   Do not skip this step even if you are only upgrading one minor
+   version.  New configuration options are added in each release, and
+   odd problems will turn up if the configuration files are not set up
+   as expected.  If you want to carry your existing configuration to a
+   new version with minimal work, use ``make oldconfig``, which will
+   only ask you for the answers to new questions.
+
+ - Alternative configuration commands are::
+
+     &quot;make config&quot;      Plain text interface.
+
+     &quot;make menuconfig&quot;  Text based color menus, radiolists &amp; dialogs.
+
+     &quot;make nconfig&quot;     Enhanced text based color menus.
+
+     &quot;make xconfig&quot;     Qt based configuration tool.
+
+     &quot;make gconfig&quot;     GTK+ based configuration tool.
+
+     &quot;make oldconfig&quot;   Default all questions based on the contents of
+                        your existing ./.config file and asking about
+                        new config symbols.
+
+     &quot;make silentoldconfig&quot;
+                        Like above, but avoids cluttering the screen
+                        with questions already answered.
+                        Additionally updates the dependencies.
+
+     &quot;make olddefconfig&quot;
+                        Like above, but sets new symbols to their default
+                        values without prompting.
+
+     &quot;make defconfig&quot;   Create a ./.config file by using the default
+                        symbol values from either arch/$ARCH/defconfig
+                        or arch/$ARCH/configs/${PLATFORM}_defconfig,
+                        depending on the architecture.
+
+     &quot;make ${PLATFORM}_defconfig&quot;
+                        Create a ./.config file by using the default
+                        symbol values from
+                        arch/$ARCH/configs/${PLATFORM}_defconfig.
+                        Use &quot;make help&quot; to get a list of all available
+                        platforms of your architecture.
+
+     &quot;make allyesconfig&quot;
+                        Create a ./.config file by setting symbol
+                        values to 'y' as much as possible.
+
+     &quot;make allmodconfig&quot;
+                        Create a ./.config file by setting symbol
+                        values to 'm' as much as possible.
+     &quot;make allnoconfig&quot; Create a ./.config file by setting symbol
+                        values to 'n' as much as possible.
+
+     &quot;make randconfig&quot;  Create a ./.config file by setting symbol
+                        values to random values.
+
+     &quot;make localmodconfig&quot; Create a config based on current config and
+                           loaded modules (lsmod). Disables any module
+                           option that is not needed for the loaded modules.
+
+                           To create a localmodconfig for another machine,
+                           store the lsmod of that machine into a file
+                           and pass it in as a LSMOD parameter.
+
+                   target$ lsmod &gt; /tmp/mylsmod
+                   target$ scp /tmp/mylsmod host:/tmp
+
+                   host$ make LSMOD=/tmp/mylsmod localmodconfig
+
+                           The above also works when cross compiling.
+
+     &quot;make localyesconfig&quot; Similar to localmodconfig, except it will convert
+                           all module options to built in (=y) options.
+
+   You can find more information on using the Linux kernel config tools
+   in Documentation/kbuild/kconfig.txt.
+</code></pre>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
