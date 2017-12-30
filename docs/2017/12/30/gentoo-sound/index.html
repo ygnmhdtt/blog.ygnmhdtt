@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>ThinkPad上のLinuxで音を出すためにやったこと | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/linux">#Linux</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+  
+  | <a class="subtitle is-6" href="/tags/alsa">#alsa</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 30, 2017</h2>
+    <h1 class="title">ThinkPad上のLinuxで音を出すためにやったこと</h1>
+      
+    <div class="content">
+      <p>Xとfluxboxを入れたは良いものの、音が出なかったので、対応した。</p>
+
+<p></p>
+
+<h3 id="ハードウェアレベルの調査">ハードウェアレベルの調査</h3>
+
+<p>まずはハードウェアレベルの調査。
+サウンドカードがカーネルに認識されているかをチェックする。</p>
+
+<pre><code>$ lspci | grep -i audio
+</code></pre>
+
+<p>筆者の場合はIntelのデバイス情報が出力されたので、サウンドカードはカーネルに認識されていると判断した。
+万が一なにも表示されない場合、カーネルに対してマシン上のオーディオデバイスの設定を組み込む必要がある。</p>
+
+<h3 id="権限の調査">権限の調査</h3>
+
+<p>該当ユーザが <code>audio</code> グループに入っていることを確認。</p>
+
+<pre><code>$ groups
+</code></pre>
+
+<p><code>audio</code> とでなければ、usermodする。</p>
+
+<h3 id="ミュート状況の調査">ミュート状況の調査</h3>
+
+<p>以下はThinkPadの設定なので注意。
+Thinkpad ACPIが独立したレイヤでオーディオを管理しているらしいので確認する。</p>
+
+<pre><code>$ cat /proc/acpi/ibm/volume
+level:          10
+mute:           on
+</code></pre>
+
+<p>筆者の場合は <code>mute</code> が <code>on</code> になっていた。
+これを <code>off</code> にすれば出る気がする。</p>
+
+<h3 id="1-マシンからミュート解除">1. マシンからミュート解除</h3>
+
+<p>大概のマシンにはミュートを解除するボタンが有ると思うので押してみる。
+これで <code>off</code> になって、実際音も出れば最高だが、筆者はこれではダメだった。</p>
+
+<h3 id="2-alsaから設定する">2. ALSAから設定する</h3>
+
+<p>Linuxでは音をだすためのソフトウェアとして広く <code>ALSA</code> と <code>OSS</code> が使われている。とりあえずALSAを使ってみる。
+以下でインストール。</p>
+
+<pre><code>$ emerge --ask media-sound/alsa-utils
+</code></pre>
+
+<p>そして、以下のコマンドで確認。</p>
+
+<pre><code>$ alsamixer
+</code></pre>
+
+<p>色々インジケータが出て来るはず。
+まずは左端のMasterが、 <code>MM</code> になっている場合、ミュート状態なので、 <code>m</code> を押して <code>00</code> に変える。
+その上で矢印キーを押して音量を調整する。
+これで <code>esc</code> して、 <code>cat /proc/acpi/ibm/volume</code> して、offになっていることを確認する。</p>
+
+<h3 id="まとめ">まとめ</h3>
+
+<p>YouTubeが見られて嬉しい!!!</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
