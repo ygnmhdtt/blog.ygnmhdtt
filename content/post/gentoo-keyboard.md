@@ -156,7 +156,15 @@ $ xcape -d
 $ vi ~/.fluxbox/startup
 
 # 以下を追記
-xmodmap -e 'keycode 255=space'; xmodmap -e 'keycode 65=Shift_L'; ~/opt/xcape/xcape -e '#65=space'
+xcape -e '#65=space'
+```
+
+```
+$ vi ~/.Xmodmap
+
+# 以下を追記
+keycode 255 = space
+keycode 65 = Shift_L
 ```
 
 これで設定をリロードするかXを上げ直せばイケるはず。
