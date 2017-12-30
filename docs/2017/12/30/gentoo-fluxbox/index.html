@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GentooにFluxboxを入れたのでメモ | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/x">#X</a>
+  
+  | <a class="subtitle is-6" href="/tags/fluxbox">#Fluxbox</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 30, 2017</h2>
+    <h1 class="title">GentooにFluxboxを入れたのでメモ</h1>
+      
+    <div class="content">
+      <p>メモる。</p>
+
+<p></p>
+
+<h3 id="概要">概要</h3>
+
+<p>CUIだけでも別にいいんだけど、GUI欲しいな〜ということでfluxboxを入れた。
+fluxboxは会社の人におすすめされて何も考えず選択した。</p>
+
+<h3 id="概念">概念</h3>
+
+<p>LinuxはWindowsやmacOSと異なり、GUI環境はあくまでカーネル上で動くプロセス(アプリケーション)に過ぎない。
+GUI環境を構築したい場合、最低限 <code>X</code> の導入が必要。また、多くの場合は別途ウインドウマネージャを導入することになる。
+Xとは <code>X Window System</code> のことで、サーバの役割を果たす。
+ウインドウマネージャ上でターミナルやブラウザが動作しており、その際ユーザのキーボード及びマウスからの入力を利用する。
+そこをXが中継していて、XはディスプレイやIOをウインドウマネージャに提供していることになる。</p>
+
+<h3 id="導入">導入</h3>
+
+<p>まずはXを入れる。</p>
+
+<pre><code>$ emerge x11-base/xorg-server
+</code></pre>
+
+<p>起動には <code>startx</code> する。
+筆者環境ではいくつかコマンドが足りなかったので追加した。</p>
+
+<pre><code>$ emerge xclock
+$ emerge xterm
+</code></pre>
+
+<h3 id="ウインドウマネージャ導入">ウインドウマネージャ導入</h3>
+
+<pre><code>$ emerge fluxbox
+</code></pre>
+
+<h3 id="設定">設定</h3>
+
+<p>Xを上げた時に、ウインドウマネージャとしてfluxboxを使用する設定。</p>
+
+<pre><code>$ vi ~/.xinitrc
+</code></pre>
+
+<pre><code># 書く
+exec startfluxbox
+</code></pre>
+
+<p>これで <code>startx</code> すると勝手にfluxboxがあがる。</p>
+
+<p>次に、fluxboxのメニューを作る。
+メニューは画面上で右クリックした際に表示され、ここからアプリを立ち上げたり、Xを落としたりなどできる。</p>
+
+<pre><code>$ fluxbox-generate_menu
+</code></pre>
+
+<p>後は、 <code>~/.fluxbox/menu</code> をいじることでメニューを変えられる。</p>
+
+<p>次に、google-chromeを入れた。</p>
+
+<pre><code>$ emerge google-chrome
+</code></pre>
+
+<p>そして、fluxboxのメニューに登録する。</p>
+
+<pre><code>$ vi .fluxbox/menu
+</code></pre>
+
+<pre><code># 好きなところに追記
+      [exec] (Google Chrome) {google-chrome-stable}
+</code></pre>
+
+<p><code>()</code> がメニュー表示文言で、 <code>{}</code> がコマンド。</p>
+
+<p>chromeが起動できることを確認する。
+日本語環境を作ってないと化けるかも。</p>
+
+<h3 id="終了">終了</h3>
+
+<p>終了時は何もないところで右クリックして、 <code>Fluxbox menu</code> -&gt; <code>Exit</code> すればOK。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
