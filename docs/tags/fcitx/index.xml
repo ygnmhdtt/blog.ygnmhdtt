@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fluxbox on yaginumahidetatsu.com</title>
-    <link>https://yaginumahidetatsu.com/tags/fluxbox/</link>
-    <description>Recent content in Fluxbox on yaginumahidetatsu.com</description>
+    <title>Fcitx on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/fcitx/</link>
+    <description>Recent content in Fcitx on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Sat, 30 Dec 2017 17:35:09 +0900</lastBuildDate>
     
-	<atom:link href="https://yaginumahidetatsu.com/tags/fluxbox/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/fcitx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       
       <guid>https://yaginumahidetatsu.com/2017/12/30/gentoo-keyboard/</guid>
       <description>&lt;p&gt;色々設定した。USキーボード前提です。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>GentooにFluxboxを入れたのでメモ</title>
-      <link>https://yaginumahidetatsu.com/2017/12/30/gentoo-fluxbox/</link>
-      <pubDate>Sat, 30 Dec 2017 11:19:33 +0900</pubDate>
-      
-      <guid>https://yaginumahidetatsu.com/2017/12/30/gentoo-fluxbox/</guid>
-      <description>&lt;p&gt;メモる。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

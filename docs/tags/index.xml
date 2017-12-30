@@ -202,9 +202,18 @@
     </item>
     
     <item>
+      <title>Fcitx</title>
+      <link>https://yaginumahidetatsu.com/tags/fcitx/</link>
+      <pubDate>Sat, 30 Dec 2017 17:35:09 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/fcitx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fluxbox</title>
       <link>https://yaginumahidetatsu.com/tags/fluxbox/</link>
-      <pubDate>Sat, 30 Dec 2017 11:19:33 +0900</pubDate>
+      <pubDate>Sat, 30 Dec 2017 17:35:09 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/fluxbox/</guid>
       <description></description>
@@ -312,7 +321,7 @@
     <item>
       <title>Linux</title>
       <link>https://yaginumahidetatsu.com/tags/linux/</link>
-      <pubDate>Sat, 30 Dec 2017 11:04:42 +0900</pubDate>
+      <pubDate>Sat, 30 Dec 2017 17:35:09 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/linux/</guid>
       <description></description>
@@ -342,6 +351,15 @@
       <pubDate>Sat, 11 Nov 2017 12:48:24 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mozc</title>
+      <link>https://yaginumahidetatsu.com/tags/mozc/</link>
+      <pubDate>Sat, 30 Dec 2017 17:35:09 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/mozc/</guid>
       <description></description>
     </item>
     
@@ -594,6 +612,15 @@
       <pubDate>Sat, 30 Dec 2017 11:19:33 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xmodmap</title>
+      <link>https://yaginumahidetatsu.com/tags/xmodmap/</link>
+      <pubDate>Sat, 30 Dec 2017 17:35:09 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/xmodmap/</guid>
       <description></description>
     </item>
     
