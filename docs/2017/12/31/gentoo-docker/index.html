@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GentooにDockerを入れた | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/linux">#Linux</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/docker">#Docker</a>
+  
+  | <a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">December 31, 2017</h2>
+    <h1 class="title">GentooにDockerを入れた</h1>
+      
+    <div class="content">
+      <p>表題の手順をメモる。</p>
+
+<p></p>
+
+<p>Gentooを仕事で使うにあたり、Dockerがないとなにもできない。インストールしていく。</p>
+
+<h3 id="dockerインストール">dockerインストール</h3>
+
+<p>先にカーネルの設定をしてもいいが、筆者はとりあえず入れた。</p>
+
+<pre><code>$ emerge app-emulation/docker
+</code></pre>
+
+<p>筆者のUSEフラグはデフォルトのままにしてあり、なにもいじってない。
+注意点としてはファイルシステム周り。overlayを有効にすることだけ気をつければいい。
+この状態で試しに、</p>
+
+<pre><code>$ rc-service docker start
+</code></pre>
+
+<p>でdockerをスタートする。
+カーネルがいい感じに設定されていれば、これでも起動するはず。 <code>sudo docker ps</code> などして確認する。</p>
+
+<p>もし起動しなければ、カーネルの再設定が必要。必要に応じて <code>/var/log/docker.log</code> を確認しておく。</p>
+
+<h3 id="カーネル設定">カーネル設定</h3>
+
+<p>カーネル設定については、<a href="https://wiki.gentoo.org/wiki/Docker">wiki</a>の通りやればOK。
+筆者の場合、特にモジュールを追加でロードするような設定もしなかった。
+注意点としては、このwikiはファイルシステムにoverlayを採用するようなやり方が書いてある。
+もしなんらかの理由で他のファイルシステム(AUFSなど)を使いたい場合、この通りではダメ。
+特に、AUFSの場合は<a href="https://wiki.gentoo.org/wiki/Aufs">こちら</a> を参考にパッチを当てる必要がある。</p>
+
+<p>カーネル設定したら <code>grub-mkconfig</code> して再起動。</p>
+
+<h3 id="使用準備">使用準備</h3>
+
+<p>これでdockerがちゃんと起動することを確認する。
+また、</p>
+
+<pre><code>$ rc-update add docker default
+</code></pre>
+
+<p>でdockerが起動時に上がることを設定しておく。<br />
+最後に、</p>
+
+<pre><code>$ sudo gpasswd -a ユーザ名 docker
+</code></pre>
+
+<p>で、ユーザをdockerグループに入れておく。こうしないと、 <code>docker ps</code> すら <code>sudo</code> が必要。また、グループ変更は一回ログアウトしないと反映されない。</p>
+
+<h3 id="ちなみに">ちなみに</h3>
+
+<p><a href="https://docs.docker.com/engine/userguide/storagedriver/overlayfs-driver/">公式</a>にある通り、AUFSよりオーバーレイのほうが推奨らしい。注意。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

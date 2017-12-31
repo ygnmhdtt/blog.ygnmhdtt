@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sat, 30 Dec 2017 17:35:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2017 08:48:51 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GentooにDockerを入れた</title>
+      <link>https://yaginumahidetatsu.com/2017/12/31/gentoo-docker/</link>
+      <pubDate>Sun, 31 Dec 2017 08:48:51 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/31/gentoo-docker/</guid>
+      <description>&lt;p&gt;表題の手順をメモる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Fluxboxのキーボード周りの設定について</title>
