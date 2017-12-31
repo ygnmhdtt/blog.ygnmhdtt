@@ -36,11 +36,12 @@ $ rc-service docker start
 
 ### カーネル設定
 
-カーネル設定については、[wiki](https://wiki.gentoo.org/wiki/Docker)の通りやればOK。
-筆者の場合、特にモジュールを追加でロードするような設定もしなかった。
-注意点としては、このwikiはファイルシステムにoverlayを採用するようなやり方が書いてある。
-もしなんらかの理由で他のファイルシステム(AUFSなど)を使いたい場合、この通りではダメ。
-特に、AUFSの場合は[こちら](https://wiki.gentoo.org/wiki/Aufs) を参考にパッチを当てる必要がある。
+カーネル設定については、[wiki](https://wiki.gentoo.org/wiki/Docker)の通りやればOK。  
+筆者の場合、特にモジュールを追加でロードするような設定もしなかった。  
+注意点としては、このwikiはファイルシステムにoverlayを採用するようなやり方が書いてある。  
+もしなんらかの理由で他のファイルシステム(AUFSなど)を使いたい場合、この通りではダメ。  
+特に、AUFSの場合は[こちら](https://wiki.gentoo.org/wiki/Aufs) を参考にパッチを当てる必要がある。  
+また、AUFSを使う場合はdockerインストール時にaufsのUSEフラグを立てておくことも必要。
 
 カーネル設定したら `grub-mkconfig` して再起動。
 
