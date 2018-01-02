@@ -26,7 +26,7 @@ $ emerge --ask layman
 ERROR: dev-python/cryptography-2.0.2-r1::gentoo failed (compile phase)
 ```
 
-色々調べたところ、opensslのバージョンが1.1.0以上なら、ダウングレードしロという情報があった。
+色々調べたところ、opensslのバージョンが1.1.0以上なら、ダウングレードしろという情報があった。
 筆者の環境は、
 
 ```
@@ -54,7 +54,7 @@ $ layman-updater -R
 
 ### skypeforlinuxをインストール
 
-いい感じに動いているという情報のあった、 `[skypeforlinux-8.13.76.6](http://gpo.zugaina.org/net-im/skypeforlinux)` をインストールする。
+いい感じに動いているという情報のあった、 [skypeforlinux-8.13.76.6](http://gpo.zugaina.org/net-im/skypeforlinux) をインストールする。
 
 ```
 $ emerge -a skypeforlinux
