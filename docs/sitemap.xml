@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/02/gentoo-skype/</loc>
+    <lastmod>2018-01-02T19:27:43+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2017/12/31/gentoo-docker/</loc>
     <lastmod>2017-12-31T08:48:51+09:00</lastmod>
   </url>
@@ -442,7 +447,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/gentoo/</loc>
-    <lastmod>2017-12-31T08:48:51+09:00</lastmod>
+    <lastmod>2018-01-02T19:27:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -592,7 +597,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2017-12-31T08:48:51+09:00</lastmod>
+    <lastmod>2018-01-02T19:27:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -629,6 +634,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/selenium/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/skype/</loc>
+    <lastmod>2018-01-02T19:27:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -724,7 +735,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2017-12-31T08:48:51+09:00</lastmod>
+    <lastmod>2018-01-02T19:27:43+09:00</lastmod>
     <priority>0</priority>
   </url>
   

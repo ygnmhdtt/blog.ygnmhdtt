@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 31 Dec 2017 08:48:51 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jan 2018 19:27:43 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GentooにSkypeをインストールした</title>
+      <link>https://yaginumahidetatsu.com/2018/01/02/gentoo-skype/</link>
+      <pubDate>Tue, 02 Jan 2018 19:27:43 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/02/gentoo-skype/</guid>
+      <description>&lt;p&gt;まだ試していないがSkypeをインストールした。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GentooにDockerを入れた</title>

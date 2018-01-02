@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GentooにSkypeをインストールした | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#Gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/skype">#Skype</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 2, 2018</h2>
+    <h1 class="title">GentooにSkypeをインストールした</h1>
+      
+    <div class="content">
+      <p>まだ試していないがSkypeをインストールした。</p>
+
+<p></p>
+
+<p>仕事で使うのでSkypeを導入した。<a href="https://wiki.gentoo.org/wiki/Skype">wiki</a>にある、portageのSkypeは動かなかったので、オーバーレイを使用した。</p>
+
+<h3 id="layman導入">layman導入</h3>
+
+<p>laymanを使う。</p>
+
+<pre><code>$ emerge --ask layman
+</code></pre>
+
+<p>しかし、下記のようなエラーが出る。</p>
+
+<pre><code>ERROR: dev-python/cryptography-2.0.2-r1::gentoo failed (compile phase)
+</code></pre>
+
+<p>色々調べたところ、opensslのバージョンが1.1.0以上なら、ダウングレードしロという情報があった。
+筆者の環境は、</p>
+
+<pre><code>$ openssl version 
+OpenSSL 1.1.0g  2 Nov 2017 
+</code></pre>
+
+<p>だったので、ダウングレードしてみる。<br />
+<code>/etc/portage/package.mask/openssl</code> を作成し、以下のように書く。</p>
+
+<pre><code>&gt;dev-libs/openssl-1.1.0
+</code></pre>
+
+<p>これで1.1.0は強制的にマスクできるので、この状態で <code>emerge -uDN world</code> することで、1.1.0以下の最新を取ってくるようになる。</p>
+
+<p>その後、再び <code>emerge layman</code> したら通った。
+あとは<a href="https://wiki.gentoo.org/wiki/Layman">公式</a>の通り、</p>
+
+<pre><code>$ layman-updater -R
+</code></pre>
+
+<p>しておいた。</p>
+
+<h3 id="skypeforlinuxをインストール">skypeforlinuxをインストール</h3>
+
+<p>いい感じに動いているという情報のあった、 <code>[skypeforlinux-8.13.76.6](http://gpo.zugaina.org/net-im/skypeforlinux)</code> をインストールする。</p>
+
+<pre><code>$ emerge -a skypeforlinux
+</code></pre>
+
+<p>あとは</p>
+
+<pre><code>$ skypeforlinux
+</code></pre>
+
+<p>で起動する。
+早く試してみたい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
