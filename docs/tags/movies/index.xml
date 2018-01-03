@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Movies on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/movies/</link>
+    <description>Recent content in Movies on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Wed, 03 Jan 2018 20:33:26 +0900</lastBuildDate>
+    
+	<atom:link href="https://yaginumahidetatsu.com/tags/movies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017に映画館で見た映画を振り返る</title>
+      <link>https://yaginumahidetatsu.com/2018/01/03/2017-movies/</link>
+      <pubDate>Wed, 03 Jan 2018 20:33:26 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/03/2017-movies/</guid>
+      <description>&lt;p&gt;表題について振り返る。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
