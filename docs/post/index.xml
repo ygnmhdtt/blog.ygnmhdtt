@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Fri, 05 Jan 2018 13:30:22 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jan 2018 22:25:23 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>映画のURLについて語る</title>
+      <link>https://yaginumahidetatsu.com/2018/01/09/movies-url/</link>
+      <pubDate>Tue, 09 Jan 2018 22:25:23 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/09/movies-url/</guid>
+      <description>&lt;p&gt;映画サイトのURLについて語る。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Gentoo上のfluxboxでSkypeを使用した感想</title>
