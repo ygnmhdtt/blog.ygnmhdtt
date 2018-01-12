@@ -10,7 +10,7 @@ About Me
 Hidetatsu YAGINUMA (柳沼 秀龍)  
 1993-
 
-Web Engineer at Sapporo, Hokkaido, Japan  
+Backend Engineer at Sapporo, Hokkaido, Japan  
 
 Golang/Ruby/Java/Python/Haskell  
 AWS/Docker
