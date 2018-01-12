@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesについて学ぶ 1 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 12, 2018</h2>
+    <h1 class="title">Kubernetesについて学ぶ 1</h1>
+      
+    <div class="content">
+      <p>Kubernetesについて学んでいく。</p>
+
+<p></p>
+
+<p>Kubernetesについて、ほぼ何も知らないので学んでいく。理由は学びたいからであり、特に必要に迫られているわけではない。</p>
+
+<h3 id="学び方">学び方</h3>
+
+<p><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/">チュートリアル</a>を読んで、書いてある通りに動かし、このブログに書いていく。
+ちなみに、こういうのって公式を読むのが最強ですよね。</p>
+
+<h3 id="overview">Overview</h3>
+
+<p><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/">こちら</a>をまずは読んでいく。</p>
+
+<pre><code>このチュートリアルでは、Kubernetesクラスタオーケストレーションシステムの基礎を説明します。
+各モジュールには、主要なKubernetesの機能と概念に関する背景情報が含まれており、
+インタラクティブなオンラインチュートリアルも含まれています。
+これらのインタラクティブなチュートリアルでは、簡単なクラスタとそのコンテナ化されたアプリケーションを自分で管理できます。
+
+インタラクティブなチュートリアルを使用すると、次のことを学ぶことができます。
+
+* containerizedされたアプリケーションをクラスタにデプロイする
+* デプロイメントのスケーリング
+* コンテナ化されたアプリケーションを新しいソフトウェアバージョンで更新する
+* コンテナ化されたアプリケーションをデバッグする
+
+このチュートリアルではKatacodaを使用して、Webブラウザに仮想端末を実行し、
+どこでも実行できる小規模なKubernetesのローカル展開であるMinikubeを実行します。
+ソフトウェアをインストールしたり、何かを設定する必要はありません。各インタラクティブチュートリアルは、Webブラウザ自体から直接実行されます。
+</code></pre>
+
+<p>ここまでで。とりあえず、</p>
+
+<ul>
+<li>クラスタってものがあり</li>
+<li>コンテナ化されたアプリケーションを、クラスタに対してデプロイする</li>
+</ul>
+
+<p>ことを理解した。クラスタとはなにか？については、おいおい出てくることを期待する。</p>
+
+<pre><code>現代のWebサービスでは、ユーザーはアプリケーションを24/7で利用できると期待しており、
+開発者はこれらのアプリケーションの新しいバージョンを1日に数回デプロイすることを期待しています。
+コンテナ化は、パッケージソフトウェアがこれらの目標を達成するのを助け、
+アプリケーションをダウンタイムなしで簡単かつ迅速にリリースおよびアップデートできるようにします。
+Kubernetesは、コンテナ化されたアプリケーションをいつでもどこでも実行できるようにし、
+作業に必要なリソースとツールを見つけるのに役立ちます。
+Kubernetesは、コンテナオーケストレーションでのGoogleの蓄積された経験と、
+コミュニティから得た最高のアイデアを組み合わせた、プロダクション対応のオープンソースプラットフォームです。
+</code></pre>
+
+<p>つまり、Kubernetesを我々が使うことで得られるメリットは。</p>
+
+<ul>
+<li>アプリケーションをダウンタイム無しで1日に複数回デプロイすることができる</li>
+</ul>
+
+<p>ことだと言えるだろう。</p>
+
+<p>国語のテストみたいになってきた。とりあえずここまで。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
