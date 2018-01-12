@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesについて学ぶ 2 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 12, 2018</h2>
+    <h1 class="title">Kubernetesについて学ぶ 2</h1>
+      
+    <div class="content">
+      <p>引き続き学んでいく。</p>
+
+<p></p>
+
+<p>1は<a href="https://yaginumahidetatsu.com/2018/01/12/kubernetes-learn-1/">こちら</a>。</p>
+
+<p>今回は<a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-intro/">Create a Cluster</a>を読んでいく。</p>
+
+<h3 id="using-minikube-to-create-a-cluster">Using Minikube to Create a Cluster</h3>
+
+<pre><code>Kubernetesは、単一ユニットとして動作するように接続されている可用性の高いコンピュータクラスタを調整します。 
+Kubernetesの抽象化によって、コンテナ化されたアプリケーションを個々のマシンに具体的に結びつけることなく
+クラスタに展開することができます。この新しいデプロイメントモデルを利用するには、
+アプリケーションを個々のホストから切り離す方法でパッケージ化する必要があります。つまり:
+それらをコンテナ化する必要があります。
+
+コンテナ化されたアプリケーションは、アプリケーションがホストに深く統合されたパッケージとして
+特定のマシンに直接インストールされていた過去のデプロイメントモデルよりも柔軟性があり、利用可能です。 
+Kubernetesは、クラスタ全体のアプリケーションコンテナの配布とスケジューリングをより効率的に自動化します。 
+Kubernetesはオープンソースのプラットフォームで、プロダクションの準備が整いました。
+
+Kubernetesクラスタは、2種類のリソースで構成されています。
+
+* The Master: クラスタを調整する
+* Nodes: アプリケーションを実行するワーカー
+</code></pre>
+
+<p>従来は、アプリケーションとホストが深く結合されており、柔軟性を欠いていた。(ホストに障害が起きたりしたらアプリも死ぬ。逆に、スケールも難しい。)
+しかし、アプリケーションをコンテナ化することで、個々のマシンと疎結合な状態を生み出すことができる。
+<code>クラスタ</code> というものがそのabstractionsを実現してくれているらしい。
+しかし、コンテナという物自体はLXCやdockerが提供してくれていたが、
+kubernetesが <em>クラスタ全体のアプリケーションコンテナの配布とスケジューリングをより効率的に自動化</em> してくれるらしい。
+つまり、ホストとアプリを疎結合にすることはkubernetesの仕事ではなく、(それはコンテナで実現される)
+クラスタにアプリを配備し、スケジューリングすることが仕事だと言える(たぶん)。</p>
+
+<h3 id="cluster-diagram">Cluster Diagram</h3>
+
+<pre><code>マスターはクラスタの管理を担当します。
+マスターは、アプリケーションのスケジューリング、アプリケーションの望ましい状態の維持、
+アプリケーションのスケーリング、新しい更新の展開など、クラスター内のすべてのアクティビティーを調整します。
+
+ノードは、Kubernetesクラスタ内のワーカーマシンとして機能するVMまたは物理コンピュータです。
+各ノードには、ノードを管理し、Kubernetesマスターと通信するためのエージェントであるKubeletがあります。
+ノードには、Dockerやrktなどのコンテナ操作を処理するツールも必要です。
+運用トラフィックを処理するKubernetesクラスタには、最低3つのノードが必要です。
+
+Kubernetesにアプリケーションをデプロイするときは、
+マスターにアプリケーションコンテナを開始するよう指示します。
+マスターは、クラスタのノード上で実行するコンテナのスケジュールを設定します。
+ノードは、マスターが公開するKubernetes APIを使用してマスターと通信します。
+エンドユーザーは、Kubernetes APIを直接使用してクラスタとやりとりすることもできます。
+
+Kubernetesクラスタは、物理マシンまたは仮想マシンのいずれにも展開できます。 
+Kubernetes開発を開始するには、Minikubeを使用できます。 
+Minikubeは、ローカルマシンにVMを作成し、1つのノードだけを含む単純なクラスタを展開する軽量Kubernetesの実装です。 
+Minikubeは、Linux、macOS、およびWindowsシステムで使用できます。 
+Minikube CLIは、クラスタを操作するための基本的なブートストラップ操作（開始、停止、ステータス、および削除を含む）を提供します。
+ただし、このチュートリアルでは、Minikubeがプリインストールされているオンライン端末を使用します。
+
+Kubernetesが何であるかを知ったので、オンラインチュートリアルに進み、最初のクラスターを開始しましょう！
+</code></pre>
+
+<ul>
+<li>マスターはクラスタ全体の管理をしている(実体はホスト)</li>
+<li>ノードはサーバーのこと。</li>
+<li>各ノードには、Kubeletというエージェントがいる</li>
+<li>クラスタには最低3ノード必要</li>
+</ul>
+
+<p>つまり。
+masterにはクラスタ全体の情報を管理させ、ノードがマスターに対して、API経由で情報をもらい、
+自ノードの上でコンテナを作る。
+APIはデベロッパがたたくこともできるらしい。</p>
+
+<p>ここで <code>Minikube</code> というものが出てくる。
+Minikubeを使って、ローカルにVMを起動し、1つのノードを持つクラスタを動かせるらしい。</p>
+
+<h3 id="所感">所感</h3>
+
+<p>マスター、ノードなど、普通のサーバのクラスタリングっぽい感じらしい。
+その上で、各ノードにはKubeletというエージェントがいて、masterとのやりとりをしてくれるとのこと。
+つまり、ここまではまだそんなに難しくなくて、API経由でなにをするのか？Kubeletはどんな仕事をするのか？が大事となる。</p>
+
+<p>ちなみに、Elasticsearchもこんな感じの構造になってますよね。</p>
+
+<p>次回はチュートリアルをやってみる。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
