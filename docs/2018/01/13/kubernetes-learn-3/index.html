@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesについて学ぶ 3 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 13, 2018</h2>
+    <h1 class="title">Kubernetesについて学ぶ 3</h1>
+      
+    <div class="content">
+      <p>オンラインチュートリアルをやっていく。</p>
+
+<p></p>
+
+<p>前回は<a href="https://yaginumahidetatsu.com/2018/01/12/kubernetes-learn-2/">こちら</a>。</p>
+
+<p>今日は<a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/cluster-interactive/">Interactive Tutorial</a>をやってみる。</p>
+
+<h3 id="interactive-tutorial-creating-a-cluster">Interactive Tutorial - Creating a Cluster</h3>
+
+<p>チュートリアルはブラウザ上にターミナルがあって、どっかの仮想サーバをいじれるようになっている。</p>
+
+<pre><code>$ minikube version
+minikube version: v0.17.1-katacoda
+</code></pre>
+
+<pre><code>$ minikube start
+Starting local Kubernetes cluster...
+$
+</code></pre>
+
+<p><code>start</code> でスタートできるっぽい。</p>
+
+<pre><code>このブートキャンプ中にKubernetesと対話するために、
+コマンドラインインターフェイスkubectlを使用します。
+次のモジュールでkubectlについて詳しく説明しますが、今はクラスタ情報をいくつか見ていきます。 
+kubectlがインストールされているかどうかを確認するには、kubectl versionコマンドを実行します：
+</code></pre>
+
+<pre><code>$ kubectl version
+Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;8&quot;, GitVersion:&quot;v1.8.0&quot;, GitCommit:&quot;6e937839ac04a38cac63e6a7a306c5d035fe7b0a&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2017-09-28T22:57:57Z&quot;, GoVersion:&quot;go1.8.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+Server Version: version.Info{Major:&quot;1&quot;, Minor:&quot;5&quot;, GitVersion:&quot;v1.5.2&quot;, GitCommit:&quot;08e099554f3c31f6e6f07b448ab3ed78d0520507&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;1970-01-01T00:00:00Z&quot;, GoVersion:&quot;go1.7.1&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+$
+</code></pre>
+
+<p>Go製らしい。kubectlというインタフェースでminikubeを操作する。</p>
+
+<pre><code>
+OK、kubectlが設定されており、クライアントのバージョンとサーバーのバージョンの両方を見ることができます。
+クライアントのバージョンはkubectlのバージョンです。サーバーのバージョンは、
+マスターにインストールされたKubernetesバージョンです。ビルドの詳細を表示することもできます。
+</code></pre>
+
+<p>とのこと。</p>
+
+<pre><code>$ kubectl cluster-info
+Kubernetes master is running at http://host01:8080
+heapster is running at http://host01:8080/api/v1/namespaces/kube-system/services/heapster/proxy
+kubernetes-dashboard is running at http://host01:8080/api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy
+monitoring-grafana is running at http://host01:8080/api/v1/namespaces/kube-system/services/monitoring-grafana/proxy
+monitoring-influxdb is running at http://host01:8080/api/v1/namespaces/kube-system/services/monitoring-influxdb/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+</code></pre>
+
+<p><code>cluster-info</code> をたたくことで、クラスタの情報をとれるっぽい。
+上記を見るに、master、及びdashboardなどがクラスタ内で動いているらしい。</p>
+
+<p>ちなみに、 <code>kubectl cluster-info dump</code> を叩いてみたら、めちゃめちゃ長いjsonが吐かれた。</p>
+
+<pre><code>$kubectl get nodes
+NAME      STATUS    ROLES     AGE       VERSION
+host01    Ready     &lt;none&gt;    8m        v1.5.2
+</code></pre>
+
+<p>これは <code>docker ps</code> した時のやつですね。</p>
+
+<p>要するに、 <code>host01</code> っていうホストで構成されるクラスタがあり、その上でmasterやdashboardが動いている。その情報にアクセスするためのAPIが
+<code>kubectl</code> らしい。</p>
+
+<p>ここまでで <code>Module1(Create a Cluster)</code> が終了した。</p>
+
+<p>この後はModule2の <code>Deploy an App</code> をやっていく。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

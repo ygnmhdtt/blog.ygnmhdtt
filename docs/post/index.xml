@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Fri, 12 Jan 2018 18:51:28 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jan 2018 18:00:29 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetesについて学ぶ 3</title>
+      <link>https://yaginumahidetatsu.com/2018/01/13/kubernetes-learn-3/</link>
+      <pubDate>Sat, 13 Jan 2018 18:00:29 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/13/kubernetes-learn-3/</guid>
+      <description>&lt;p&gt;オンラインチュートリアルをやっていく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetesについて学ぶ 2</title>
