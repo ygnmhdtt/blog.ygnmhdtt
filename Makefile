@@ -1,6 +1,6 @@
 default:
 	@echo "Drafts:"
-	ls drafts
+	@ls drafts
 	@echo ""
 	@echo "=== Deployment Start"
 	hugo
