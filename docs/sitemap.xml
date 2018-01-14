@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/14/kubernetes-learn-4/</loc>
+    <lastmod>2018-01-14T11:01:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/01/13/kubernetes-learn-3/</loc>
     <lastmod>2018-01-13T18:00:29+09:00</lastmod>
   </url>
@@ -537,7 +542,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/kubernetes/</loc>
-    <lastmod>2018-01-13T18:00:29+09:00</lastmod>
+    <lastmod>2018-01-14T11:01:57+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -639,7 +644,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-01-13T18:00:29+09:00</lastmod>
+    <lastmod>2018-01-14T11:01:57+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -777,7 +782,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-01-13T18:00:29+09:00</lastmod>
+    <lastmod>2018-01-14T11:01:57+09:00</lastmod>
     <priority>0</priority>
   </url>
   

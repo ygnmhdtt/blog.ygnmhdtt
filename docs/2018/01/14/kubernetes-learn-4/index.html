@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesについて学ぶ 4 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 14, 2018</h2>
+    <h1 class="title">Kubernetesについて学ぶ 4</h1>
+      
+    <div class="content">
+      <p>デプロイについて学ぶ。</p>
+
+<p></p>
+
+<p>前回は<a href="https://yaginumahidetatsu.com/2018/01/13/kubernetes-learn-3/">こちら</a>。</p>
+
+<p>今日からModule2の、 <code>Deploy an App</code> について学んでいく。</p>
+
+<h3 id="kubernetes-deployments">Kubernetes Deployments</h3>
+
+<pre><code>Kubernetesクラスタが稼動したら、コンテナ化されたアプリケーションをその上に配置できます。
+これを行うには、KubernetesのDeployment Configurationを作成します。
+デプロイメントは、Kubernetesにアプリケーションのインスタンスの作成と更新の方法を指示します。
+デプロイメントを作成したら、Kubernetesのマスタースケジュールはアプリケーションインスタンスを
+クラスター内の個々のノードにメンションしました。
+
+アプリケーションインスタンスが作成されると、
+Kubernetes Deployment Controllerはそれらのインスタンスを継続的に監視します。
+インスタンスをホストしているノードが停止したり削除されたりすると、
+Deployment Controllerがそれを置き換えます。
+これにより、マシンの障害またはメンテナンスに対処するための自己修復メカニズムが提供されます。
+
+プリオーケストレーションの世界では、
+アプリケーションを起動するためにインストールスクリプトが使用されることがよくありましたが、
+マシンの障害からの回復は許可されませんでした。 
+Kubernetes Deploymentsは、アプリケーションインスタンスを作成し、
+それらのノード間でアプリケーションインスタンスを実行することによって、
+アプリケーション管理に対する根本的に異なるアプローチを提供します。
+</code></pre>
+
+<ul>
+<li>Deployment Configurationを作成する</li>
+<li>masterがnodeにアプリケーションを配備する</li>
+<li>Deployment Controllerがインスタンスを監視する</li>
+</ul>
+
+<p>Kubernetesがアプリケーションインスタンス(実体はたぶんコンテナ)を、ノードに配備する。そして管理もやってくれる。
+という話らしい。</p>
+
+<h3 id="deploying-your-first-app-on-kubernetes">Deploying your first app on Kubernetes</h3>
+
+<pre><code>デプロイメントを作成および管理するには、KubernetesコマンドラインインターフェイスKubectlを使用します。 
+KubectlはKubernetes APIを使用してクラスタと対話します。
+このモジュールでは、Kubernetesクラスタでアプリケーションを実行するデプロイメントを
+作成するために必要な最も一般的なKubectlコマンドについて学習します。
+
+デプロイメントを作成するときは、
+アプリケーションのコンテナイメージと実行するレプリカの数を指定する必要があります。
+後でその情報を変更することができます。
+ブートキャンプのモジュール5と6では、配備の拡張と更新の方法について説明しています。
+
+最初のデプロイでは、Dockerコンテナにパッケージ化されたNode.jsアプリケーションを使用します。
+ソースコードとDockerfileは、Kubernetes BootcampのGitHubリポジトリにあります。
+
+デプロイメントが何であるかを知ったので、オンラインチュートリアルに行き、最初のアプリをデプロイしましょう！
+</code></pre>
+
+<p>次回はチュートリアルをやる。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
