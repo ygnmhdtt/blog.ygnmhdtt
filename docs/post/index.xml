@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 14 Jan 2018 11:01:57 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2018 22:46:49 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GentooのWifiがブツブツ切れる問題に対応した</title>
+      <link>https://yaginumahidetatsu.com/2018/01/14/gentoo-wifi-problem/</link>
+      <pubDate>Sun, 14 Jan 2018 22:46:49 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/14/gentoo-wifi-problem/</guid>
+      <description>&lt;p&gt;メモっておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetesについて学ぶ 4</title>
