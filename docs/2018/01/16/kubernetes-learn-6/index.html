@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetes Learn 6 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aaa">#aaa</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 16, 2018</h2>
+    <h1 class="title">Kubernetes Learn 6</h1>
+      
+    <div class="content">
+      <p>続きをやる。</p>
+
+<p></p>
+
+<p><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-interactive/">Interactive Tutorial - Deploying an App</a>のStep3をやる。</p>
+
+<h3 id="view-our-app">View our app</h3>
+
+<pre><code>Kubernetes内で動作しているポッドは、プライベートな独立したネットワーク上で実行されています。
+デフォルトでは、同じkubernetesクラスタ内の他のポッドやサービスからは見えますが、
+そのネットワーク外では表示されません。 
+kubectlを使用するときは、アプリケーションと通信するためにAPIエンドポイントを介して対話しています。
+</code></pre>
+
+<p>Podとは、 <code>group of one or more containers (such as Docker containers), with shared storage/network, and a specification for how to run the containers</code> とのこと。
+作成したデプロイメントによってあがるコンテナ郡のことをPodという単位で呼称しているのだと思う(たぶん)。
+重要な概念っぽい。</p>
+
+<pre><code>モジュール4のkubernetesクラスターの外部にアプリケーションを公開する方法に関するその他のオプションについても説明します。
+
+kubectlコマンドは、通信をクラスタ全体のプライベートネットワークに転送するプロキシを作成できます。
+プロキシはcontrol-Cを押して終了することができ、実行中は出力を表示しません。
+
+プロキシを実行するための2番目の端末ウィンドウを開きます。
+</code></pre>
+
+<pre><code>$ kubectl proxy
+Starting to serve on 127.0.0.1:8001
+</code></pre>
+
+<pre><code>私たちは現在、ホスト（オンライン端末）とKubernetesクラスタとの間の接続を持っています。
+プロキシは、これらの端末からAPIへの直接アクセスを可能にします。
+
+プロキシエンドポイント経由でホストされているすべてのAPIを見ることができます。
+これはhttp://localhost:8001から入手できます。
+たとえば、curlコマンドを使用してAPIを介して直接バージョンを問い合わせることができます。
+</code></pre>
+
+<pre><code>$ curl http://localhost:8001/version
+{
+  &quot;major&quot;: &quot;1&quot;,
+  &quot;minor&quot;: &quot;5&quot;,
+  &quot;gitVersion&quot;: &quot;v1.5.2&quot;,
+  &quot;gitCommit&quot;: &quot;08e099554f3c31f6e6f07b448ab3ed78d0520507&quot;,
+  &quot;gitTreeState&quot;: &quot;clean&quot;,
+  &quot;buildDate&quot;: &quot;1970-01-01T00:00:00Z&quot;,
+  &quot;goVersion&quot;: &quot;go1.7.1&quot;,
+  &quot;compiler&quot;: &quot;gc&quot;,
+  &quot;platform&quot;: &quot;linux/amd64&quot;
+}
+</code></pre>
+
+<p>つまり、ポッドはプライベートなネットワーク上で稼働するので、そこに外部からアクセスするためのプロキシを立てられるということっぽい。</p>
+
+<pre><code>APIサーバーは、ポッド名に基づいて各ポッドのエンドポイントを自動的に作成します。ポッド名は、プロキシを介してアクセスすることもできます。
+
+まず、Pod名を取得する必要があります。それを、環境変数POD_NAMEに保存します。
+</code></pre>
+
+<pre><code>$ export POD_NAME=$(kubectl get pods -o go-template --template '{ge .items}}{{.metadata.name}}{{&quot;\n&quot;}}{{end}}')
+$ echo Name of the Pod: $POD_NAME
+Name of the Pod: kubernetes-bootcamp-390780338-7bv66
+</code></pre>
+
+<pre><code>これで、そのポッドで実行されているアプリケーションに対してHTTPリクエストを行うことができます。
+</code></pre>
+
+<pre><code>$ curl http://localhost:8001/api/v1/proxy/namespaces/default/pods/$POD_NAME/
+Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-390780338-7bv66 | v=1
+</code></pre>
+
+<pre><code>urlは、PodのAPIへのルートです。
+
+注：端末の上部を確認してください。プロキシは新しいタブ（ターミナル2）で実行され、最近のコマンドは元のタブ（ターミナル1）で実行されました。プロキシはまだ2番目のタブで実行されており、curlコマンドはlocalhost：8001を使用して動作することができました。
+</code></pre>
+
+<p>補足する。</p>
+
+<p><img src="/images/kubernetes-learn-6/1.png" alt="" /></p>
+
+<p>Terminal1ではAPIを叩いていて、</p>
+
+<p><img src="/images/kubernetes-learn-6/2.png" alt="" /></p>
+
+<p>Terminal2でプロキシが動いている。(つまり同じホスト)</p>
+
+<p>コンテナをデプロイして、プロキシ経由でアクセスする。という流れで使うことがわかった。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
