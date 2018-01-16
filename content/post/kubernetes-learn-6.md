@@ -94,11 +94,11 @@ urlは、PodのAPIへのルートです。
 
 補足する。
 
-![](/images/kubernetes-learn-6/1.png)
+![](/static/images/kubernetes-learn-6/1.png)
 
 Terminal1ではAPIを叩いていて、
 
-![](/images/kubernetes-learn-6/2.png)
+![](/static/images/kubernetes-learn-6/2.png)
 
 Terminal2でプロキシが動いている。(つまり同じホスト)
 
