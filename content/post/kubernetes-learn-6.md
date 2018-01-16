@@ -1,5 +1,5 @@
 ---
-title: "Kubernetes Learn 6"
+title: "Kubernetesについて学ぶ 6"
 date: 2018-01-16T10:57:50+09:00
 tags:
 - aaa
