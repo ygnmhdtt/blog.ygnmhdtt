@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 16 Jan 2018 10:57:50 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jan 2018 20:12:09 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>初めてGemを作って公開した</title>
+      <link>https://yaginumahidetatsu.com/2018/01/19/first-gem/</link>
+      <pubDate>Fri, 19 Jan 2018 20:12:09 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/19/first-gem/</guid>
+      <description>&lt;p&gt;やってみた。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetesについて学ぶ 7</title>
+      <link>https://yaginumahidetatsu.com/2018/01/18/kubernetes-learn-7/</link>
+      <pubDate>Thu, 18 Jan 2018 21:06:37 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/18/kubernetes-learn-7/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Kubernetesについて学ぶ 6</title>

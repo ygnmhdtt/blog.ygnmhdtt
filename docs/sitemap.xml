@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/19/first-gem/</loc>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/18/kubernetes-learn-7/</loc>
+    <lastmod>2018-01-18T21:06:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/01/16/kubernetes-learn-6/</loc>
     <lastmod>2018-01-16T10:57:50+09:00</lastmod>
   </url>
@@ -502,6 +512,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/gem/</loc>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/gentoo/</loc>
     <lastmod>2018-01-14T22:46:49+09:00</lastmod>
     <priority>0</priority>
@@ -563,7 +579,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/kubernetes/</loc>
-    <lastmod>2018-01-16T10:42:25+09:00</lastmod>
+    <lastmod>2018-01-18T21:06:37+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -665,7 +681,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-01-16T10:57:50+09:00</lastmod>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -689,7 +705,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/ruby/</loc>
-    <lastmod>2017-09-07T09:18:13+09:00</lastmod>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -761,7 +777,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/tools/</loc>
-    <lastmod>2017-12-09T15:19:27+09:00</lastmod>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -803,7 +819,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-01-16T10:57:50+09:00</lastmod>
+    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   
