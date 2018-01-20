@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/20/first-guitar/</loc>
+    <lastmod>2018-01-20T21:22:16+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/01/19/first-gem/</loc>
     <lastmod>2018-01-19T20:12:09+09:00</lastmod>
   </url>
@@ -542,6 +547,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/guitar/</loc>
+    <lastmod>2018-01-20T21:22:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/haskell/</loc>
     <lastmod>2016-11-27T18:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -585,7 +596,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/life/</loc>
-    <lastmod>2017-12-21T21:20:14+09:00</lastmod>
+    <lastmod>2018-01-20T21:22:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -681,7 +692,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
+    <lastmod>2018-01-20T21:22:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -819,7 +830,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-01-19T20:12:09+09:00</lastmod>
+    <lastmod>2018-01-20T21:22:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
