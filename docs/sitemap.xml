@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/01/30/go-cli-directory/</loc>
+    <lastmod>2018-01-30T20:08:16+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/01/30/jimuguri/</loc>
     <lastmod>2018-01-30T20:06:26+09:00</lastmod>
   </url>
@@ -462,6 +467,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/cli/</loc>
+    <lastmod>2018-01-30T20:08:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/coffeescript/</loc>
     <lastmod>2016-11-07T18:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -536,6 +547,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/git/</loc>
     <lastmod>2017-01-09T18:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/go/</loc>
+    <lastmod>2018-01-30T20:08:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -697,7 +714,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-01-30T20:06:26+09:00</lastmod>
+    <lastmod>2018-01-30T20:08:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -835,7 +852,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-01-30T20:06:26+09:00</lastmod>
+    <lastmod>2018-01-30T20:08:16+09:00</lastmod>
     <priority>0</priority>
   </url>
   
