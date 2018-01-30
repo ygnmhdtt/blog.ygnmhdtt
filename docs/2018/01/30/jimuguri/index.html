@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Rubyでシンプルなコマンドラインツールを作成するためのGem Jimuguri | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/ruby">#Ruby</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">January 30, 2018</h2>
+    <h1 class="title">Rubyでシンプルなコマンドラインツールを作成するためのGem Jimuguri</h1>
+      
+    <div class="content">
+      
+
+<h1 id="はじめに">はじめに</h1>
+
+<p>コマンドラインツールでも作るか〜と考えた時、最近はGoを使って書いている人が多いかと思います。バイナリで配布できるし。
+筆者もGoで書くことが多いっちゃ多いのですが、書き慣れたRubyで書きたい、という方向けに、シンプルなCLIツールクリエイターを紹介します。(ここでいうシンプルとは、覚えることが少なく、機能も少ない、の意)</p>
+
+<p>RubyでCLIツールを作るとなると <a href="https://github.com/erikhuda/thor">Thor</a> がメジャーかと思いますが、かなり高機能で、ここまで色々できなくていい、、という方にピッタリかと思います。</p>
+
+<p>また、筆者はこのGemの作者です。「いいものを作ったから、いろんな人に使ってもらいたい！！」というモチベーションでこの記事を書いています。あくまで技術共有のための記事ですが、「宣伝や販売を主目的とした記事は投稿しない」に抵触する場合は、エントリの改修もしくは削除を行うので、ご指摘ください。m(_ _)m</p>
+
+<h1 id="ソース">ソース</h1>
+
+<p><a href="https://github.com/ygnmhdtt/jimuguri">Github :octocat: </a>
+<a href="https://rubygems.org/gems/jimuguri">RubyGem :gem: </a></p>
+
+<h1 id="できること">できること</h1>
+
+<p>こんな感じでコマンドが作れます。
+受け取ったメッセージをprintするアクションと、reverseしてprintするアクションです。</p>
+
+<pre><code class="language-ruby"># インスタンス
+app = Jimuguri::Cli.new(name: 'jimuguri sample', description: 'sample app', version: '1.0.1')
+
+# アクション定義
+app.add_action 'print', 'print passed message' do
+  print app.options[:message]
+end
+
+app.add_action 'reverse', 'print reversed passed message' do
+  print app.options[:message].reverse
+end
+
+# オプション定義
+app.add_option 'm message', 'message message', 'Print message(required)'
+
+# start
+app.run ARGV
+</code></pre>
+
+<pre><code class="language-sh">$ ruby sample.rb print -m 'Hello World!'
+Hello World!
+$ ruby sample.rb reverse -m 'Hello World!'
+!dlroW olleH
+</code></pre>
+
+<h1 id="使い方">使い方</h1>
+
+<p>使い方を説明します。</p>
+
+<h2 id="アプリ作成">アプリ作成</h2>
+
+<pre><code class="language-ruby">Cli.new(name: 'jimuguri sample', description: 'sample app', version: '1.0.1')
+</code></pre>
+
+<p>name, description, versionを初期化時に渡します。
+この情報はヘルプに出てくるだけなので適当でもいいっちゃいいです。</p>
+
+<h2 id="action追加">action追加</h2>
+
+<pre><code class="language-ruby">app.add_action 'print', 'print passed message' do
+  print app.options[:message]
+end
+</code></pre>
+
+<p>アドドアクションメソッドでアドドできます。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">第1引数</th>
+<th align="left">第2引数</th>
+<th align="left">ブロック</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">コマンド名</td>
+<td align="left">コマンドの説明</td>
+<td align="left">コマンドの中身</td>
+</tr>
+</tbody>
+</table>
+
+<p>コマンドの説明はヘルプにのみ使われます。
+もちろん、アクションは複数定義できます。</p>
+
+<p>また、以下のように、doブロックの中から別のメソッドも呼び出せます。</p>
+
+<pre><code class="language-ruby">def upper_case(str)
+  str.upcase
+end
+
+app.add_action 'print', 'print passed message' do
+  print upper_case app.options[:message]
+end
+</code></pre>
+
+<h2 id="option追加">option追加</h2>
+
+<pre><code class="language-ruby">app.add_option 'm', 'message', 'Print message(required)'
+</code></pre>
+
+<p>アドドオプションメソッドでアドドできます。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">第1引数</th>
+<th align="left">第2引数</th>
+<th align="left">第3引数</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">オプション名(short)</td>
+<td align="left">オプション名(long)</td>
+<td align="left">オプションの説明</td>
+</tr>
+</tbody>
+</table>
+
+<p>オプションの説明はヘルプにのみ使われます。</p>
+
+<p>オプションを定義すると、shortは <code>-#{short}</code> 、 <code>--#{long}</code> の形で使用することができます。
+つまり、上記の例では、<code>-m</code> もしくは <code>--message</code> のように呼び出すことができます。</p>
+
+<h3 id="オプションについての説明">オプションについての説明</h3>
+
+<p>オプションには次の3つが存在します。</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">オプション</th>
+<th align="left">役割</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">フラグオプション</td>
+<td align="left">true/false</td>
+</tr>
+
+<tr>
+<td align="left">必須オプション</td>
+<td align="left">引数が必須となる</td>
+</tr>
+
+<tr>
+<td align="left">任意オプション</td>
+<td align="left">引数があれば引数を取り、なければtrue/false</td>
+</tr>
+</tbody>
+</table>
+
+<p>書き方は以下のとおりです。</p>
+
+<h4 id="フラグオプション">フラグオプション</h4>
+
+<pre><code class="language-ruby">app.add_option 'f', 'force', 'Do something force'
+</code></pre>
+
+<p>フラグオプションは、あればtrueがとれ、なければfalseとなります。</p>
+
+<h4 id="必須オプション">必須オプション</h4>
+
+<pre><code class="language-ruby">app.add_option 'o FILENAME', 'output FILENAME', 'Specify output file.(required)'
+</code></pre>
+
+<p>第2引数にスペースつなぎで渡してほしいものをくっつけます。(名前は <code>FILENAME</code> でなくてもなんでもOK)
+必須オプションは、引数(例で言うとFILENAME)がないとコマンドが叩けません。(ヘルプが表示されます。)</p>
+
+<h4 id="任意オプション">任意オプション</h4>
+
+<pre><code class="language-ruby">app.add_option 'm [message]', 'message [message]', 'Shows message if passed(optional)'
+</code></pre>
+
+<p>第2引数にスペースつなぎで渡してほしいものをくっつけますが、それを <code>[]</code> でかこむことで任意になります。
+引数があれば引数を取得でき、なければ <code>true</code> をとれます。</p>
+
+<h2 id="オプションの使い方">オプションの使い方</h2>
+
+<p>オプションをアクションの中から以下のように取得できます。</p>
+
+<pre><code class="language-ruby">msg = app.options[:message]
+</code></pre>
+
+<p>ハッシュのキーは、オプションに設定した第2引数です。</p>
+
+<h2 id="その他">その他</h2>
+
+<p>ヘルプとバージョンは自動生成されます。
+ここまで説明したもので試してみます。</p>
+
+<pre><code>$ bundle exec ruby sample.rb help
+NAME:
+    jimuguri sample - sample app
+
+USAGE:
+    ruby `file_name.rb` command [command options] [arguments...]
+
+VERSION:
+    1.0.1
+
+COMMANDS:
+    help        Shows a list of commands or help for one command
+    version     Shows version
+    print       print passed message
+    reverse     print reversed passed message
+
+OPTIONS:
+    -f --force  Do something force
+    -o FILENAME --output FILENAME     Specify output file.
+    -m [message] --message [message]  Shows message if passed
+</code></pre>
+
+<pre><code>$ bundle exec ruby sample.rb version
+1.0.1
+</code></pre>
+
+<h1 id="まとめ">まとめ</h1>
+
+<p>Jimuguriは制約を多くし、やれることを少なくすることでシンプルさを保っています。
+コマンドラインツールを書き慣れた Rubyで書きたい、しかし <code>Thor</code> ほどの高機能はなくてよい、というシチュエーションで、ぜひ使ってみてください!!</p>
+
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Fri, 19 Jan 2018 20:12:09 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jan 2018 20:06:26 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rubyでシンプルなコマンドラインツールを作成するためのGem Jimuguri</title>
+      <link>https://yaginumahidetatsu.com/2018/01/30/jimuguri/</link>
+      <pubDate>Tue, 30 Jan 2018 20:06:26 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/30/jimuguri/</guid>
+      <description>はじめに コマンドラインツールでも作るか〜と考えた時、最近はGoを使って書いている人が多いかと思います。バイナリで配布できるし。 筆者もGoで書くことが多いっちゃ多いのですが、書き慣れたRubyで書きたい、という方向けに、シンプルなCLIツールクリエイターを紹介します。(ここでいうシンプルとは、覚えることが少なく、機能も少ない、の意)
+RubyでCLIツールを作るとなると Thor がメジャーかと思いますが、かなり高機能で、ここまで色々できなくていい、、という方にピッタリかと思います。
+また、筆者はこのGemの作者です。「いいものを作ったから、いろんな人に使ってもらいたい！！」というモチベーションでこの記事を書いています。あくまで技術共有のための記事ですが、「宣伝や販売を主目的とした記事は投稿しない」に抵触する場合は、エントリの改修もしくは削除を行うので、ご指摘ください。m(_ _)m
+ソース Github :octocat:  RubyGem :gem: 
+できること こんな感じでコマンドが作れます。 受け取ったメッセージをprintするアクションと、reverseしてprintするアクションです。
+# インスタンス app = Jimuguri::Cli.new(name: &#39;jimuguri sample&#39;, description: &#39;sample app&#39;, version: &#39;1.0.1&#39;) # アクション定義 app.add_action &#39;print&#39;, &#39;print passed message&#39; do print app.options[:message] end app.add_action &#39;reverse&#39;, &#39;print reversed passed message&#39; do print app.options[:message].reverse end # オプション定義 app.add_option &#39;m message&#39;, &#39;message message&#39;, &#39;Print message(required)&#39; # start app.run ARGV  $ ruby sample.rb print -m &#39;Hello World!</description>
+    </item>
     
     <item>
       <title>初めてGemを作って公開した</title>
