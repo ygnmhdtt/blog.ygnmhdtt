@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Deep Healthcheckについて | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 1, 2018</h2>
+    <h1 class="title">Deep Healthcheckについて</h1>
+      
+    <div class="content">
+      <p>Deep Healthcheckパターンについて書く。</p>
+
+<p></p>
+
+<p>Deep Healthcheckパターンとは、<a href="http://aws.clouddesignpattern.org/index.php/CDP:Deep_Health_Check%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3">こちら</a>で紹介されている
+クラウドアーキテクチャのデザインパターンである。</p>
+
+<h3 id="概要">概要</h3>
+
+<p>一般的にELBを使ったヘルスチェックでは、HTTPステータスコード200を返すだけの小さな処理のみを行うエンドポイントを用意するのが定石。
+しかし、これのデメリットは、後ろにあるDBサーバへの接続確認ができないことである。
+これを解決するために、単に200を返すのではなく、そのエンドポイントの処理の中でDB接続を発行し、
+DB接続観点でのヘルスチェックも一緒に見てしまう、というのが <strong>Deep Healthcheck</strong> パターン。</p>
+
+<h3 id="メリット">メリット</h3>
+
+<p>DBにもし繋げなければ5xxを返すなどすることで、DB接続失敗時にもヘルスチェック失敗にすることができる。</p>
+
+<h3 id="デメリット">デメリット</h3>
+
+<p>ヘルスチェック自体が負荷になる可能性がある。
+ELBはデフォルトでヘルスチェックを15秒ごとに発行するので、15秒ごとに両系のサーバからDBへのコネクションが張られることになる。
+これが負荷にならないかはよくテストする必要がある。
+また当然だが、RDSとの送受信料金もかかる。(微々たるものだとは思うが。)</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

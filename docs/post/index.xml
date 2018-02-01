@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 30 Jan 2018 20:08:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2018 23:39:27 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Healthcheckについて</title>
+      <link>https://yaginumahidetatsu.com/2018/02/01/about-deep-healthcheck/</link>
+      <pubDate>Thu, 01 Feb 2018 23:39:27 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/01/about-deep-healthcheck/</guid>
+      <description>&lt;p&gt;Deep Healthcheckパターンについて書く。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>go getすれば即コマンドとして使えるようにCLIツールを作る</title>
