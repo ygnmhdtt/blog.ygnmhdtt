@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Thu, 01 Feb 2018 23:39:27 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2018 18:22:42 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dockerを使った開発環境</title>
+      <link>https://yaginumahidetatsu.com/2018/02/02/docker-development-environment/</link>
+      <pubDate>Fri, 02 Feb 2018 18:22:42 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/02/docker-development-environment/</guid>
+      <description>&lt;p&gt;自分のdockerの使い方について書いていく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Deep Healthcheckについて</title>
