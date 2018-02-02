@@ -7,18 +7,18 @@ About Me
 
 <!--more-->
 
-Hidetatsu YAGINUMA (柳沼 秀龍)
-1993-
+Hidetatsu YAGINUMA (柳沼 秀龍)  
+1993-  
 
-MBTI: ISFJ-A
-Egogram: (CP NP A FC AC) (16 8 18 2 6)
+MBTI: ISFJ-A  
+Egogram: (CP NP A FC AC) (16 8 18 2 6)  
 
-Backend Engineer at Sapporo, Hokkaido, Japan
+Backend Engineer at Sapporo, Hokkaido, Japan  
 
-Golang/Ruby/Java/Python/Haskell
-AWS/Docker
+Golang/Ruby/Java/Python/Haskell  
+AWS/Docker  
 
-AWS Certified Solution Architect Professional - 2017 / 12
+AWS Certified Solution Architect Professional - 2017 / 12  
 
 * [Github](https://github.com/ygnmhdtt)
 * [Qiita](https://qiita.com/ygnmhdtt)
