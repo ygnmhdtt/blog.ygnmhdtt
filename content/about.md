@@ -7,12 +7,15 @@ About Me
 
 <!--more-->
 
-Hidetatsu YAGINUMA (柳沼 秀龍)  
+Hidetatsu YAGINUMA (柳沼 秀龍)
 1993-
 
-Backend Engineer at Sapporo, Hokkaido, Japan  
+MBTI: ISFJ-A
+Egogram: (CP NP A FC AC) (16 8 18 2 6)
 
-Golang/Ruby/Java/Python/Haskell  
+Backend Engineer at Sapporo, Hokkaido, Japan
+
+Golang/Ruby/Java/Python/Haskell
 AWS/Docker
 
 AWS Certified Solution Architect Professional - 2017 / 12
