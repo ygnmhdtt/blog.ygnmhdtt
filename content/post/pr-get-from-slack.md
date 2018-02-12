@@ -20,7 +20,7 @@ Slackから確認できると便利だと思い、Goで作ってみた。
 https://github.com/ygnmhdtt/prman
 
 ### ようす
-![](images/pr-get-from-slack/1.png)
+![](/images/pr-get-from-slack/1.png)
 
 ### 所感
 
