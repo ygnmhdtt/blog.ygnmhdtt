@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/02/12/pr-get-from-slack/</loc>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/02/04/guitar-engineering/</loc>
     <lastmod>2018-02-04T17:37:43+09:00</lastmod>
   </url>
@@ -566,6 +571,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/github/</loc>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/go/</loc>
     <lastmod>2018-01-30T20:08:16+09:00</lastmod>
     <priority>0</priority>
@@ -729,7 +740,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-02-04T17:37:43+09:00</lastmod>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -777,7 +788,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/slack/</loc>
-    <lastmod>2017-06-19T10:22:59+09:00</lastmod>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -825,7 +836,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/tools/</loc>
-    <lastmod>2018-02-02T18:22:42+09:00</lastmod>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -867,7 +878,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-02-04T17:37:43+09:00</lastmod>
+    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   

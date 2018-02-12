@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Slackから未レビューのプルリクを取得できるようにした | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/slack">#Slack</a>
+  
+  | <a class="subtitle is-6" href="/tags/github">#Github</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 12, 2018</h2>
+    <h1 class="title">Slackから未レビューのプルリクを取得できるようにした</h1>
+      
+    <div class="content">
+      <p>表題のツールを作った。</p>
+
+<p></p>
+
+<p>いろんなプロジェクトに関わっているといろんなリポジトリに自分のレビュー待ちのPRがたまってしまい、
+どれをレビューすれば良いのか確認するのが面倒なことがあった。
+Slackから確認できると便利だと思い、Goで作ってみた。</p>
+
+<h3 id="成果物">成果物</h3>
+
+<p><a href="https://github.com/ygnmhdtt/prman">https://github.com/ygnmhdtt/prman</a></p>
+
+<h3 id="ようす">ようす</h3>
+
+<p>[](images/pr-get-from-slack/1.png)</p>
+
+<h3 id="所感">所感</h3>
+
+<p>筆者は基本的にこういうchatops的なツールはあんまり好きじゃない。
+理由はいろいろあるが、コマンドを覚えるのがめんどいというのが大きい。</p>
+
+<p>そのため、できるだけ覚えることを少なくするよう心がけた。<br />
+オプション指定などはほとんどできないようになっている。</p>
+
+<p>けっこう大量のAPIリクエストを投げるので速度が課題となった。<br />
+UX向上のために、一回意味のないレスポンス( <code>PRを調べています..</code> )を投げるようにした。</p>
+
+<p>社内ではけっこうみんな使ってくれていて嬉しい。<br />
+こういう便利なものをたくさん作っていきたい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
