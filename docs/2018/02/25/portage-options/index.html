@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Portageのオプション | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/portage">#portage</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/gentoo">#gentoo</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 25, 2018</h2>
+    <h1 class="title">Portageのオプション</h1>
+      
+    <div class="content">
+      <p>自分用メモ。</p>
+
+<p></p>
+
+<ul>
+<li>同期
+Portageツリーの同期。ebuildファイル(パッケージの設計書)を更新する。</li>
+</ul>
+
+<pre><code># emerge --sync
+</code></pre>
+
+<ul>
+<li>検索
+パッケージを検索する。</li>
+</ul>
+
+<pre><code># emerge --search &lt;pattern&gt;
+</code></pre>
+
+<p>以下でパッケージの詳細を表示する。(&ndash;pretendによりインストールは行われない)</p>
+
+<pre><code># emerge --verbose --pretend(-p) &lt;package&gt;
+</code></pre>
+
+<ul>
+<li>インストール
+パッケージをインストールする。</li>
+</ul>
+
+<h1 id="emerge-ask-a-verbose-v-package">emerge &ndash;ask(-a) &ndash;verbose(-v) <package></h1>
+
+<ul>
+<li>更新
+インストールした全てのパッケージを更新する。
+あんま使わない。</li>
+</ul>
+
+<pre><code># emerge --update(-u) --deep(-D) world
+</code></pre>
+
+<ul>
+<li>更新(&ndash;newuse)
+USEフラグに変更があった全てのパッケージを更新する。
+よく使う。</li>
+</ul>
+
+<pre><code># emerge --update --deep --newuse(-N) world
+</code></pre>
+
+<ul>
+<li>アンインストール
+指定したパッケージを削除する(依存関係は削除されない)</li>
+</ul>
+
+<pre><code># emerge --unmerge(-C) &lt;package&gt;
+</code></pre>
+
+<ul>
+<li>不要パッケージ削除
+依存関係を持たないパッケージを削除する。unmergeした後はたたくのが推奨。</li>
+</ul>
+
+<pre><code># emerge --depclean
+</code></pre>
+
+<ul>
+<li>その他
+Portageによって使用されている変数を確認する。</li>
+</ul>
+
+<pre><code># emerge --info
+</code></pre>
+
+<p>前回のセッションを再開する。</p>
+
+<pre><code># emerge --resume
+</code></pre>
+
+<p>最初のパッケージを飛ばして、前回のセッションを再開する。</p>
+
+<pre><code># emerge --resume --skipfirst
+</code></pre>
+
+<p>/var/lib/portage/worldにパッケージ名の書き込みを行わない。
+ライブラリなど、依存関係でbuildされるパッケージを単独でrebuildする場合などに使う。</p>
+
+<pre><code># emerge --oneshot(-1)
+</code></pre>
+
+<ul>
+<li>システムの再構築
+システムの再構築</li>
+</ul>
+
+<pre><code># emerge -e system
+# emerge -e world
+</code></pre>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
