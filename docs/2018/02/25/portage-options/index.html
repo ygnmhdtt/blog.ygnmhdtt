@@ -46,22 +46,18 @@
     <h1 class="title">Portageのオプション</h1>
       
     <div class="content">
-      <p>自分用メモ。</p>
+      <p>portage操作によく使うオプションたち。</p>
 
 <p></p>
 
-<ul>
-<li>同期</li>
-</ul>
+<h3 id="同期">同期</h3>
 
 <p>Portageツリーの同期。ebuildファイル(パッケージの設計書)を更新する。</p>
 
 <pre><code># emerge --sync
 </code></pre>
 
-<ul>
-<li>検索</li>
-</ul>
+<h3 id="検索">検索</h3>
 
 <p>パッケージを検索する。</p>
 
@@ -73,18 +69,14 @@
 <pre><code># emerge --verbose --pretend(-p) &lt;package&gt;
 </code></pre>
 
-<ul>
-<li>インストール</li>
-</ul>
+<h3 id="インストール">インストール</h3>
 
 <p>パッケージをインストールする。</p>
 
 <pre><code># emerge --ask(-a) --verbose(-v) &lt;package&gt;
 </code></pre>
 
-<ul>
-<li>更新</li>
-</ul>
+<h3 id="更新">更新</h3>
 
 <p>インストールした全てのパッケージを更新する。
 あんま使わない。</p>
@@ -92,9 +84,7 @@
 <pre><code># emerge --update(-u) --deep(-D) world
 </code></pre>
 
-<ul>
-<li>更新(&ndash;newuse)</li>
-</ul>
+<h3 id="更新-newuse">更新(&ndash;newuse)</h3>
 
 <p>USEフラグに変更があった全てのパッケージを更新する。
 よく使う。</p>
@@ -102,27 +92,21 @@
 <pre><code># emerge --update --deep --newuse(-N) world
 </code></pre>
 
-<ul>
-<li>アンインストール</li>
-</ul>
+<h3 id="アンインストール">アンインストール</h3>
 
 <p>指定したパッケージを削除する(依存関係は削除されない)</p>
 
 <pre><code># emerge --unmerge(-C) &lt;package&gt;
 </code></pre>
 
-<ul>
-<li>不要パッケージ削除</li>
-</ul>
+<h3 id="不要パッケージ削除">不要パッケージ削除</h3>
 
 <p>依存関係を持たないパッケージを削除する。unmergeした後はたたくのが推奨。</p>
 
 <pre><code># emerge --depclean
 </code></pre>
 
-<ul>
-<li>その他</li>
-</ul>
+<h3 id="その他">その他</h3>
 
 <p>Portageによって使用されている変数を確認する。</p>
 

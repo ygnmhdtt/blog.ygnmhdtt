@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/02/25/equery-options/</loc>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/02/25/portage-options/</loc>
     <lastmod>2018-02-25T05:01:33+09:00</lastmod>
   </url>
@@ -546,6 +551,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/equery/</loc>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/fcitx/</loc>
     <lastmod>2017-12-30T17:35:09+09:00</lastmod>
     <priority>0</priority>
@@ -565,7 +576,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/gentoo/</loc>
-    <lastmod>2018-02-25T05:01:33+09:00</lastmod>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -739,7 +750,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/portage/</loc>
-    <lastmod>2018-02-25T05:01:33+09:00</lastmod>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -751,7 +762,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-02-25T05:01:33+09:00</lastmod>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -889,7 +900,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-02-25T05:01:33+09:00</lastmod>
+    <lastmod>2018-02-25T11:12:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
