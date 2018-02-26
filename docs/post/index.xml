@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 25 Feb 2018 11:12:20 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 26 Feb 2018 20:11:32 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GentooをSystemdに移行した</title>
+      <link>https://yaginumahidetatsu.com/2018/02/26/gentoo-systemd/</link>
+      <pubDate>Mon, 26 Feb 2018 20:11:32 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/26/gentoo-systemd/</guid>
+      <description>&lt;p&gt;OpenRCからSystemdに移行した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>equeryのオプション</title>

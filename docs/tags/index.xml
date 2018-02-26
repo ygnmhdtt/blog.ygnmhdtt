@@ -258,7 +258,7 @@
     <item>
       <title>Gentoo</title>
       <link>https://yaginumahidetatsu.com/tags/gentoo/</link>
-      <pubDate>Sun, 25 Feb 2018 11:12:20 +0900</pubDate>
+      <pubDate>Mon, 26 Feb 2018 20:11:32 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/gentoo/</guid>
       <description></description>
@@ -639,6 +639,15 @@
       <pubDate>Sat, 11 Nov 2017 12:48:24 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/system-failure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systemd</title>
+      <link>https://yaginumahidetatsu.com/tags/systemd/</link>
+      <pubDate>Mon, 26 Feb 2018 20:11:32 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/systemd/</guid>
       <description></description>
     </item>
     

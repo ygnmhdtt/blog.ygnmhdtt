@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GentooをSystemdに移行した | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/systemd">#systemd</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 26, 2018</h2>
+    <h1 class="title">GentooをSystemdに移行した</h1>
+      
+    <div class="content">
+      <p>OpenRCからSystemdに移行した。</p>
+
+<p></p>
+
+<p>ウインドウマネージャにFluxboxを使っていたが、GNOMEが使ってみたくなり、Systemdを入れることにした。
+オーバーレイを導入すればOpenRCでもGNOMEが使えるっぽいんだけど、そんなにOpenRCにこだわりがなかったし、
+最近カーネルのビルドもやってなかったので、やってみた。</p>
+
+<h3 id="カーネル設定">カーネル設定</h3>
+
+<p>カーネルのリビルドが必要だったので、以下のように対応。ついでにアップデートした。</p>
+
+<pre><code>$ emerge gentoo-sources
+
+$ eselect kernel list
+# eselect kernel set n でインストールしたカーネルにセット
+
+$ cd /usr/src/linux
+$ cp /usr/src/前のkernelのディレクトリ/.config ./.config
+$ make oldconfig
+</code></pre>
+
+<p>以下のように設定。ソースは<a href="https://wiki.gentoo.org/wiki/Systemd">公式</a>。</p>
+
+<pre><code>Gentoo Linux ---&gt;
+   Support for init systems, system and service managers ---&gt;
+      [*] systemd
+
+General setup  ---&gt;
+	[*] open by fhandle syscalls
+	[*] Control Group support ---&gt;
+	[ ] Enable deprecated sysfs features to support old userspace tools
+	[*] Configure standard kernel features (expert users)  ---&gt;
+		[*] Enable eventpoll support
+		[*] Enable signalfd() system call
+		[*] Enable timerfd() system call
+[*] Networking support ---&gt;
+Device Drivers  ---&gt;
+	Generic Driver Options  ---&gt;
+		[*] Maintain a devtmpfs filesystem to mount at /dev
+File systems  ---&gt;
+	[*] Inotify support for userspace
+	Pseudo filesystems  ---&gt;
+		[*] /proc file system support
+		[*] sysfs file system support
+
+General setup  ---&gt;
+        [*] Checkpoint/restore support
+	[*] Namespaces support  ---&gt;
+		[*] Network namespace
+[*] Enable the block layer  ---&gt;
+	[*] Block layer SG support v4
+Processor type and features  ---&gt;
+	[*] Enable seccomp to safely compute untrusted bytecode
+Networking support ---&gt;
+	Networking options ---&gt;
+		&lt;*&gt; The IPv6 protocol
+Device Drivers  ---&gt;
+	Generic Driver Options  ---&gt;
+		()  path to uevent helper
+		[ ] Fallback user-helper invocation for firmware loading
+Firmware Drivers  ---&gt;
+	[*] Export DMI identification via sysfs to userspace
+File systems ---&gt;
+	&lt;*&gt; Kernel automounter version 4 support (also supports v3)
+	Pseudo filesystems ---&gt;
+		[*] Tmpfs virtual memory file system support (former shm fs)
+		[*]   Tmpfs POSIX Access Control Lists
+		[*]   Tmpfs extended attributes
+</code></pre>
+
+<p>これでカーネルをリビルドする。</p>
+
+<pre><code>$ make &amp;&amp; make modules_install
+$ make install
+$ mount /boot
+$ grub-mkconfig -o /boot/grub/grub.cfg
+
+$ vi /etc/default/grub
+# 以下の行のコメントアウトを外す
+GRUB_CMDLINE_LINUX=&quot;init=/lib/systemd/systemd&quot;
+</code></pre>
+
+<p>再起動する前に、公式に従って以下を対応。</p>
+
+<pre><code>$ ln -sf /proc/self/mounts /etc/mtab
+$ eselect profile list
+# systemdのものにset
+
+$ emerge --unmerge sys-fs/udev
+$ emerge -avDN @world
+</code></pre>
+
+<p>あとは再起動する。</p>
+
+<pre><code>$ sudo reboot
+</code></pre>
+
+<p>これでうまく立ち上がるのを祈る。</p>
+
+<h3 id="systemctl-設定">systemctl 設定</h3>
+
+<p>今までrc-serviceに登録してたものをsystemctlに登録する。</p>
+
+<pre><code>$ systemctl enable cronie.service
+$ systemctl enable sshd.service
+$ systemctl enable ntpd.service
+$ systemctl enable wpa_supplicant@wlp5s0
+$ systemctl enable docker.service
+</code></pre>
+
+<p>再起動して、ちゃんとサービスが上がるか、インターネットにつながるか確認する。</p>
+
+<h3 id="その他">その他</h3>
+
+<p>gentooについてググる前に、自分のブログに答えが書いてある状況が多くて嬉しい。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
