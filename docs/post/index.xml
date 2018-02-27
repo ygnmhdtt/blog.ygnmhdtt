@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 27 Feb 2018 17:47:18 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Feb 2018 22:05:46 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GentooのターミナルにRictyを導入した</title>
+      <link>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</link>
+      <pubDate>Tue, 27 Feb 2018 22:05:46 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</guid>
+      <description>&lt;p&gt;Rictyのいれ方。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ターミナル周りの見た目をかっこよくする</title>

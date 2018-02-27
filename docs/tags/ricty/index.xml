@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ricty on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/ricty/</link>
+    <description>Recent content in Ricty on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Tue, 27 Feb 2018 22:05:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://yaginumahidetatsu.com/tags/ricty/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GentooのターミナルにRictyを導入した</title>
+      <link>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</link>
+      <pubDate>Tue, 27 Feb 2018 22:05:46 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</guid>
+      <description>&lt;p&gt;Rictyのいれ方。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

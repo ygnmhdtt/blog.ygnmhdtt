@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>GentooのターミナルにRictyを導入した | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/gentoo">#gentoo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/gnome">#gnome</a>
+  
+  | <a class="subtitle is-6" href="/tags/ricty">#ricty</a>
+  
+  | <a class="subtitle is-6" href="/tags/powerline">#powerline</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 27, 2018</h2>
+    <h1 class="title">GentooのターミナルにRictyを導入した</h1>
+      
+    <div class="content">
+      <p>Rictyのいれ方。</p>
+
+<p></p>
+
+<h3 id="前提">前提</h3>
+
+<ul>
+<li>WMはGNOME3</li>
+<li>ターミナルはGnome Terminal</li>
+</ul>
+
+<h3 id="手順">手順</h3>
+
+<p><a href="http://www.sa-sa-ki.jp/blog/2016/11/ubuntu-16-04-lts-ricty/">こちら</a>の通りなんだけど。</p>
+
+<pre><code>$ emerge fontforge
+
+# 一時的な作業ディレクトリ作成
+$ mkdir ricty
+$ cd ricty
+
+# 必要なフォントファイルをDL
+$ wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
+$ wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
+
+# Migu DL
+$ wget https://osdn.jp/projects/mix-mplus-ipa/downloads/63545/migu-1m-20150712.zip
+$ unzip migu-1m-20150712.zip
+$ cp migu-1m-20150712/migu-1m-*.ttf ./
+
+$ wget http://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator.sh
+$ wget http://www.rs.tus.ac.jp/yyusa/ricty/os2version_reviser.sh
+$ chmod 755 ricty_generator.sh os2version_reviser.sh
+$ ./ricty_generator.sh auto
+
+$ ./os2version_reviser.sh Ricty*.ttf
+</code></pre>
+
+<p>これでなんとかなる。
+が、生成したRictyにPowerline用のパッチを当てたかったので、以下も行った。</p>
+
+<pre><code>$ git clone https://github.com/Lokaltog/powerline-fontpatcher
+# Ricty-Regularか、Boldか、Diminishedか、好きなのを選ぶ
+$ fontforge -lang=py -script ./powerline-fontpatcher/scripts/powerline-fontpatcher Ricty-Regular.ttf
+# ファイル名にスペースが入ったttfができあがるのが気持ち悪いのでリネーム
+$ mv Ricty\ Discord\ Regular\ for\ Powerline.ttf Ricty_Discord_Regular_for_Powerline.ttf
+</code></pre>
+
+<p>これでpowerline用のフォントが出来上がる。
+あとは、</p>
+
+<pre><code>$ cp -f Ricty*.ttf ~/.fonts/
+$ fc-cache -vf
+</code></pre>
+
+<p>で、フォントの準備はOK。</p>
+
+<p>あとはgnome-terminal側で、Preferecnes -&gt; Profile -&gt; Custom fontで設定する。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
