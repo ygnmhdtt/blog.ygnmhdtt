@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>ターミナル周りの見た目をかっこよくする | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/tools">#tools</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/tmux">#tmux</a>
+  
+  | <a class="subtitle is-6" href="/tags/vim">#vim</a>
+  
+  | <a class="subtitle is-6" href="/tags/zsh">#zsh</a>
+  
+  | <a class="subtitle is-6" href="/tags/prompt">#prompt</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">February 27, 2018</h2>
+    <h1 class="title">ターミナル周りの見た目をかっこよくする</h1>
+      
+    <div class="content">
+      <p>かっこよくした。</p>
+
+<p></p>
+
+<h3 id="成果物">成果物</h3>
+
+<ul>
+<li>tmuxとzsh</li>
+</ul>
+
+<p><img src="/images/prompt-tmux-vim-looking-customize/1.png" alt="" /></p>
+
+<ul>
+<li>vim</li>
+</ul>
+
+<p><img src="/images/prompt-tmux-vim-looking-customize/2.png" alt="" /></p>
+
+<h3 id="道のり">道のり</h3>
+
+<p>最初は<a href="https://github.com/powerline/powerline">powerline</a>を使おうと思ったんだけど、
+見た目を返るだけでこれは大げさかな、、と思って辞めた。
+ロードアベレージとか天気とか出す必要ないし、このくらいなら自分でなんとかなるだろうと思ってつくってみた。</p>
+
+<h3 id="zsh">zsh</h3>
+
+<pre><code class="language-sh"># git prompt
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr &quot;%F{255}!&quot;
+zstyle ':vcs_info:git:*' unstagedstr &quot;%F{255}+&quot;
+zstyle ':vcs_info:*' formats &quot;%F{255}%c%u[%b]%f&quot;
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+function precmd () { vcs_info }
+
+# zsh prompt
+# %K{num}: background color
+# %F{num}: characters color
+# %f{num}: resetcharacters color
+# %k{num}: reset background color
+# color sample script:
+# for c in {000..255}; do echo -n &quot;\e[38;5;${c}m $c&quot; ; [ $(($c%16)) -eq 15 ] &amp;&amp; echo;done;echo
+export PROMPT='
+%K{099}%F{255} gentoo %f%k'
+export PROMPT=$PROMPT'%K{020}%F{099}%f%k'
+export PROMPT=$PROMPT'%K{020}%F{051} %~ %f%k'
+export PROMPT=$PROMPT'`git_dir_check ${vcs_info_msg_0_} $?`
+%F{255} ↬ %f '
+
+function git_dir_check () {
+  if [ -e .git ]; then
+    local color='002'
+    case `echo $1 | sed -E s/.+}// | cut -c 1` in
+      &quot;!&quot; ) color='003' ;;
+      &quot;+&quot; ) color='001' ;;
+    esac
+    msg=&quot;%K{${color}}%F{020}%f%k&quot;
+    msg=$msg&quot;%K{${color}} $1 %k%F{${color}}%f&quot;
+  else
+    msg='%F{020}%f'
+  fi
+    echo $msg
+}
+</code></pre>
+
+<p>zshの機能を使って、stageしてないファイルがある時や、コミットしてないファイルが有るときなどに色を分けることができる。</p>
+
+<h3 id="tmux">tmux</h3>
+
+<pre><code>## left
+set -g status-left '#[fg=colour255,bg=colour248]#{?client_prefix,#[reverse],} tmux #[default]#[fg=colour248,bg=black]#[default]  '
+
+# right
+set -g status-right &quot;#[fg=colour255]%Y-%m-%d(%a) %H:%M#[default]&quot;
+
+# window-status
+set-window-option -g window-status-format &quot;#[fg=colour250] #I &gt; #W #[default]&quot;
+
+# current-window-status
+set-window-option -g window-status-current-format &quot;#[fg=black,bg=colour039]#[default]#[fg=colour236,bg=colour039] #I &gt; #W #[default]#[fg=colour039,bg=black]#[default]&quot;
+</code></pre>
+
+<h3 id="vim">vim</h3>
+
+<p><a href="https://github.com/itchyny/lightline.vim">lightline.vim</a>を使っているだけ。
+カラースキーマには <code>jellybeans</code> を使っている。</p>
+
+<h3 id="所感">所感</h3>
+
+<p>こういうのは、そもそもどういうデザインにするかを考えるのが難しい。
+見やすく、かっこよく、シンプルで、メンテナンスしやすいものを作るのは大変。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

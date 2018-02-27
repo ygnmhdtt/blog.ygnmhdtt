@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/02/27/prompt-tmux-vim-looking-customize/</loc>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/02/26/gentoo-systemd/</loc>
     <lastmod>2018-02-26T20:11:32+09:00</lastmod>
   </url>
@@ -767,7 +772,13 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-02-26T20:11:32+09:00</lastmod>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/prompt/</loc>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -863,13 +874,13 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/tmux/</loc>
-    <lastmod>2017-12-26T22:13:40+09:00</lastmod>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/tools/</loc>
-    <lastmod>2018-02-12T22:22:56+09:00</lastmod>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -882,6 +893,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/typing/</loc>
     <lastmod>2017-10-28T14:41:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/vim/</loc>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -910,8 +927,14 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/zsh/</loc>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-02-26T20:11:32+09:00</lastmod>
+    <lastmod>2018-02-27T17:47:18+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tmux on yaginumahidetatsu.com</title>
-    <link>https://yaginumahidetatsu.com/tags/tmux/</link>
-    <description>Recent content in Tmux on yaginumahidetatsu.com</description>
+    <title>Prompt on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/prompt/</link>
+    <description>Recent content in Prompt on yaginumahidetatsu.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
     <lastBuildDate>Tue, 27 Feb 2018 17:47:18 +0900</lastBuildDate>
     
-	<atom:link href="https://yaginumahidetatsu.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaginumahidetatsu.com/tags/prompt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       
       <guid>https://yaginumahidetatsu.com/2018/02/27/prompt-tmux-vim-looking-customize/</guid>
       <description>&lt;p&gt;かっこよくした。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>tmuxについて学んだ</title>
-      <link>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</link>
-      <pubDate>Tue, 26 Dec 2017 22:13:40 +0900</pubDate>
-      
-      <guid>https://yaginumahidetatsu.com/2017/12/26/about-tmux/</guid>
-      <description>&lt;p&gt;tmuxをちゃんと勉強した。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
