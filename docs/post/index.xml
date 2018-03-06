@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Tue, 27 Feb 2018 22:05:46 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 22:06:54 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>エンジニアリングと生産性について</title>
+      <link>https://yaginumahidetatsu.com/2018/03/06/productivity-engineering/</link>
+      <pubDate>Tue, 06 Mar 2018 22:06:54 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/03/06/productivity-engineering/</guid>
+      <description>&lt;p&gt;考えたことを書いておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GentooのターミナルにRictyを導入した</title>
