@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/03/14/about-ecs/</loc>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/03/06/productivity-engineering/</loc>
     <lastmod>2018-03-06T22:06:54+09:00</lastmod>
   </url>
@@ -470,7 +475,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/aws/</loc>
-    <lastmod>2018-02-01T23:39:27+09:00</lastmod>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -548,7 +553,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/docker/</loc>
-    <lastmod>2018-02-02T18:22:42+09:00</lastmod>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -561,6 +566,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/ec2/</loc>
     <lastmod>2017-02-11T18:00:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/ecs/</loc>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -788,7 +799,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-03-06T22:06:54+09:00</lastmod>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -962,7 +973,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-03-06T22:06:54+09:00</lastmod>
+    <lastmod>2018-03-14T09:34:04+09:00</lastmod>
     <priority>0</priority>
   </url>
   
