@@ -168,7 +168,7 @@ services:
     environment:
       - RAILS_DATABASE_USERNAME=root
       - RAILS_DATABASE_PASSWORD=docker
-      - RAILS_DATABASE_NAME=web_in_basket_development
+      - RAILS_DATABASE_NAME=dbname_development
       - RAILS_DATABASE_HOST=db
       - REDIS_HOST=redis
       - REDIS_PORT=6379
