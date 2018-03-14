@@ -434,7 +434,7 @@ exit 0
 ### Goとかの場合
 
 Railsだと、実行環境にrubyが必要だし、こんな大げさになったけど、Goだとけっこう簡略化できる。
-疲れたので書かないけど、[multi stage build(https://docs.docker.com/develop/develop-images/multistage-build/) を使う。
+疲れたので書かないけど、[multi stage build](https://docs.docker.com/develop/develop-images/multistage-build/) を使う。
 
 イメージとしては、
 
