@@ -1,5 +1,5 @@
 ---
-title: "Kubernetesを学ぶ 9"
+title: "Kubernetesについて学ぶ 9"
 date: 2018-03-19T22:31:54+09:00
 tags:
 - kubernetes
