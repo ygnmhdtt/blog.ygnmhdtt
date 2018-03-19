@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesを学ぶ 9 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">March 19, 2018</h2>
+    <h1 class="title">Kubernetesを学ぶ 9</h1>
+      
+    <div class="content">
+      <p>これでラスト。</p>
+
+<p></p>
+
+<h1 id="running-multiple-instances-of-your-app">Running Multiple Instances of Your App</h1>
+
+<pre><code>
+以前のモジュールでは、デプロイメントを作成し、サービスを通じて公開しました。
+デプロイメントは、アプリケーションを実行するために1つのポッドのみを作成しました。
+トラフィックが増加すると、ユーザーの需要に対応するためにアプリケーションを拡張する必要があります。
+</code></pre>
+
+<pre><code>デプロイメントをスケールアウトすると、新しいポッドが作成され、
+使用可能なリソースを持つノードにスケジュールされます。
+拡大縮小すると、ポッドの数が新しい希望の状態に減少します。
+Kubernetesはまた、Podのオートスケーリングをサポートしますが、このチュートリアルの範囲外です。
+ゼロへのスケーリングも可能で、指定されたDeploymentのすべてのポッドを終了します。
+
+アプリケーションの複数のインスタンスを実行するには、
+すべてのインスタンスにトラフィックを分散する方法が必要です。
+サービスには、公開された展開のすべてのポッドにネットワークトラフィックを分散する統合ロードバランサがあります。
+サービスは、エンドポイントを使用して実行中のポッドを継続的に監視し、トラフィックが使用可能なポッドにのみ送信されるようにします。
+
+スケーリングは、Deployment内のレプリカの数を変更することによって実行されます。
+</code></pre>
+
+<p>Pod単位でスケールアウトし、ロードバランシングもしてくれるらしい。
+ヘルスチェックもサポートしてくれる。
+ホストマシン(仮想マシンも)自体を冗長化したときはどうするのかな。マスターがいい感じに見てくれるのだろうか。</p>
+
+<h1 id="performing-a-rolling-update">Performing a Rolling Update</h1>
+
+<pre><code>ユーザーはいつでもアプリケーションを利用できると期待しており、
+開発者は新しいバージョンを1日に数回展開することが予想されます。
+Kubernetesでは、これはローリングアップデートで行われます。
+更新をローリングすると、Podsインスタンスを新しいインスタンスで段階的に更新することにより、
+ダウンタイムゼロでデプロイメントのアップデートを実行できます。
+新しいポッドは、利用可能なリソースを持つノードでスケジュールされます。
+
+前のモジュールでは、複数のインスタンスを実行するようにアプリケーションを拡張しました。
+これは、アプリケーションの可用性に影響を与えずに更新を実行するための要件です。
+デフォルトでは、更新中に使用できないポッドの最大数と、作成できる新しいポッドの最大数は1です。
+両方のオプションは、（ポッドの）数値またはパーセンテージのいずれかに設定できます。
+Kubernetesでは、更新プログラムがバージョン管理され、展開更新プログラムは以前の（安定版）バージョンに戻すことができます。
+</code></pre>
+
+<p>ローリングアップデートで大丈夫なのかな、、、</p>
+
+<pre><code>アプリケーションのスケーリングと同様に、デプロイメントが公開されている場合、
+サービスは更新中に利用可能なポッドにのみトラフィックをロードバランシングします。
+使用可能なポッドは、アプリケーションのユーザーが使用できるインスタンスです。
+
+ローリングアップデートでは、次の操作が可能です。
+
+* ある環境から別の環境にアプリケーションをプロモートする（コンテナイメージの更新を介して）
+* 以前のバージョンにロールバックする
+* 停止時間ゼロのアプリケーションの継続的な統合と継続的な配信
+
+デプロイメントが公開されている場合、サービスは更新中に利用可能なポッドにのみトラフィックをロードバランシングします。
+</code></pre>
+
+<p>kubernetesマジ頭いい。</p>
+
+<h1 id="所感">所感</h1>
+
+<p>一通り終わった。
+こんなの人間に使いこなせるのか？と思わなくもない。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
