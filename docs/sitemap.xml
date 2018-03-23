@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/03/23/c-compiler-1/</loc>
+    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/03/19/kubernetes-learn-9.md/</loc>
     <lastmod>2018-03-19T22:31:54+09:00</lastmod>
   </url>
@@ -525,6 +530,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/c/</loc>
+    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/capybara/</loc>
     <lastmod>2017-09-07T09:18:13+09:00</lastmod>
     <priority>0</priority>
@@ -551,6 +562,12 @@
   <url>
     <loc>https://yaginumahidetatsu.com/tags/command/</loc>
     <lastmod>2017-11-14T15:00:30+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaginumahidetatsu.com/tags/compiler/</loc>
+    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -814,7 +831,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-03-19T22:31:54+09:00</lastmod>
+    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -988,7 +1005,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-03-19T22:31:54+09:00</lastmod>
+    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
     <priority>0</priority>
   </url>
   
