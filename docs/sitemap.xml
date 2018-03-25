@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yaginumahidetatsu.com/2018/03/25/c-compiler-2/</loc>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/2018/03/23/c-compiler-1/</loc>
     <lastmod>2018-03-23T19:27:01+09:00</lastmod>
   </url>
@@ -482,6 +487,12 @@
   </url>
   
   <url>
+    <loc>https://yaginumahidetatsu.com/tags/ast/</loc>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://yaginumahidetatsu.com/tags/atom/</loc>
     <lastmod>2016-11-07T18:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -531,7 +542,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/c/</loc>
-    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -567,7 +578,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/tags/compiler/</loc>
-    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -831,7 +842,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/post/</loc>
-    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1005,7 +1016,7 @@
   
   <url>
     <loc>https://yaginumahidetatsu.com/</loc>
-    <lastmod>2018-03-23T19:27:01+09:00</lastmod>
+    <lastmod>2018-03-25T22:42:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   

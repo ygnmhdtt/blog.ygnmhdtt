@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Fri, 23 Mar 2018 19:27:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Mar 2018 22:42:20 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cコンパイラ 2 ASTの実装</title>
+      <link>https://yaginumahidetatsu.com/2018/03/25/c-compiler-2/</link>
+      <pubDate>Sun, 25 Mar 2018 22:42:20 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/03/25/c-compiler-2/</guid>
+      <description>&lt;p&gt;抽象構文木を実装した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Cコンパイラ 1</title>
