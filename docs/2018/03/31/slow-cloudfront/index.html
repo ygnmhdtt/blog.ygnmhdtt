@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>S3 x Cloudfront なのに遅い時 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/s3">#S3</a>
+  
+  | <a class="subtitle is-6" href="/tags/cloudfront">#CloudFront</a>
+  
+  | <a class="subtitle is-6" href="/tags/cdn">#CDN</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">March 31, 2018</h2>
+    <h1 class="title">S3 x Cloudfront なのに遅い時</h1>
+      
+    <div class="content">
+      <p>S3とCloudFrontなのに遅い。という時がある。</p>
+
+<p></p>
+
+<p>S3にアセットを置いてCloudFrontのディストリビューションから配信する。というのは、
+クラウドデザインパターンのひとつでもあり、有用な戦略である。
+CloudFrontはCDNで、エッジサーバにアセットをキャッシュしてくれるから速い。というのは基本的に正しいんだけど、
+たまに(大体特定のファイルだけ)遅い。ということがある。</p>
+
+<h2 id="原因">原因</h2>
+
+<p>特に、特定のファイルだけ遅い。というケースでは、ファイルがハードディスクに保存され、かつうまくセクタに載ってくれてないことが多い。</p>
+
+<p>つまり、</p>
+
+<ul>
+<li>Bad Sectorに載ってしまっている</li>
+<li>フラグメントされてしまっている</li>
+</ul>
+
+<p>ということが考えられる。
+なお、ここでいうハードディスクとは、S3側、CloudFrontのエッジ側両方の話である。</p>
+
+<p>BadSectorは、日本語でもバッドセクタというっぽいけど、
+ハードウェア起因でwrite/readができなくなってしまったセクタのことを言う。(たぶん)</p>
+
+<p>また、フラグメントとは、ファイルの断片化を言う。
+同じファイルが連続したセクタに乗らず、離れたセクタに分散してしまっていることを言う。
+離れたセクタに乗ること自体はよくあることで、昔のWindowsだと <strong>デフラグ</strong> で断片化を直したりしていたはず。</p>
+
+<h2 id="切り分け方">切り分け方</h2>
+
+<p>原因がS3にあるのか、CloudFrontにあるのかを調べるのは大切。
+やり方としては、CloudFrontを外してみて、S3のエンドポイントから取得した時のレイテンシを計測すればいい。
+速度が変わらなければS3が原因だし、早くなったらエッジ側に原因がある。</p>
+
+<p>(ただし、理論上は両方が原因ということもある。)</p>
+
+<h2 id="直し方">直し方</h2>
+
+<p>直し方はいくつかある。</p>
+
+<h3 id="ファイル名を変更してみる">ファイル名を変更してみる</h3>
+
+<p>ファイル名を変更すると、別ファイルとみなされ、セクタが変わるので、運が良ければうまくいく。
+ただ、これをやるとその結果別のファイルが遅くなったりすることがある。</p>
+
+<h3 id="cloudfrontをやめる">CloudFrontをやめる</h3>
+
+<p>高速化できればいいなら、Akamai、FastlyなどのフルSSDなCDNを使うという手もある。
+ただし、理論上はSSDでもバッドセクタは発生する(正確にはバッドブロック)ので、注意。</p>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>早くSSDリプレースしてくれ。</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

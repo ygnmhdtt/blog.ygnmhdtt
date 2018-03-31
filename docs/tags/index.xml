@@ -78,7 +78,7 @@
     <item>
       <title>Aws</title>
       <link>https://yaginumahidetatsu.com/tags/aws/</link>
-      <pubDate>Wed, 14 Mar 2018 09:34:04 +0900</pubDate>
+      <pubDate>Sat, 31 Mar 2018 23:18:04 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/aws/</guid>
       <description></description>
@@ -148,6 +148,15 @@
     </item>
     
     <item>
+      <title>Cdn</title>
+      <link>https://yaginumahidetatsu.com/tags/cdn/</link>
+      <pubDate>Sat, 31 Mar 2018 23:18:04 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/cdn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Chrome Extension</title>
       <link>https://yaginumahidetatsu.com/tags/chrome-extension/</link>
       <pubDate>Sat, 09 Dec 2017 15:19:27 +0900</pubDate>
@@ -162,6 +171,15 @@
       <pubDate>Tue, 30 Jan 2018 20:08:16 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudfront</title>
+      <link>https://yaginumahidetatsu.com/tags/cloudfront/</link>
+      <pubDate>Sat, 31 Mar 2018 23:18:04 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/cloudfront/</guid>
       <description></description>
     </item>
     
@@ -639,6 +657,15 @@
       <pubDate>Tue, 30 Jan 2018 20:06:26 +0900</pubDate>
       
       <guid>https://yaginumahidetatsu.com/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S3</title>
+      <link>https://yaginumahidetatsu.com/tags/s3/</link>
+      <pubDate>Sat, 31 Mar 2018 23:18:04 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/tags/s3/</guid>
       <description></description>
     </item>
     

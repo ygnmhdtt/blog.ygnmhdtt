@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sun, 25 Mar 2018 22:42:20 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 31 Mar 2018 23:18:04 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>S3 x Cloudfront なのに遅い時</title>
+      <link>https://yaginumahidetatsu.com/2018/03/31/slow-cloudfront/</link>
+      <pubDate>Sat, 31 Mar 2018 23:18:04 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/03/31/slow-cloudfront/</guid>
+      <description>&lt;p&gt;S3とCloudFrontなのに遅い。という時がある。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Cコンパイラ 2 ASTの実装</title>
