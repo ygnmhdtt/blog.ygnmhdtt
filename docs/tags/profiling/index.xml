@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Profiling on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/profiling/</link>
+    <description>Recent content in Profiling on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
+    <lastBuildDate>Sat, 07 Apr 2018 11:40:29 +0900</lastBuildDate>
+    
+	<atom:link href="https://yaginumahidetatsu.com/tags/profiling/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ボトルネック調査の基本的な手順</title>
+      <link>https://yaginumahidetatsu.com/2018/04/07/server-profiling/</link>
+      <pubDate>Sat, 07 Apr 2018 11:40:29 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/04/07/server-profiling/</guid>
+      <description>&lt;p&gt;ボトルネック調査のやり方について、自分のわかる範囲内でまとめておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
