@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Lambda Funcrion to convert PDF to Image by Node.js | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/lambda">#Lambda</a>
+  
+  | <a class="subtitle is-6" href="/tags/node.js">#Node.js</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">April 12, 2018</h2>
+    <h1 class="title">Lambda Funcrion to convert PDF to Image by Node.js</h1>
+      
+    <div class="content">
+      <p>I&rsquo;ve created AWS Lambda function to convert pdf to image.</p>
+
+<p></p>
+
+<p>Repository is <a href="https://github.com/ygnmhdtt/lmd_pdf2img">here</a>.
+I need this function for work, but I couldn&rsquo;t find any useful libraries or examples.</p>
+
+<h3 id="how-to-use">How to use</h3>
+
+<p>First, you need to install dependencies.</p>
+
+<pre><code>$ npm install gm aws-sdk util
+</code></pre>
+
+<p>Now, I haven&rsquo;t prepared any deployment command.
+You need to do it manually like this.</p>
+
+<pre><code>$ zip -r function.zip *
+</code></pre>
+
+<p>And, you need to upload zip at lambda console.
+Of course, you must set function trigger <code>S3 Upload</code> .</p>
+
+<h3 id="source-code">Source code</h3>
+
+<p>All in <code>index.js</code> .</p>
+
+<pre><code>const srcBucket = event.Records[0].s3.bucket.name;
+const srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, &quot; &quot;));
+
+const dstBucket = srcBucket;
+const dstKey = srcKey.replace('.pdf', '.png');
+</code></pre>
+
+<p>Now, destination bucket and key is same as source.
+If you want to configure it, please write your own code.</p>
+
+<p>Other configurations are written in README.
+Please use and feedback me!!</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

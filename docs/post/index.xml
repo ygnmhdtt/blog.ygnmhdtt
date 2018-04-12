@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Sat, 07 Apr 2018 11:40:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 12 Apr 2018 21:28:36 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lambda Funcrion to convert PDF to Image by Node.js</title>
+      <link>https://yaginumahidetatsu.com/2018/04/12/lambda-convert-pdf-to-img/</link>
+      <pubDate>Thu, 12 Apr 2018 21:28:36 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/04/12/lambda-convert-pdf-to-img/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve created AWS Lambda function to convert pdf to image.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ボトルネック調査の基本的な手順</title>
