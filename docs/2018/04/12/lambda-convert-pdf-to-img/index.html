@@ -52,7 +52,7 @@
 
 <p></p>
 
-<p>Repository is <a href="https://github.com/ygnmhdtt/lmd_pdf2img">here</a>.
+<p>Repository is <a href="https://github.com/ygnmhdtt/lmd_pdf2img">here</a>.<br />
 I need this function for work, but I couldn&rsquo;t find any useful libraries or examples.</p>
 
 <h3 id="how-to-use">How to use</h3>
@@ -62,13 +62,13 @@ I need this function for work, but I couldn&rsquo;t find any useful libraries or
 <pre><code>$ npm install gm aws-sdk util
 </code></pre>
 
-<p>Now, I haven&rsquo;t prepared any deployment command.
+<p>Now, I haven&rsquo;t prepared any deployment command.<br />
 You need to do it manually like this.</p>
 
 <pre><code>$ zip -r function.zip *
 </code></pre>
 
-<p>And, you need to upload zip at lambda console.
+<p>And, you need to upload zip at lambda console.<br />
 Of course, you must set function trigger <code>S3 Upload</code> .</p>
 
 <h3 id="source-code">Source code</h3>
@@ -82,11 +82,11 @@ const dstBucket = srcBucket;
 const dstKey = srcKey.replace('.pdf', '.png');
 </code></pre>
 
-<p>Now, destination bucket and key is same as source.
+<p>Now, destination bucket and key is same as source (extension will be <code>png</code> ).<br />
 If you want to configure it, please write your own code.</p>
 
-<p>Other configurations are written in README.
-Please use and feedback me!!</p>
+<p>Other configurations are written in README.<br />
+Please use it and send feedback to me!!</p>
     </div>
     
   </div>
