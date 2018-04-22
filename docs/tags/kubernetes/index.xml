@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2017</copyright>
-    <lastBuildDate>Mon, 19 Mar 2018 22:31:54 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Apr 2018 10:26:27 +0900</lastBuildDate>
     
 	<atom:link href="https://yaginumahidetatsu.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Report of Japan container days v18.04</title>
+      <link>https://yaginumahidetatsu.com/2018/04/22/japan-container-days-v1804/</link>
+      <pubDate>Sun, 22 Apr 2018 10:26:27 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/04/22/japan-container-days-v1804/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been to Japan container days at April 19th, 2018 in Tokyo.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Kubernetesについて学ぶ 9</title>

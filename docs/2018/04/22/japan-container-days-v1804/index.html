@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Report of Japan container days v18.04 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/thinking">#thinking</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/container">#container</a>
+  
+  | <a class="subtitle is-6" href="/tags/docker">#docker</a>
+  
+  | <a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">April 22, 2018</h2>
+    <h1 class="title">Report of Japan container days v18.04</h1>
+      
+    <div class="content">
+      <p>I&rsquo;ve been to Japan container days at April 19th, 2018 in Tokyo.</p>
+
+<p></p>
+
+<p><a href="https://containerdays.jp/">Japan container days</a> is conference of container (almost kubernetes, k8s).</p>
+
+<p>I&rsquo;ve been there and now want to write some impressions of sessions.</p>
+
+<p>Please note that almost all sessions were spoken in Japanese.<br />
+I am not going to translate content of sessions into English, I will write only my own impressions.</p>
+
+<h3 id="technology-about-private-container-foundation-ake-by-cyberagent">Technology about private container foundation AKE by CyberAgent</h3>
+
+<p>original title is: サイバーエージェントにおけるプライベートコンテナ基盤AKEを支える技術</p>
+
+<p>They spoke about building kubernetes cluster using OpenStack.
+They created original kubernetes as a service(kaas) on their onpremise.
+And, use it at production environment.
+I was surprised at creating own kaas, and using it at production.
+Because, if I use k8s at production, it&rsquo;s good to use with EKS, GKE, or other services.</p>
+
+<p><a href="https://speakerdeck.com/masayaaoyama/saibaezientoniokerupuraibetokontenaji-pan-akewozhi-eruji-shu">Slide</a> (in japanese)</p>
+
+<h3 id="kubernetes-x-paas-challenge-for-noops-of-container-applications">Kubernetes x Paas &ndash; Challenge for NoOps of container applications</h3>
+
+<p>original title is: Kubernetes x PaaS — コンテナアプリケーションのNoOpsへの挑戦</p>
+
+<p>NoOps means:
+* Self healing
+* In-Flight renewing
+* Adaptive scale</p>
+
+<p>And, k8s provides features of them. But, it make application on container statefull.<br />
+Application on any container should be stateless.<br />
+For it, We should use any services provided by public cloud vendor.
+For example:</p>
+
+<ul>
+<li>Open service broker API</li>
+<li>Service Catalog</li>
+<li>Kaas (EKS, GKE, AKS)</li>
+<li>Service Mesh</li>
+<li>Istio</li>
+<li>Helm</li>
+</ul>
+
+<p>Honestly, I didn&rsquo;t even know about open service broker, service catalog, istio, helm.<br />
+I want to use it with EKS or GKE and write something about this blog.</p>
+
+<p><a href="https://www.slideshare.net/yokawasa/kubernetes-x-paas-noops">Slide</a> (in japanese)</p>
+
+<h3 id="face-against-microservices-with-istio">Face against microservices with Istio</h3>
+
+<p>original title is: Istioと共にマイクロサービスに立ち向かえ!</p>
+
+<p>Microservices architecture is not a silver bullet.<br />
+It will cause problems like this:</p>
+
+<ul>
+<li>difficult to manage traffic between applications</li>
+<li>difficult to manage keys and certificate</li>
+<li>difficult to glasp whole systems</li>
+<li>difficult to know what will be occured at failure or incident</li>
+</ul>
+
+<p><a href="https://istio.io/">Istio</a> will help you with these annoying things.</p>
+
+<p><a href="https://speakerdeck.com/ladicle/istiotogong-nimaikurosabisunili-tixiang-kae">Slide</a> (in japanese)</p>
+
+<h3 id="impressions">Impressions</h3>
+
+<p>I have never operate kubernetes at production. (I only use container with AWS ECS.)<br />
+So, I was very surprised at many services are on kubernetes cluster at production environments.<br />
+I never know about many useful services around containers and k8s.<br />
+I like docker, and any other container technology and I want to use them.<br />
+Now, I want to use it and operate more simple and useful our systems.</p>
+
+<p><a href="https://medium.com/@yukotan/japan-container-days-v18-04-%E3%81%AE%E8%B3%87%E6%96%99-4f380fb7b696">Slides and entries</a></p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
