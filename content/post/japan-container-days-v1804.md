@@ -23,11 +23,11 @@ I am not going to translate content of sessions into English, I will write only 
 
 original title is: サイバーエージェントにおけるプライベートコンテナ基盤AKEを支える技術
 
-They spoke about building kubernetes cluster using OpenStack.
-They created original kubernetes as a service(kaas) on their onpremise.
-And, use it at production environment.
-I was surprised at creating own kaas, and using it at production.
-Because, if I use k8s at production, it's good to use with EKS, GKE, or other services.
+They spoke about building kubernetes cluster using OpenStack.  
+They created original kubernetes as a service(kaas) on their onpremise.  
+And, use it at production environment.  
+I was surprised at creating own kaas, and using it at production.  
+Because, if I use k8s at production, it's good to use with EKS, GKE, or other services.  
 
 [Slide](https://speakerdeck.com/masayaaoyama/saibaezientoniokerupuraibetokontenaji-pan-akewozhi-eruji-shu) (in japanese)
 
@@ -36,6 +36,7 @@ Because, if I use k8s at production, it's good to use with EKS, GKE, or other se
 original title is: Kubernetes x PaaS — コンテナアプリケーションのNoOpsへの挑戦
 
 NoOps means:
+
 * Self healing
 * In-Flight renewing
 * Adaptive scale
