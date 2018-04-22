@@ -25,3 +25,5 @@ AWS Certified Solution Architect Professional - 2017 / 12
 * [other articles](https://www.google.co.jp/search?q=site%3Ahttps%3A%2F%2Fblog.mmmcorp.co.jp+%E6%9F%B3%E6%B2%BC&rls=com.microsoft:ja:{referrer:source?}&ie=UTF-8&oe=UTF-8&sourceid=ie7&rlz=1I7SNJB_jaJP481&gfe_rd=cr&dcr=0&ei=QjtCWuaVPOHd8Afn_IDoAQ)
 
 Working at [MMM co., Ltd](https://mmmcorp.co.jp/)
+
+I will translate my Japanese entries into English some time soon!
