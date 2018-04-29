@@ -112,8 +112,10 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
+# plan
+
 ```
-make plan  
+$ make plan  
 terraform plan  
 Refreshing Terraform state in-memory prior to plan...  
 The refreshed state will be used to calculate this plan, but will not be
@@ -418,6 +420,15 @@ module.ec2.aws_instance.bastion: Creation complete after 23s (ID: i-00ebded5f73c
 
 Apply complete! Resources: 8 added, 0 changed, 0 destroyed.
 ```
+
+# created resources
+
+![](/images/introduce-terraform/1.png)
+![](/images/introduce-terraform/2.png)
+![](/images/introduce-terraform/3.png)
+![](/images/introduce-terraform/4.png)
+![](/images/introduce-terraform/5.png)
+![](/images/introduce-terraform/6.png)
 
 # login
 
