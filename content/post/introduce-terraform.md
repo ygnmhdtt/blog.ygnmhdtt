@@ -12,7 +12,7 @@ Introduce terraform.
 
 # At first: code is
 
-[here](https://github.com/ygnmhdtt/minimal-tf).
+[here](https://github.com/ygnmhdtt/minimal-terraform) .
 
 # Terraform
 
