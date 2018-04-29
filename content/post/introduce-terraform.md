@@ -1,5 +1,5 @@
 ---
-title: "Introduce Terraform and logs"
+title: "Introduce Terraform with simple template"
 date: 2018-04-30T06:18:53+09:00
 tags:
 - AWS
