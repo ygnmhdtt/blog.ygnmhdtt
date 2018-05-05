@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Run aws-cli without pip | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="https://yaginumahidetatsu.com/css/style.css"/></head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile">
+          <a class="nav-item" href="https://yaginumahidetatsu.com/post"><h1 class="is-4">Archive</h1></a>
+        /
+        <a class="nav-item" href="https://yaginumahidetatsu.com/about"><h1 class="is-4">About</h1></a>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/aws">#AWS</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/tools">#tools</a>
+  
+  | <a class="subtitle is-6" href="/tags/docker">#Docker</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">May 5, 2018</h2>
+    <h1 class="title">Run aws-cli without pip</h1>
+      
+    <div class="content">
+      <p>Run aws command with docker.</p>
+
+<p></p>
+
+<p>I prepared <code>aws-tools-container</code> .<br />
+Please clone <a href="https://github.com/ygnmhdtt/aws-tools-container">here</a>.</p>
+
+<h1 id="credential">Credential</h1>
+
+<p>For <code>aws</code> command, we need to prepare <code>~/.aws/config</code> and <code>~/.aws/credentials</code> .<br />
+<code>aws-tools-container</code> mounts your local <code>~/.aws</code> directory to container home directory.<br />
+So, you don&rsquo;t have to fix them for aws-tools-container.</p>
+
+<h1 id="usage">Usage</h1>
+
+<p>Clone repository, and</p>
+
+<pre><code>$ make build
+$ make up
+$ make login
+
+# Now, you are in container
+
+# aws s3 ls
+</code></pre>
+
+<p>Default AWS credential is set <code>default</code> .<br />
+If you want to change it, please do like this:</p>
+
+<pre><code>$ export AWS_DEFAULT_PROFILE=your-profile
+</code></pre>
+
+<p>I prepared profile list command.</p>
+
+<pre><code>$ make list
+</code></pre>
+
+<p>And, this includes <a href="https://github.com/awslabs/aws-shell">aws-shell</a> .</p>
+
+<pre><code>$ make login
+# aws-shell
+</code></pre>
+
+<p>If you want to stop container, just type this</p>
+
+<pre><code>$ make stop
+</code></pre>
+
+<p>Please use it!!
+Now we no longer need pip!!</p>
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2017</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+
