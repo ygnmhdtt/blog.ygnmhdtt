@@ -1,6 +1,6 @@
 ---
 title: "I will quit working remotely"
-date: 2018-05-31T21:52:40+09:00
+date: 2018-05-30T21:52:40+09:00
 tags:
 - life
 ---
