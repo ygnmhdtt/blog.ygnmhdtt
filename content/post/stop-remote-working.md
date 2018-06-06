@@ -1,8 +1,8 @@
 ---
-title: "2How to learn about AWS for beginners"
-date: 2018-05-21T21:52:40+09:00
+title: "I will quit working remotely"
+date: 2018-05-31T21:52:40+09:00
 tags:
-- AWS
+- life
 ---
 
 I will change jobs and quit working remotely.
