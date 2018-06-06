@@ -2,7 +2,7 @@
 title: "I will quit working remotely"
 date: 2018-05-30T21:52:40+09:00
 tags:
-- AWS
+- life
 ---
 
 I will change jobs and quit working remotely.
