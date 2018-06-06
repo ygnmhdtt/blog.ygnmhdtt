@@ -16,7 +16,7 @@ It was challenging days, and I could got special colleagues.
 I really appreciate at all.  
 I miss working remotely, but I decided stop it.  
 I really love it, but it has some weakness.  
-  
+
 ### Unmatch of communication speed  
 
 Everyone has their own communication pace.  
